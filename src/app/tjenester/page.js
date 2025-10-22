@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function OmPage() {
+export default function TjenesterPage() {
   return (
     <main>
       
