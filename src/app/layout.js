@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Hero from "@/components/Hero";
 
 import "./globals.css";
 import Footer from "@/components/Footer";
@@ -24,7 +25,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+      
+      <Hero />
+
+        <main className="grow">{children}</main>
 
       <Footer />
       </body>
