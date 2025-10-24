@@ -28,7 +28,7 @@ export default function Hero() {
           href="https://www.ledigtime.no/kjodes/step1"
           target='_blank'
           className="
-              inline-block bg-(--accent-terracotta) text-white 
+              inline-block bg-accent text-white 
             px-5 sm:px-8 py-2 sm:py-3 rounded-full font-semibold 
             text-sm sm:text-base
             transition-transform hover:-translate-y-1
