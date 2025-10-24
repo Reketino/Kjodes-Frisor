@@ -6,7 +6,7 @@ export default function Home() {
   return (
 
 <main>
-  
+
  <section className='relative flex items-center justify-center text-center h-[80vh] sm:h-[90vh] overflow-hidden'>
         <Image 
         src="/hero2perf.jpg"
@@ -55,7 +55,7 @@ export default function Home() {
   </div>
 </section>
 
-  <section className="py-20 px-6 bg-background text-foreground text-center">
+  <section className="py-10 px-6 bg-background text-foreground text-center">
   <h2 className="text-3xl sm:text-4xl font-serif font-semibold mb-8">
     Våre tjenester
   </h2>
