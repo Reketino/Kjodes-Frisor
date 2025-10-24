@@ -4,7 +4,9 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-<>
+
+<main>
+  
  <section className='relative flex items-center justify-center text-center h-[80vh] sm:h-[90vh] overflow-hidden'>
         <Image 
         src="/hero2perf.jpg"
@@ -41,7 +43,7 @@ export default function Home() {
       </div>
     </section>
 
-<main className="bg-background text-foreground py-20 px-4 sm:px-8">
+<section className="bg-background text-foreground py-20 px-4 sm:px-8">
   <div className="max-w-4xl mx-auto text-center space-y-6">
     <h2 className="text-3xl sm:text-4xl font-serif font-semibold">
       Velkommen til Kjødes Frisørsalong
@@ -51,6 +53,7 @@ export default function Home() {
       Hos oss får du tid, trygghet og en klipp som passer deg – ikke bare trenden.
     </p>
   </div>
+</section>
 
   <section className="py-20 px-6 bg-background text-foreground text-center">
   <h2 className="text-3xl sm:text-4xl font-serif font-semibold mb-8">
@@ -85,7 +88,7 @@ export default function Home() {
 </section>
 
 </main>
-</>
+
 
   );
 }
