@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-
-
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 import Footer from "@/components/Footer";
 
@@ -26,9 +25,9 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
       
-      
+      <Navbar />
 
-        <main className="grow">{children}</main>
+        <main className="grow mt-20">{children}</main>
 
       <Footer />
       </body>
