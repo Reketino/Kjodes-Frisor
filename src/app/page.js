@@ -32,7 +32,7 @@ export default function Home() {
           href="https://www.ledigtime.no/kjodes/step1"
           target='_blank'
           className="
-              inline-block bg-accent text-white 
+              inline-block bg-amber-950 text-white 
             px-5 sm:px-8 py-2 sm:py-3 rounded-full font-semibold 
             text-sm sm:text-base
             transition-transform hover:-translate-y-1
@@ -59,20 +59,40 @@ export default function Home() {
   <h2 className="text-3xl sm:text-4xl font-serif font-semibold mb-8">
     Våre tjenester
   </h2>
+
   <div className="max-w-5xl mx-auto grid sm:grid-cols-3 gap-8">
     {[
-      { title: "Klipp & styling", desc: "Fra klassisk klipp til moderne uttrykk – vi finner stilen som passer deg." },
-      { title: "Farge & striper", desc: "Naturlige toner eller litt ekstra glød – vi bruker skånsomme produkter." },
-      { title: "Skjegg & herreklipp", desc: "Presis klipp og stell med fokus på detaljer og komfort." },
+      {
+        title: "Klipp & styling",
+        desc: "Fra klassisk klipp til moderne uttrykk – vi finner stilen som passer deg.",
+      },
+      {
+        title: "Farge & striper",
+        desc: "Naturlige toner eller litt ekstra glød – vi bruker skånsomme produkter.",
+      },
+      {
+        title: "Skjegg & herreklipp",
+        desc: "Presis klipp og stell med fokus på detaljer og komfort.",
+      },
+      {
+        title: "Barneklipp",
+        desc: "Tålmodig og trygg klipp for barn i alle aldre – med fokus på trivsel.",
+      },
+      {
+        title: "Forming, bryn & vipper",
+        desc: "Løft blikket med stell av bryn og vipper, formet etter dine ønsker.",
+      },
+      {
+        title: "Drop-in & timebestilling",
+        desc: "Velkommen innom når det passer deg, eller bestill time på forhånd for garantert plass.",
+      },
     ].map((service) => (
       <div
         key={service.title}
         className="p-6 rounded-2xl bg-white/10 backdrop-blur-sm shadow-sm hover:shadow-md transition"
       >
         <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-        <p className="text-neutral-400 text-base leading-relaxed">
-          {service.desc}
-        </p>
+        <p className="text-neutral-400 text-base leading-relaxed">{service.desc}</p>
       </div>
     ))}
   </div>
