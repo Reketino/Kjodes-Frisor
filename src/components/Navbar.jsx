@@ -2,8 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import KontaktPage from "@/app/kontakt/page";
-import OmPage from "@/app/om/page";
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,18 +50,25 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-black text-center pb-4">
           <Link
-            href="/about"
+            href="/om"
             className="block py-2 hover:text-gray-300 transition"
             onClick={() => setIsOpen(false)}
           >
             Om oss
           </Link>
           <Link
-            href="/contact"
+            href="/kontakt"
             className="block py-2 hover:text-gray-300 transition"
             onClick={() => setIsOpen(false)}
           >
             Kontakt oss
+          </Link>
+          <Link
+            href="/apning"
+            className="block py-2 hover:text-gray-300 transition"
+            onClick={() => setIsOpen(false)}
+          >
+            Åpningstider 
           </Link>
         </div>
       )}
