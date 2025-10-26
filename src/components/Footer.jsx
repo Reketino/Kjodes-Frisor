@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <main className="flex flex-col h-fit  bg-stone-900">
-      <footer className="flex flex-wrap items-start justify-between w-full px-2 py-2 gap-6 ">
+    <main className="flex flex-col h-fit bg-stone-900">
+      <footer className="flex flex-wrap items-center justify-between w-full px-6 py-4 gap-6 border-t border-stone-700">
         <div className="flex items-center gap-3">
         <Image
           src="/Logo.png"
@@ -19,7 +19,7 @@ export default function Footer() {
         </p>
       </div>
 
-      <ul className="flex flex-col text-center gap-1">
+      <ul className="flex flex-row gap-6 font-serif sm:text-base font-semibold">
         <Link
           href="/om"
           className=" mt-2 font-serif text-shadow-stone-400 transition-discrete  hover:text-gray-100  hover:underline"
@@ -40,10 +40,10 @@ export default function Footer() {
         </Link>
       </ul>
 
-      <div className="flex flex-col items-center justify-center  mb-2">
-        <p className="font-serif text-sm">Følg oss på sosiale medier</p>
+      <div className="flex flex-col items-center sm:items-end text-sm">
+        <p className="font-serif font-semibold mb-1">Følg oss på sosiale medier</p>
 
-      <div className="flex flex-row gap-6 mt-2">
+      <div className="flex flex-row gap-4 mt-2">
         <Link
           href="https://www.instagram.com/kjodesfrisorsalongas/"
           target="_blank"
@@ -52,9 +52,9 @@ export default function Footer() {
           <Image
             src="/Instagram.png"
             alt="Instagram"
-            width={60}
-            height={60}
-            className="object-center"
+            width={36}
+            height={36}
+            className="hover:scale-110 active:scale-90 hover:opacity-85 transition-opacity"
           ></Image>
         </Link>
 
@@ -66,8 +66,9 @@ export default function Footer() {
           <Image
             src="/facebook.png"
             alt="facebook"
-            width={60}
-            height={60}
+            width={36}
+            height={36}
+            className="hover:scale-110 active:scale-90 hover:opacity-85 transition-opacity"
           ></Image>
         </Link>
       </div>

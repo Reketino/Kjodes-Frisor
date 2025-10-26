@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function OmPage() {
   return (
-   <section className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 py-16 max-w-6xl mx-auto">
+   <section className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 py-16 max-w-6xl mx-auto mt-6">
       
       <div className="md:w-1/2 flex justify-center">
         <img
