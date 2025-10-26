@@ -126,9 +126,44 @@ export default function Home() {
             className="rounded-lg object-cover h-64 w-full"
           />
           <img
-            src="/glimt3.jpg"
+            src="/glimt.jpg"
             className="rounded-lg object-cover h-64 w-full"
           />
+        </div>
+      </section>
+
+      <section className="bg-neutral-800 text-gray-300 py-15 px-5">
+        <div className="max-w-5xl mx-auto ">
+          <h2 className=" text-3xl sm:text-2xl font:serif text-center mb-6">
+            Våre Frisører
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+          <div className="flex flex-col items-center">
+            <Image
+            src="/elise.jpeg"
+            alt="Bilde av Elise"
+            width={250}
+            height={250}
+            className="rounded-full shadow-lg object-cover"
+            />
+            <h3 className="font-semibold"> Elise Klokkehaug Kjøde</h3>
+            <p className="">
+              Daglig leder og eier Elise Klokkehaug Kjøde
+            </p>
+
+            <div className="flex flex-col items-center">
+            <Image
+            src="/Marte.jpg"
+            alt="Bilde av Marte"
+            width={250}
+            height={250}
+            className="rounded-full shadow-lg object-cover"
+            />
+            <h3 className="font-semibold">Marte Berge Hoel</h3>
+            <p className=""> Medeier og Frisør Marte Berge Hoel</p>
+            </div>
+           </div>
+          </div>
         </div>
       </section>
     </main>
