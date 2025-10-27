@@ -10,8 +10,8 @@ export default function Footer() {
         <Image
           src="/Logo.png"
           alt="Logo til Kjødes"
-          width={40}
-          height={40}
+          width={50}
+          height={50}
           className="mb-2"
         ></Image>
         <p className="text-white font-serif">
