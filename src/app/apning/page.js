@@ -2,18 +2,55 @@ import React from "react";
 
 export default function AapningPage() {
   return (
-    <main className="flex flex-col items-center space-y-1 mt-10">
-      <h2 className=" sm:text-4xl color">Våre Åpningstider:</h2>
-      <ul className="flex  flex-col items-center space-y-1 mt-4">
-        <span className="text-center font-bold mb-2 mt-2">Mandag: 09–17</span>
-        <span className="text-center font-bold mb-2 mt-2">Tirsdag: 09–17</span>
-        <span className="text-center font-bold mb-2 mt-2">Onsdag: 09–17</span>
-        <span className="text-center font-bold mb-2 mt-2">Torsdag: 09–18</span>
-        <span className="text-center font-bold mb-2 mt-2">Fredag: 09–16</span>
-        <span className="text-center font-bold mb-2 mt-2">Lørdag: Stengt</span>
-        <span className="text-center font-bold mb-2 mt-2">Søndag: Stengt</span>
-      </ul>
-      <h2 className="sm:text-2xl mb-4 mt-4">Velkommen Til Oss!✂️</h2>
+    <main className="relative flex flex-col items-center justify-center min-h-screen w-full bg-cover bg-center bg-no-repeat"
+    style={{ backgroundImage: "url('/kalender.jpg')" }}
+    >
+      <div className="absolute inset-0 bg-black/70 z-0 pointer-events-none"></div>
+
+      <div className="relative z-10 w-full max-w-4xl py-10 text-center px-4">
+      <h2 className=" text-6xl mb-8 font-semibold text-stone-500">Åpningstider</h2>
+      <ul className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-8">
+      {[
+        {day: "Mandag",
+         time: "09-17",
+        },
+        {day: "Tirsdag",
+         time: "09-17",
+        },
+        {day: "Onsdag",
+         time: "09-17",
+        },
+        {day: "Torsdag",
+         time: "09-18",
+        },
+        {day: "Fredag",
+         time: "09-16",
+        },
+        {day: "Lørdag",
+         time: "Stengt",
+        },
+        {day: "Søndag",
+         time: "Stengt",
+        },
+        ].map((service) => ( 
+          <div
+          key={service.day}
+          className="p-6 rounded-4xl bg-white/8 backdrop-blur-md shadow-md transition hover:bg-neutral-950 hover:scale-105"
+          >
+          <h3 className=" text-4xl font-semibold mb-2 text-stone-500">{service.day}</h3>
+          <p className={`text-2xl leading-relaxed  ${  
+            ["Lørdag", "Søndag"].includes(service.day)
+            ? "text-red-600 font:bold"
+            :"text-stone-200"
+          }`}
+          >
+            {service.time}
+          </p>
+          </div>
+        ))} 
+        </ul>
+      
+      </div>
     </main>
   );
 }
