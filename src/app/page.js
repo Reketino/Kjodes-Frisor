@@ -112,7 +112,7 @@ export default function Home() {
         </a>
       </section>
 
-      <section className="py-20 bg-neutral-100 text-neutral-800 mt-6">
+      <section className="py-20 bg-stone-200 text-neutral-800 mt-6">
         <h2 className="text-3xl text-center font-serif mb-8">
           Et glimt fra salongen
         </h2>
@@ -132,12 +132,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-neutral-800 text-gray-300 py-15 px-5">
-        <div className="max-w-5xl mx-auto ">
-          <h2 className=" text-3xl sm:text-2xl font:serif text-center mb-6">
+      <section className="bg-stone-700 text-shadow-white py-16 px-6">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className=" text-3xl sm:text-5xl font:serif font-semibold mb-10">
             Våre Frisører
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="flex flex-col items-center">
             <Image
             src="/elise.jpeg"
@@ -146,10 +146,11 @@ export default function Home() {
             height={250}
             className="rounded-full shadow-lg object-cover"
             />
-            <h3 className="font-semibold"> Elise Klokkehaug Kjøde</h3>
-            <p className="">
+            <h3 className="text-xl font-semibold mt-4"> Elise Klokkehaug Kjøde</h3>
+            <p className="text-neutral-400 leading-relaxed">
               Daglig leder og eier Elise Klokkehaug Kjøde
             </p>
+            </div>
 
             <div className="flex flex-col items-center">
             <Image
@@ -159,11 +160,10 @@ export default function Home() {
             height={250}
             className="rounded-full shadow-lg object-cover"
             />
-            <h3 className="font-semibold">Marte Berge Hoel</h3>
-            <p className=""> Medeier og Frisør Marte Berge Hoel</p>
+            <h3 className="text-xl font-semibold mt-4">Marte Berge Hoel</h3>
+            <p className="text-neutral-400 leading-relaxed"> Medeier og Frisør Marte Berge Hoel</p>
             </div>
            </div>
-          </div>
         </div>
       </section>
     </main>
