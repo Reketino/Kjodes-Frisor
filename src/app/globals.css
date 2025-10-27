@@ -1,14 +1,6 @@
 @import "tailwindcss";
 
-/* 🌆 Base-variabler (lys som fallback) */
-:root {
-  --background: #f6f4f1;
-  --foreground: #1a1a1a;
-  --accent-terracotta: #b3533a;
-  --accent-amber: #d9a441;
-  --muted-olive: #6a6747;
-  --surface: #fff;
-}
+
 
 /* 💫 Tailwind theme bridge */
 @theme inline {
