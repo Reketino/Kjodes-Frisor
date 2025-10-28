@@ -116,18 +116,22 @@ export default function Home() {
         <h2 className="text-3xl text-center font-serif mb-8">
           Et glimt fra salongen
         </h2>
-        <div className="max-w-5xl mx-auto grid sm:grid-cols-3 gap-4 px-6">
+
+        <div className="group relative max-w-5xl mx-auto grid sm:grid-cols-3 gap-4 px-6">
           <img
             src="/glimt1.jpg"
-            className="rounded-lg object-cover h-64 w-full"
+            className="rounded-2xl object-cover h-64 w-full transition-all duration-300
+            group-hover:scale-101 group-hover:shadow-2xl"
           />
           <img
             src="/glimt2.jpg"
-            className="rounded-lg object-cover h-64 w-full"
+            className="rounded-2xl object-cover h-64 w-full transition-all duration-300
+            group-hover:scale-101 group-hover:shadow-2xl"
           />
           <img
             src="/glimt.jpg"
-            className="rounded-lg object-cover h-64 w-full"
+            className="rounded-2xl object-cover h-64 w-full transition-all duration-300
+            group-hover:scale-101 group-hover:shadow-2xl"
           />
         </div>
       </section>

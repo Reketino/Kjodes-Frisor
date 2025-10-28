@@ -32,22 +32,33 @@ export default function AapningPage() {
         {day: "Søndag",
          time: "Stengt",
         },
-        ].map((service) => ( 
+        ].map((service) => {
+          const isHelg =["Lørdag", "Søndag"]. includes(service.day);
+
+          return (
           <div
           key={service.day}
-          className="p-6 rounded-4xl bg-white/8 backdrop-blur-md shadow-md transition hover:bg-neutral-950 hover:scale-105"
+          className={`group p-6 rounded-4xl bg-white/10 backdrop-blur-md shadow-md transition-all duration-300
+           hover:bg-neutral-900  hover:-translate-y-1
+           ${
+            isHelg
+            ? "hover:shadow-red-500/30"
+            : "hover:shadow-green-500/30"
+           }`}
           >
-          <h3 className=" text-4xl font-semibold mb-2 text-stone-500">{service.day}</h3>
-          <p className={`text-2xl leading-relaxed  ${  
-            ["Lørdag", "Søndag"].includes(service.day)
-            ? "text-red-600 font:bold"
-            :"text-stone-200"
+          <h3 className=" text-4xl font-semibold mb-2 text-stone-400">{service.day}</h3>
+          <p className={`text-2xl leading-relaxed transition-colors duration-300  
+          ${  
+            isHelg
+            ? "text-stone-200 group-hover:text-red-600"
+            :"text-stone-200 group-hover:text-green-500"
           }`}
           >
             {service.time}
           </p>
           </div>
-        ))} 
+          );
+        })} 
         </ul>
       
       </div>

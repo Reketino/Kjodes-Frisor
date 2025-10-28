@@ -1,8 +1,11 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Footer() {
+  const [isOpen, setIsOpen] = useState (false);
+
   return (
     <main className="flex flex-col h-fit bg-stone-900">
       <footer className="flex flex-wrap items-center justify-between w-full px-6 py-4 gap-6 border-t border-stone-700">
@@ -73,6 +76,43 @@ export default function Footer() {
         </Link>
       </div>
       </div>
+
+       <button
+          className="md:hidden flex flex-col space-y-1"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <span className="block w-6 h-0.5 bg-white"></span>
+          <span className="block w-6 h-0.5 bg-white"></span>
+          <span className="block w-6 h-0.5 bg-white"></span>
+        </button>
+      
+
+      
+      {isOpen && (
+        <div className="md:hidden bg-black text-center pb-4">
+          <Link
+            href="/om"
+            className="block py-2 hover:text-gray-300 transition"
+            onClick={() => setIsOpen(false)}
+          >
+            Om oss
+          </Link>
+          <Link
+            href="/kontakt"
+            className="block py-2 hover:text-gray-300 transition"
+            onClick={() => setIsOpen(false)}
+          >
+            Kontakt oss
+          </Link>
+          <Link
+            href="/apning"
+            className="block py-2 hover:text-gray-300 transition"
+            onClick={() => setIsOpen(false)}
+          >
+            Åpningstider 
+          </Link>
+        </div>
+      )}
       </footer>
     </main>
   );
