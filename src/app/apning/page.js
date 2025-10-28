@@ -8,7 +8,7 @@ export default function AapningPage() {
       <div className="absolute inset-0 bg-black/70 z-0 pointer-events-none"></div>
 
       <div className="relative z-10 w-full max-w-4xl py-10 text-center px-4">
-      <h2 className=" text-6xl mb-8 font-semibold text-stone-500">Åpningstider</h2>
+      <h2 className=" text-4xl mb-8 font-semibold text-stone-500">Åpningstider</h2>
       <ul className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-8">
       {[
         {day: "Mandag",
