@@ -1,4 +1,5 @@
 import React from "react";
+import { FaPhoneSquareAlt, FaMapPin, FaEnvelope } from "react-icons/fa";
 
 export default function KontaktPage() {
   return (
@@ -14,18 +15,28 @@ export default function KontaktPage() {
 
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div className="bg-white/15 backdrop-blur-md rounded-2xl p-6 shadow-lg transition hover:shadow-xl hover:-translate-y-1">
-              <p className="text-xl mb-4">📍 Storgata 5, 6230 Sykkylven</p>
+              <div className="flex flex-row items-center justify-center mb-2 gap-1">
+                <FaMapPin size={25} />
+                <p className="text-xl  hover:text-red-500">
+                  {" "}
+                  Storgata 5, 6230 Sykkylven
+                </p>
+              </div>
+
               <a
                 href="tel:70254680"
-                className="block text-xl mb-2 hover:text-green-700 transition"
+                className="text-xl  hover:text-green-700 transition flex flex-row items-center justify-center mb-2 gap-1"
               >
-                📞 70 25 46 80
+                <FaPhoneSquareAlt size={25} />
+                70 25 46 80
               </a>
+
               <a
                 href="mailto:kjodesfrisorsalong@gmail.com"
-                className="block text-xl hover:text-green-700 transition"
+                className="text-xl hover:text-green-700 transition flex flex-row  items-center justify-center gap-1"
               >
-                ✉️ kjodesfrisorsalong@gmail.com
+                <FaEnvelope size={25} />
+                kjodesfrisorsalong@gmail.com
               </a>
             </div>
             <div className="rounded-xl overflow-hidden shadow-lg transition-transform duration-200 hover:scale-102">

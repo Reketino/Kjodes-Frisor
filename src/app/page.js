@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FaPhoneSquareAlt, FaMapPin } from "react-icons/fa";
+import { FaScissors } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -19,11 +20,11 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/50" />
 
         <div className="relative z-10 max-w-[90%] sm:max-w-2xl px-2 sm:px-4">
-          <h1 className="text-4xl sm:text-6xl font-serif text-white tracking-tight leading-tight drop-shadow-md">
+          <h1 className="text-5xl sm:text-6xl font-serif text-white tracking-tight leading-tight drop-shadow-md mb-2">
             Kjødes Frisørsalong
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-neutral-200 mb-6 sm:mb-8">
+          <p className=" text-2xl text-neutral-200 mb-6 sm:mb-8">
             Din frisør i hjertet av Sykkylven
           </p>
           <a
@@ -32,15 +33,18 @@ export default function Home() {
             className="
               inline-block bg-white/20  text-shadow-gray-400 
             px-5 py-2 rounded-full font-semibold 
-            text-2xl transition-transform hover:-translate-y-1
+           transition-transform hover:-translate-y-1
             transition-color hover:bg-stone-900
             hover:scale-105 active:scale-90
           "
           >
-            Bestill time
+            <div className="flex flex-row gap-2 items-center justify-center">
+              <FaScissors size={36} />
+              <p className="text-2xl"> Bestill time</p>
+            </div>
           </a>
-          <p className="text-base md:text-xl text-neutral-200 mt-4 mb-2">
-            Eller
+          <p className="text-xl text-neutral-200 mt-4 mb-4">
+            eller ring oss på
           </p>
           <a
             href="tel:70254680"
@@ -49,7 +53,7 @@ export default function Home() {
          transition-color hover:bg-stone-900 hover:scale-105"
           >
             <div className="flex flex-row gap-2 items-center justify-center">
-              <FaPhoneSquareAlt size={36}  />
+              <FaPhoneSquareAlt size={36} />
               <p className="text-2xl"> 70 25 46 80</p>
             </div>
           </a>
@@ -61,7 +65,7 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl font-serif font-semibold">
             Velkommen til Kjødes Frisørsalong
           </h2>
-          <p className="text-lg text-neutral-600 leading-relaxed">
+          <p className="text-lg text-neutral-500 leading-relaxed">
             Vi er en liten salong med stort hjerte for faget og menneskene som
             sitter i stolen. Hos oss får du tid, trygghet og en klipp som passer
             deg – ikke bare trenden.
@@ -116,8 +120,8 @@ export default function Home() {
         <a
           href="https://www.ledigtime.no/kjodes/step1"
           target="_blank"
-          className="inline-block font-semibold  mb-2 mt-6  
-          rounded-full px-5 sm:px-8 py-3 sm:py-3.5 
+          className="inline-block font-semibold mt-8  
+          rounded-full px-6 py-3  
            bg-white/10 text-shadow-gray-400
            transition-colors hover:-translate-y-1 hover:bg-stone-900 
            hover:scale-105 active:scale-90"
@@ -133,7 +137,7 @@ export default function Home() {
 
         <div className="group relative max-w-5xl mx-auto grid sm:grid-cols-3 gap-4 px-6">
           <img
-            src="/glimt1.jpg"
+            src="/glimt11.jpg"
             className="rounded-2xl object-cover h-64 w-full transition-all duration-300
             group-hover:scale-101 group-hover:shadow-2xl"
           />
@@ -152,18 +156,20 @@ export default function Home() {
 
       <section className=" text-shadow-stone-300 py-16 px-6">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className=" text-3xl  font-serif font-semibold mb-10">
+          <h2 className=" text-4xl  font-serif font-semibold mb-8">
             Våre Frisører
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-60 justify-items-center">
             <div className="flex flex-col items-center">
+              <div className="w-80 aspect-square overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="/elise.jpeg"
+                src="/elise2.jpeg"
                 alt="Bilde av Elise"
                 width={250}
                 height={250}
-                className="rounded-full shadow-lg object-cover"
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
               />
+              </div>
               <h3 className="text-xl font-semibold mt-4">
                 {" "}
                 Elise Klokkehaug Kjøde
@@ -172,13 +178,15 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col items-center">
+              <div className="w-80 aspect-square overflow-hidden rounded-2xl shadow-lg ">
               <Image
                 src="/Marte.jpg"
                 alt="Bilde av Marte"
                 width={250}
                 height={250}
-                className="rounded-full shadow-lg object-cover"
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
               />
+              </div>
               <h3 className="text-xl font-semibold mt-4">Marte Berge Hoel</h3>
               <p className="text-neutral-400 leading-relaxed">Eier og Frisør</p>
             </div>
@@ -188,14 +196,14 @@ export default function Home() {
 
       <section className="bg-stone-200 text-neutral-900 py-12 px-6 lg:px-12 text-center">
         <div className=" flex flex-col items-center max-w-4xl mx-auto">
-          <h2 className="text-3xl font-serif font-semibold mb-4">
+          <h2 className="text-4xl font-serif font-semibold mb-4">
             Vi holder til i
           </h2>
-          <div className="flex flex-row items-center justify-center">
+          <div className="flex flex-row items-center justify-center mb-4">
             <FaMapPin size={28} />
-          <p className="text-2xl font-semibold mb-2">
-            Storgata 5, 6230 Sykkylven
-          </p>
+            <p className="text-2xl font-semibold">
+              Storgata 5, 6230 Sykkylven
+            </p>
           </div>
 
           <aside className="group relative grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -227,9 +235,7 @@ export default function Home() {
             </div>
           </aside>
 
-          <h2 className="text-3xl font-serif font-semibold mt-4">
-            Velkommen!
-          </h2>
+          <h2 className="text-4xl font-serif font-semibold mt-6">Velkommen!</h2>
         </div>
       </section>
     </main>
