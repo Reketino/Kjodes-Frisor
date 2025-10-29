@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -52,13 +53,11 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            src="/Instagram.png"
-            alt="Instagram"
-            width={36}
-            height={36}
+          <FaInstagram
+            size={36}
             className="hover:scale-110 active:scale-90 hover:opacity-85 transition-opacity"
-          ></Image>
+          ></FaInstagram>
+           
         </Link>
 
         <Link
@@ -66,13 +65,10 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            src="/facebook.png"
-            alt="facebook"
-            width={36}
-            height={36}
+          <FaFacebook
+            size={36}
             className="hover:scale-110 active:scale-90 hover:opacity-85 transition-opacity"
-          ></Image>
+          ></FaFacebook>
         </Link>
       </div>
       </div>

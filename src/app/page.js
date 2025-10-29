@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { FaPhoneSquareAlt, FaMapPin } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -47,7 +48,10 @@ export default function Home() {
         px-5 py-2 rounded-full font-semibold transition-transform hover hover:-translate-y-1
          transition-color hover:bg-stone-900 hover:scale-105"
           >
-            <p className="text-2xl">📞70 25 46 80</p>
+            <div className="flex flex-row gap-2 items-center justify-center">
+              <FaPhoneSquareAlt size={36}  />
+              <p className="text-2xl"> 70 25 46 80</p>
+            </div>
           </a>
         </div>
       </section>
@@ -187,9 +191,12 @@ export default function Home() {
           <h2 className="text-3xl font-serif font-semibold mb-4">
             Vi holder til i
           </h2>
+          <div className="flex flex-row items-center justify-center">
+            <FaMapPin size={28} />
           <p className="text-2xl font-semibold mb-2">
-            📍Storgata 5, 6230 Sykkylven
+            Storgata 5, 6230 Sykkylven
           </p>
+          </div>
 
           <aside className="group relative grid grid-cols-1 md:grid-cols-2 gap-12">
             <div
