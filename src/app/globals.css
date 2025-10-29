@@ -12,8 +12,8 @@
   --font-serif: 'Playfair Display', serif;
 }
 
-/* 🌙 Mørk modus (Marrakech tones) */
-@media (prefers-color-scheme: dark) {
+
+
   :root {
     --background: #0f0f10;
     --foreground: #edecea;
@@ -22,7 +22,7 @@
     --accent-amber: #d9a441;
     --muted-olive: #6a6747;
   }
-}
+
 
 /* 🧭 Global styling */
 body {
