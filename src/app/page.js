@@ -159,14 +159,14 @@ export default function Home() {
           <h2 className=" text-4xl  font-serif font-semibold mb-8">
             Våre Frisører
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-60 justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-25 justify-items-center">
             <div className="flex flex-col items-center">
-              <div className="w-80 aspect-square overflow-hidden rounded-2xl shadow-lg">
+              <div className="w-96 aspect-square overflow-hidden rounded-3xl shadow-lg">
               <Image
-                src="/elise2.jpeg"
+                src="/elisekjode.jpeg"
                 alt="Bilde av Elise"
                 width={250}
-                height={250}
+                height={350}
                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
               />
               </div>
@@ -178,17 +178,17 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col items-center">
-              <div className="w-80 aspect-square overflow-hidden rounded-2xl shadow-lg ">
+              <div className="w-96 aspect-square overflow-hidden rounded-3xl shadow-lg ">
               <Image
                 src="/Marte.jpg"
                 alt="Bilde av Marte"
                 width={250}
-                height={250}
+                height={350}
                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
               />
               </div>
               <h3 className="text-xl font-semibold mt-4">Marte Berge Hoel</h3>
-              <p className="text-neutral-400 leading-relaxed">Eier og Frisør</p>
+              <p className="text-neutral-400 leading-relaxed">Eier & Frisør</p>
             </div>
           </div>
         </div>

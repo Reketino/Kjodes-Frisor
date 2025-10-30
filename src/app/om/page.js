@@ -38,15 +38,6 @@ export default function OmPage() {
       height={500}
       />
       </div>
-
-      <div className='absolute inset-0 rounded-2xl opacity-50 group-hover:opacity-0
-      transition-all duration-700 ease-in-out pointer-events-none'
-      style={{ backgroundImage:
-        'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Cfilter id=\'n\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.8\' numOctaves=\'3\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23n)\'/%3E%3C/svg%3E")',
-      backgroundSize: 'cover',
-      mixBlendMode: 'overlay',
-    }}
-    />
     
 
       <div className="md:w-1/2 text-center md:text-right">
@@ -55,6 +46,44 @@ export default function OmPage() {
       </p>
       </div>
     </section>
+
+    <section className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 py-10 max-w-6xl mx-auto">
+      <div className="relative md:w-1/2 flex justify-center group">
+      <Image
+      src="/glimt1.jpg"
+      alt="Marte Berge Hoel – Eier av Kjødes Frisørsalong"
+      className="w-full max-w-sm rounded-2xl shadow-lg object-cover
+      grayscale hover:scale-101 hover:grayscale-0  
+      transition-all duration-700"
+      width={500}
+      height={500}
+      />
+      </div>
+
+<div className="md:w-1/2 text-center md:text-left">
+        <p className="text-lg leading-relaxed text-neutral-400 mt-2">
+          <strong>Marte Berge Hoel</strong> startet frisørkarrieren hos Cancam og ble lærling hos Elise i 2019. I 2022 kjøpte hun seg inn i <strong>Kjødes Frisørsalong</strong> og driver nå salongen sammen med Elise. Marte kombinerer kreativitet og presisjon, og setter alltid kunden i fokus for en personlig og profesjonell opplevelse.
+        </p>
+      </div>
+    </section>
+
+<section className="flex flex-col items-center justify-center gap-5 px-6 py-16 max-w-6xl mx-auto mt-2">
+  <Image
+  src="/salong.jpeg"
+  alt='Bilde av salongen'
+  className='w-full max-w-3xl rounded-4xl shadow-lg object-cover
+      grayscale hover:scale-101 hover:grayscale-0  
+      transition-all duration-700"'
+  width={1920}
+  height={1080}
+  />
+      <div className="md:w-1/2 text-center">
+        <p className="font-semibold leading-relaxed text-neutral-400 text-xl">
+          Velkommen til Kjødes Frisørsalong – hvor tradisjon møter moderne stil i hjertet av Sykkylven!
+        </p>
+      </div>
+    </section>
+
        </main>
   );
 }
