@@ -14,6 +14,8 @@ export default function OmPage() {
           transition-all duration-700 hover:scale-101"
           width={500}
           height={500}
+          loading='lazy'
+          fetchPriority='high'
         />
       </div>
 
