@@ -31,6 +31,7 @@ export default function Footer() {
       <div className="flex flex-row items-center justify-center gap-4 mt-2">
         <Link
           href="https://www.instagram.com/kjodesfrisorsalongas/"
+          alt="Kjødes Frisørsalong Instagram"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -43,6 +44,7 @@ export default function Footer() {
 
         <Link
           href="https://www.facebook.com/profile.php?id=100058599266291"
+          alt="Kjødes Frisørsalong Facebook"
           target="_blank"
           rel="noopener noreferrer"
         >
