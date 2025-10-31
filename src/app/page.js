@@ -162,13 +162,13 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-25 justify-items-center">
             <div className="flex flex-col items-center">
               <div className="w-96 aspect-square overflow-hidden rounded-3xl shadow-lg">
-              <Image
-                src="/elisekjode.jpeg"
-                alt="Bilde av Elise"
-                width={250}
-                height={350}
-                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-              />
+                <Image
+                  src="/elisekjode.jpeg"
+                  alt="Bilde av Elise"
+                  width={250}
+                  height={350}
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
               </div>
               <h3 className="text-xl font-semibold mt-4">
                 {" "}
@@ -179,13 +179,13 @@ export default function Home() {
 
             <div className="flex flex-col items-center">
               <div className="w-96 aspect-square overflow-hidden rounded-3xl shadow-lg ">
-              <Image
-                src="/Marte.jpg"
-                alt="Bilde av Marte"
-                width={250}
-                height={350}
-                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-              />
+                <Image
+                  src="/Marte.jpg"
+                  alt="Bilde av Marte"
+                  width={250}
+                  height={350}
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
               </div>
               <h3 className="text-xl font-semibold mt-4">Marte Berge Hoel</h3>
               <p className="text-neutral-400 leading-relaxed">Eier & Frisør</p>
@@ -201,9 +201,7 @@ export default function Home() {
           </h2>
           <div className="flex flex-row items-center justify-center mb-4">
             <FaMapPin size={28} />
-            <p className="text-2xl font-semibold">
-              Storgata 5, 6230 Sykkylven
-            </p>
+            <p className="text-2xl font-semibold">Storgata 5, 6230 Sykkylven</p>
           </div>
 
           <aside className="group relative grid grid-cols-1 md:grid-cols-2 gap-12">

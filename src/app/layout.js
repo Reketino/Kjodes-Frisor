@@ -24,12 +24,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
-      
-      <Navbar />
+        <Navbar />
 
         <main className="grow mt-20">{children}</main>
 
-      <Footer />
+        <Footer />
       </body>
     </html>
   );
