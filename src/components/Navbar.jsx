@@ -8,8 +8,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-black text-white shadow-md z-50">
-      <div className="max-w-6xl mx-auto flex items-center justify-between  px-6 py-4">
+    <nav className="fixed top-0 left-0 w-full bg-stone-900 text-white  shadow-md z-50">
+      <div className=" mx-auto flex items-center justify-between px-7 py-5">
        
         <Link href="/" className="flex items-center space-x-2">
           <Image
