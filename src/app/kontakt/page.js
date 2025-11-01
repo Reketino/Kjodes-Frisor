@@ -9,7 +9,7 @@ export default function KontaktPage() {
           <h1 className="text-5xl font-serif font-semibold mb-4">
             Kontakt oss
           </h1>
-          <p className="text-xl  mb-10">
+          <p className="text-xl mb-10">
             Har du spørsmål eller vil bestille time? Vi hører gjerne fra deg!
           </p>
 
