@@ -6,10 +6,10 @@ export default function KontaktPage() {
     <main className="grow">
       <section className="bg-stone-400 text-neutral-900 py-10 px-6 min-h-[calc(100vh-180px)]">
         <div className="max-w-5xl mx-auto text-center space-y-6">
-          <h1 className="text-4xl font-serif font-semibold mb-4">
+          <h1 className="text-5xl font-serif font-semibold mb-4">
             Kontakt oss
           </h1>
-          <p className="text-lg mb-10">
+          <p className="text-xl mb-10">
             Har du spørsmål eller vil bestille time? Vi hører gjerne fra deg!
           </p>
 
