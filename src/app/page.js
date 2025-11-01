@@ -131,7 +131,7 @@ export default function Home() {
       </section>
 
       <section className="py-20 bg-stone-200 text-neutral-800 mt-6">
-        <h2 className="text-3xl text-center font-serif mb-8">
+        <h2 className="text-3xl text-center font-serif font-semibold mb-8">
           Et glimt fra salongen
         </h2>
 
