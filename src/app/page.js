@@ -11,7 +11,7 @@ export default function Home() {
           src="/test.jpg"
           alt="Modell"
           fill
-          className="object-cover object-center object-position  sm:object-[center_40%] 
+          className="object-cover object-center object-position sm:object-[center_40%] 
           
         "
           priority
