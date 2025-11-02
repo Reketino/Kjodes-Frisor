@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 /* Theme Bridge Tailwind */
 @theme inline {
   --color-background: var(--background);
