@@ -23,6 +23,10 @@ export default function Footer() {
         </p>
       </div>
 
+    <div className="text-s flex items-center justify-center sm:justify-start gap-1">
+      <p style={{fontFamily: "'Great Vibes', cursive"}}>Utviklet av <a href="https://github.com/Reketino" target="_blank" rel="noopener noreferrer" className="hover-text-gray-300 hover:underline">Reketino</a>
+      </p>
+    </div>
       
 
       <div className=" sm:items-end text-sm">
