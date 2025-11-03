@@ -116,12 +116,12 @@ export default function Home() {
             </div>
           ))}
         </div>
-       <div className=" mt-8 flex flex-col sm:flex-row items-center justify-center gap-8">
+       <div className=" mt-8 flex flex-col sm:flex-row items-center justify-center gap-8 w-full max-w-xl mx-auto">
         <a
           href="https://www.ledigtime.no/kjodes/step1"
           target="_blank"
-          className="inline-block font-semibold   
-          rounded-full px-6 py-4 
+          className="flex items-center justify-center  font-semibold   
+          rounded-full gap-2 px-6 py-4 
            bg-white/10 text-shadow-gray-400
            transition-colors hover:-translate-y-1 hover:bg-stone-900 
            hover:scale-105 active:scale-90 w-64"
@@ -136,8 +136,8 @@ export default function Home() {
 
           <a
             href="tel:70254680"
-            className="inline-block font-semibold   
-          rounded-full px-6 py-4
+            className="flex items-center justify-center font-semibold   
+          rounded-full gap-2 px-6 py-4
            bg-white/10 text-shadow-gray-400
            transition-colors hover:-translate-y-1 hover:bg-stone-900 
            hover:scale-105 active:scale-90 w-64"
