@@ -43,8 +43,8 @@ export default function Home() {
               <p className="text-2xl"> Bestill time</p>
             </div>
           </a>
-          <p className="text-xl text-neutral-200 mt-4 mb-4">
-            eller ring oss på
+          <p className="text-2xl text-neutral-200 mt-4 mb-4">
+            eller ring 
           </p>
           <a
             href="tel:70254680"
@@ -73,7 +73,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-10 px-6 bg-background text-foreground text-center">
+      <section className="py-8 px-6 bg-background text-foreground text-center">
         <h2 className="text-3xl sm:text-4xl font-serif font-semibold mb-8">
           Våre tjenester
         </h2>
@@ -116,18 +116,39 @@ export default function Home() {
             </div>
           ))}
         </div>
-
+       <div className=" mt-8 flex flex-col sm:flex-row items-center justify-center gap-8">
         <a
           href="https://www.ledigtime.no/kjodes/step1"
           target="_blank"
-          className="inline-block font-semibold mt-8  
-          rounded-full px-6 py-3  
+          className="inline-block font-semibold   
+          rounded-full px-6 py-4 
            bg-white/10 text-shadow-gray-400
            transition-colors hover:-translate-y-1 hover:bg-stone-900 
-           hover:scale-105 active:scale-90"
+           hover:scale-105 active:scale-90 w-64"
         >
+           <div className="flex flex-row gap-2 items-center justify-center text-2xl">
+            <FaScissors size={25} />
           Bestill time
+          </div>
         </a>
+
+       
+
+          <a
+            href="tel:70254680"
+            className="inline-block font-semibold   
+          rounded-full px-6 py-4
+           bg-white/10 text-shadow-gray-400
+           transition-colors hover:-translate-y-1 hover:bg-stone-900 
+           hover:scale-105 active:scale-90 w-64"
+          >
+            <div className="flex flex-row gap-2 items-center justify-center text-2xl">
+              <FaPhoneSquareAlt size={25} />
+              <p>70 25 46 80</p>
+            </div>
+          </a>
+          </div>
+
       </section>
 
       <section className="py-20 bg-stone-200 text-neutral-800 mt-6">
