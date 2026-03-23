@@ -118,7 +118,7 @@ export default function Home() {
         </div>
        <div className=" mt-8 flex flex-col sm:flex-row items-center justify-center gap-8 w-full max-w-xl mx-auto">
         <a
-          href="https://www.ledigtime.no/kjodes/step1"
+          href="https://booking.easysalon.no/5e80c0b6-24ab-4f8d-a88e-015ef5fdee34"
           target="_blank"
           className="flex items-center justify-center  font-semibold   
           rounded-full gap-2 px-6 py-4 
