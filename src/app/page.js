@@ -28,7 +28,7 @@ export default function Home() {
             Din frisør i hjertet av Sykkylven
           </p>
           <a
-            href="https://www.ledigtime.no/kjodes/step1"
+            href="https://booking.easysalon.no/5e80c0b6-24ab-4f8d-a88e-015ef5fdee34"
             target="_blank"
             className="
               inline-block bg-white/20  text-shadow-gray-400 
