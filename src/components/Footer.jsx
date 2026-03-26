@@ -1,11 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Footer() {
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <main className="flex flex-col h-fit bg-stone-900">
