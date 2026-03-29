@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="flex items-center gap-3">
           <Image
             src="/Logo.png"
-            alt="Logo til Kjødes"
+            alt="Logo til Kjødes Frisørsalong"
             width={50}
             height={50}
             className="mb-2"
@@ -44,9 +44,9 @@ export default function Footer() {
           <div className="flex flex-row items-center justify-center gap-4 mt-2">
             <Link
               href="https://www.instagram.com/kjodesfrisorsalongas/"
-              alt="Kjødes Frisørsalong Instagram"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram"
             >
               <FaInstagram
                 size={40}
@@ -56,9 +56,9 @@ export default function Footer() {
 
             <Link
               href="https://www.facebook.com/profile.php?id=100058599266291"
-              alt="Kjødes Frisørsalong Facebook"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Facebook"
             >
               <FaFacebook
                 size={40}
