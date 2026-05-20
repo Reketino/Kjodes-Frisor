@@ -33,7 +33,7 @@ export default function OmPage() {
       <section className="flex flex-col md:flex-row-reverse items-center justify-center gap-10 px-6 py-10 max-w-6xl mx-auto ">
         <div className="relative md:w-1/2 flex justify-center group">
           <Image
-            src="/elisetest.jpg"
+            src="/elisekjode.jpg"
             alt="Elise Kjøde Klokkehaug – nåværende eier av Kjødes Frisørsalong"
             className="w-full max-w-sm rounded-2xl shadow-lg object-cover
       grayscale hover:scale-101 hover:grayscale-0  
