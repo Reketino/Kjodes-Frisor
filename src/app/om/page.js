@@ -13,7 +13,7 @@ export default function OmPage() {
           transition-all duration-700 hover:scale-101"
             width={500}
             height={500}
-            loading="lazy"
+            loading="eager"
             fetchPriority="high"
           />
         </div>
@@ -56,7 +56,7 @@ export default function OmPage() {
       <section className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 py-10 max-w-6xl mx-auto">
         <div className="relative md:w-1/2 flex justify-center group">
           <Image
-            src="/glimt1.jpg"
+            src="/marte2.jpg"
             alt="Marte Berge Hoel – Eier av Kjødes Frisørsalong"
             className="w-full max-w-sm rounded-2xl shadow-lg object-cover
       grayscale hover:scale-101 hover:grayscale-0  
