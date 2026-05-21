@@ -158,17 +158,17 @@ export default function Home() {
 
         <div className="group relative max-w-5xl mx-auto grid sm:grid-cols-3 gap-4 px-6">
           <img
-            src="/glimt11.jpg"
+            src="/glimt/glimt11.jpg"
             className="rounded-2xl object-cover h-64 w-full transition-all duration-300
             group-hover:scale-101 group-hover:shadow-2xl"
           />
           <img
-            src="/glimt2.jpg"
+            src="/glimt/glimt2.jpg"
             className="rounded-2xl object-cover h-64 w-full transition-all duration-300
             group-hover:scale-101 group-hover:shadow-2xl"
           />
           <img
-            src="/glimt.jpg"
+            src="/glimt/glimtet.jpg"
             className="rounded-2xl object-cover h-64 w-full transition-all duration-300
             group-hover:scale-101 group-hover:shadow-2xl"
           />
@@ -184,7 +184,7 @@ export default function Home() {
             <div className="flex flex-col items-center">
               <div className="w-96 aspect-square overflow-hidden rounded-3xl shadow-lg">
                 <Image
-                  src="/elisekjode.jpeg"
+                  src="/elise/elisekjode.jpeg"
                   alt="Bilde av Elise"
                   width={250}
                   height={350}
@@ -201,7 +201,7 @@ export default function Home() {
             <div className="flex flex-col items-center">
               <div className="w-96 aspect-square overflow-hidden rounded-3xl shadow-lg ">
                 <Image
-                  src="/martehoel.jpg"
+                  src="/marte/martehoel.jpg"
                   alt="Bilde av Marte"
                   width={250}
                   height={350}
