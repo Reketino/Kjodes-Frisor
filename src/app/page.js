@@ -201,7 +201,7 @@ export default function Home() {
             <div className="flex flex-col items-center">
               <div className="w-96 aspect-square overflow-hidden rounded-3xl shadow-lg ">
                 <Image
-                  src="/martehoel.jpg"
+                  src="/marte/martehoel.jpg"
                   alt="Bilde av Marte"
                   width={250}
                   height={350}
