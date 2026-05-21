@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className=" mx-auto flex items-center justify-between px-7 py-5">
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/Logo.png"
+            src="/assets/Logo.png"
             alt="Kjødes Frisørsalong logo"
             width={50}
             height={50}
