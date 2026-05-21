@@ -8,8 +8,8 @@ export default function Home() {
     <main>
       <section className="relative flex items-center justify-center text-center h-[80vh] sm:h-[90vh] overflow-hidden">
         <Image
-          src="/test.jpg"
-          alt="Modell"
+          src="/assets/hero.jpg"
+          alt="Hero"
           fill
           className="object-cover object-center object-position sm:object-[center_40%] 
           
