@@ -4,7 +4,7 @@ export default function AapningPage() {
   return (
     <main
       className="relative flex flex-col items-center justify-center min-h-screen w-full bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/kalender.jpg')" }}
+      style={{ backgroundImage: "url('/assets/kalender.jpg')" }}
     >
       <div className="absolute inset-0 bg-black/70 z-0 pointer-events-none"></div>
 

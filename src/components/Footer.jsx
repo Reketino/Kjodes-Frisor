@@ -11,7 +11,7 @@ export default function Footer() {
       <footer className="flex flex-wrap items-center justify-between w-full px-6 py-4 gap-6 border-t border-stone-700">
         <div className="flex items-center gap-3">
           <Image
-            src="/Logo.png"
+            src="/assets/Logo.png"
             alt="Logo til Kjødes Frisørsalong"
             width={50}
             height={50}
