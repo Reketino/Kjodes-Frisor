@@ -168,7 +168,7 @@ export default function Home() {
             group-hover:scale-101 group-hover:shadow-2xl"
           />
           <img
-            src="/glimt.jpg"
+            src="/glimtet.jpg"
             className="rounded-2xl object-cover h-64 w-full transition-all duration-300
             group-hover:scale-101 group-hover:shadow-2xl"
           />
