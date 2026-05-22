@@ -63,7 +63,7 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl font-serif font-semibold">
             Velkommen til Kjødes Frisørsalong
           </h2>
-          <p className="text-lg text-neutral-500 leading-relaxed">
+          <p className="text-lg text-neutral-400 leading-relaxed">
             Vi er en liten salong med stort hjerte for faget og menneskene som
             sitter i stolen. Hos oss får du tid, trygghet og en klipp som passer
             deg – ikke bare trenden.
