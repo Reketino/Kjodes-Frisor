@@ -43,9 +43,7 @@ export default function Home() {
               <p className="text-2xl"> Bestill time</p>
             </div>
           </a>
-          <p className="text-2xl text-neutral-200 mt-4 mb-4">
-            eller ring 
-          </p>
+          <p className="text-2xl text-neutral-200 mt-4 mb-4">eller ring</p>
           <a
             href="tel:70254680"
             className="inline-block bg-white/20 text-shadow-gray-400 
@@ -65,7 +63,7 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl font-serif font-semibold">
             Velkommen til Kjødes Frisørsalong
           </h2>
-          <p className="text-lg text-neutral-500 leading-relaxed">
+          <p className="text-lg text-neutral-400 leading-relaxed">
             Vi er en liten salong med stort hjerte for faget og menneskene som
             sitter i stolen. Hos oss får du tid, trygghet og en klipp som passer
             deg – ikke bare trenden.
@@ -116,23 +114,21 @@ export default function Home() {
             </div>
           ))}
         </div>
-       <div className=" mt-8 flex flex-col sm:flex-row items-center justify-center gap-8 w-full max-w-xl mx-auto">
-        <a
-          href="https://booking.easysalon.no/5e80c0b6-24ab-4f8d-a88e-015ef5fdee34"
-          target="_blank"
-          className="flex items-center justify-center  font-semibold   
+        <div className=" mt-8 flex flex-col sm:flex-row items-center justify-center gap-8 w-full max-w-xl mx-auto">
+          <a
+            href="https://booking.easysalon.no/5e80c0b6-24ab-4f8d-a88e-015ef5fdee34"
+            target="_blank"
+            className="flex items-center justify-center  font-semibold   
           rounded-full gap-2 px-6 py-4 
            bg-white/10 text-shadow-gray-400
            transition-colors hover:-translate-y-1 hover:bg-stone-900 
            hover:scale-105 active:scale-90 w-64"
-        >
-           <div className="flex flex-row gap-2 items-center justify-center text-2xl">
-            <FaScissors size={25} />
-          Bestill time
-          </div>
-        </a>
-
-       
+          >
+            <div className="flex flex-row gap-2 items-center justify-center text-2xl">
+              <FaScissors size={25} />
+              Bestill time
+            </div>
+          </a>
 
           <a
             href="tel:70254680"
@@ -147,8 +143,7 @@ export default function Home() {
               <p>70 25 46 80</p>
             </div>
           </a>
-          </div>
-
+        </div>
       </section>
 
       <section className="py-20 bg-stone-200 text-neutral-800 mt-6">
@@ -234,6 +229,7 @@ export default function Home() {
         transform transition-transform duration-200 group-hover:scale-102 group-hover:shadow-yellow-200"
             >
               <iframe
+                title="Kart over Kjødes Frtisørsalong"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1137.5755979821693!2d6.578945757154498!3d62.39117212283398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4616b8b29d9b0869%3A0x8371ab46b8d9392e!2sStorgata%205%2C%206230%20Sykkylven!5e1!3m2!1sno!2sno!4v1761674085785!5m2!1sno!2sno"
                 style={{ border: 0 }}
                 allowFullScreen=""
@@ -247,6 +243,7 @@ export default function Home() {
         transform transition-transform duration-200 group-hover:scale-102 group-hover:shadow-yellow-200"
             >
               <iframe
+                title="Street View ved Kjødes Frisørsalong"
                 src="https://www.google.com/maps/embed?pb=!4v1761676614110!6m8!1m7!1sGb0LP3lef9N46rhRyLlKcg!2m2!1d62.39130171178657!2d6.580364966548465!3f203.89036889478575!4f-4.236061306655444!5f1.57054899574096"
                 style={{ border: 0 }}
                 allowFullScreen=""
