@@ -1,14 +1,24 @@
 import React from "react";
+import Image from "next/image";
+
 
 export default function AapningPage() {
   return (
-    <main
-      className="relative flex flex-col items-center justify-center min-h-screen w-full bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/assets/kalender.jpg')" }}
-    >
+    <main className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
+      <Image
+      src="/assets/kalender.webp"
+      alt="Klokke"
+      fill
+      priority
+      fetchPriority="high"
+      quality={75}
+      sizes="100vw"
+      className="object-cover"
+      />
+
       <div className="absolute inset-0 bg-black/70 z-0 pointer-events-none"></div>
 
-      <div className="relative z-10 w-full max-w-4xl py-10 text-center px-4">
+      <section className="relative z-10 w-full max-w-4xl py-10 text-center px-4">
         <h2 className=" text-4xl mb-8 font-semibold text-stone-500">
           Åpningstider
         </h2>
@@ -48,7 +58,7 @@ export default function AapningPage() {
             );
           })}
         </ul>
-      </div>
+      </section>
     </main>
   );
 }
