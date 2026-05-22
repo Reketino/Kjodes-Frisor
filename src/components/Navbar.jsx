@@ -34,6 +34,10 @@ export default function Navbar() {
         </div>
 
         <button
+        type="button"
+        aria-label={isOpen ? "Lukk meny" : "Åpne meny"}
+        aria-expanded={isOpen}
+        aria-controls="mobile-menu"
           className="md:hidden flex flex-col space-y-1"
           onClick={() => setIsOpen(!isOpen)}
         >
