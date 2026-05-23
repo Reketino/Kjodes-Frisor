@@ -118,7 +118,6 @@ export default function Home() {
         <div className=" mt-8 flex flex-col sm:flex-row items-center justify-center gap-8 w-full max-w-xl mx-auto">
           <Link
             href="/booking"
-            target="_blank"
             className="flex items-center justify-center  font-semibold   
           rounded-full gap-2 px-6 py-4 
            bg-white/10 text-shadow-gray-400
