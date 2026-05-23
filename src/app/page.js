@@ -31,7 +31,6 @@ export default function Home() {
           </p>
           <Link
             href="/booking"
-            target="_blank"
             className="
               inline-block bg-white/20  text-shadow-gray-400 
             px-5 py-2 rounded-full font-semibold 
