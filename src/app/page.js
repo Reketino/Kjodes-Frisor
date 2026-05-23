@@ -1,7 +1,9 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { FaPhoneSquareAlt, FaMapPin } from "react-icons/fa";
 import { FaScissors } from "react-icons/fa6";
+
 
 export default function Home() {
   return (
@@ -27,9 +29,8 @@ export default function Home() {
           <p className=" text-2xl text-neutral-200 mb-6 sm:mb-8">
             Din frisør i hjertet av Sykkylven
           </p>
-          <a
-            href="https://booking.easysalon.no/5e80c0b6-24ab-4f8d-a88e-015ef5fdee34"
-            target="_blank"
+          <Link
+            href="/booking"
             className="
               inline-block bg-white/20  text-shadow-gray-400 
             px-5 py-2 rounded-full font-semibold 
@@ -42,7 +43,7 @@ export default function Home() {
               <FaScissors size={36} />
               <p className="text-2xl"> Bestill time</p>
             </div>
-          </a>
+          </Link>
           <p className="text-2xl text-neutral-200 mt-4 mb-4">eller ring</p>
           <a
             href="tel:70254680"
@@ -115,9 +116,8 @@ export default function Home() {
           ))}
         </div>
         <div className=" mt-8 flex flex-col sm:flex-row items-center justify-center gap-8 w-full max-w-xl mx-auto">
-          <a
-            href="https://booking.easysalon.no/5e80c0b6-24ab-4f8d-a88e-015ef5fdee34"
-            target="_blank"
+          <Link
+            href="/booking"
             className="flex items-center justify-center  font-semibold   
           rounded-full gap-2 px-6 py-4 
            bg-white/10 text-shadow-gray-400
@@ -128,7 +128,7 @@ export default function Home() {
               <FaScissors size={25} />
               Bestill time
             </div>
-          </a>
+          </Link>
 
           <a
             href="tel:70254680"
