@@ -1,7 +1,11 @@
 export default function BookingPage() {
-    return (
-        <main>
-            
-        </main>
-    )
+  return (
+    <main className="min-h-screen">
+      <iframe
+        src="https://booking.easysalon.no/5e80c0b6-24ab-4f8d-a88e-015ef5fdee34"
+        className="w-full h-screen border-0"
+        title="Bestill time"
+      />
+    </main>
+  );
 }
