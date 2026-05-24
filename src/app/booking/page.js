@@ -1,3 +1,5 @@
+"use client";
+
 export default function BookingPage() {
   return (
     <main className="fixed top-20 left-0 right-0 bottom-0">
