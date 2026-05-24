@@ -22,7 +22,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="text-s flex items-center justify-center sm:justify-start ml-[-90px]">
+        <div className="text-s flex items-center justify-center sm:justify-start -ml-22.5">
           <p style={{ fontFamily: "'Great Vibes', cursive" }}>
             Utviklet av{" "}
             <a
