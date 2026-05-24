@@ -35,7 +35,7 @@ export default function Home() {
             px-5 py-2 rounded-full font-semibold 
            transition-transform hover:-translate-y-1
             transition-color hover:bg-stone-900
-            hover:scale-105 active:scale-90 min-w-[200px]
+            hover:scale-105 active:scale-90 min-w-50
           "
           >
             <div className="flex flex-row gap-2 items-center justify-center">
@@ -48,7 +48,7 @@ export default function Home() {
             href="tel:70254680"
             className="inline-block bg-white/20 text-shadow-gray-400 
         px-5 py-2 rounded-full font-semibold transition-transform hover hover:-translate-y-1
-         transition-color hover:bg-stone-900 hover:scale-105 active:scale-90 min-w-[200px]"
+         transition-color hover:bg-stone-900 hover:scale-105 active:scale-90 min-w-50"
           >
             <div className="flex flex-row gap-2 items-center justify-center">
               <FaPhoneSquareAlt size={36} />
