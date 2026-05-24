@@ -17,7 +17,15 @@ export default function BookingPage() {
         flex items-center justify-center
         bg-background
         "
-        ></aside>
+        >
+          <section
+          className="
+          flex flex-col
+          items-center gap-8
+          text-center
+          "
+          ></section>
+        </aside>
       )}
       <iframe
         src="https://booking.easysalon.no/5e80c0b6-24ab-4f8d-a88e-015ef5fdee34"
