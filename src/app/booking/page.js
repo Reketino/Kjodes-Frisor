@@ -39,6 +39,10 @@ export default function BookingPage() {
               <h1 className="text-3xl font-serif">
                 Åpner booking
               </h1>
+
+              <p className="text-neutral-400">
+                Gjør saksen klar...
+              </p>
             </header>
           </section>
         </aside>
