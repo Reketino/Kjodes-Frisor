@@ -7,22 +7,28 @@ import Image from "next/image";
 export default function Footer() {
 
   return (
-    <footer className="flex flex-col h-fit bg-stone-900">
-      <section className="flex flex-wrap items-center justify-between w-full px-6 py-4 gap-6 border-t border-stone-700">
+    <footer className="bg-stone-900 border-t border-stone-700">
+
+      <section className="
+      flex flex-wrap items-center 
+      justify-between 
+      px-6 gap-6 py-4
+      "
+      >
+
         <section className="flex items-center gap-3">
           <Image
             src="/assets/Logo.png"
             alt="Logo til Kjødes Frisørsalong"
             width={50}
             height={50}
-            className="mb-2"
           />
-          <p className="text-white font-serif">
-            &copy; {new Date().getFullYear()} Kjødes Frisørsalong AS.
-          </p>
+          <small className="font-serif">
+            © {new Date().getFullYear()} Kjødes Frisørsalong AS.
+          </small>
         </section>
 
-        <address className="flex items-center justify-center sm:justify-start -ml-22.5">
+        <address className="not-italic">
           <p style={{ fontFamily: "'Great Vibes', cursive" }}>
             Utviklet av{" "}
             <a
@@ -36,12 +42,15 @@ export default function Footer() {
           </p>
         </address>
 
-        <nav className=" sm:items-end text-sm">
-          <p className="font-serif font-semibold mb-1">
+        <nav 
+        aria-label="Sosiale medier"
+        >
+          <h2 className="text-sm font-serif font-semibold mb-2">
             Følg oss på sosiale medier
-          </p>
+          </h2>
 
-          <ul className="flex flex-row items-center justify-center gap-4 mt-2">
+          <ul className="flex items-center justify-center gap-4">
+            <li>
             <Link
               href="https://www.instagram.com/kjodesfrisorsalongas/"
               target="_blank"
@@ -50,10 +59,12 @@ export default function Footer() {
             >
               <FaInstagram
                 size={40}
-                className="hover:scale-110 active:scale-90 hover:opacity-85 transition-opacity"
+                className="hover:scale-110 active:scale-90 hover:opacity-85 transition"
               />
             </Link>
-
+            </li>
+            
+            <li>
             <Link
               href="https://www.facebook.com/profile.php?id=100058599266291"
               target="_blank"
@@ -62,9 +73,10 @@ export default function Footer() {
             >
               <FaFacebook
                 size={40}
-                className="hover:scale-110 active:scale-90 hover:opacity-85 transition-opacity"
+                className="hover:scale-110 active:scale-90 hover:opacity-85 transition"
               />
             </Link>
+            </li>
           </ul>
         </nav>
       </section>
