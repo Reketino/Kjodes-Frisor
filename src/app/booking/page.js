@@ -24,7 +24,18 @@ export default function BookingPage() {
           items-center gap-8
           text-center
           "
-          ></section>
+          >
+            <figure>
+              <FaScissors
+              aria-hidden="true"
+              className="
+              text-6xl
+              rotate-[-20deg]
+              animate-pulse
+              "
+              />
+            </figure>
+          </section>
         </aside>
       )}
       <iframe
