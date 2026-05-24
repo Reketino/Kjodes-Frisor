@@ -56,6 +56,7 @@ export default function BookingPage() {
         w-full h-screen border-0
         transition-opacity
         duration-700
+        ${loaded ? "opacity-100" : "opacity-0"}
         `}
       />
     </main>
