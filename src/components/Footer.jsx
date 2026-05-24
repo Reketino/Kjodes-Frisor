@@ -7,22 +7,22 @@ import Image from "next/image";
 export default function Footer() {
 
   return (
-    <main className="flex flex-col h-fit bg-stone-900">
-      <footer className="flex flex-wrap items-center justify-between w-full px-6 py-4 gap-6 border-t border-stone-700">
-        <div className="flex items-center gap-3">
+    <footer className="flex flex-col h-fit bg-stone-900">
+      <section className="flex flex-wrap items-center justify-between w-full px-6 py-4 gap-6 border-t border-stone-700">
+        <section className="flex items-center gap-3">
           <Image
             src="/assets/Logo.png"
             alt="Logo til Kjødes Frisørsalong"
             width={50}
             height={50}
             className="mb-2"
-          ></Image>
+          />
           <p className="text-white font-serif">
             &copy; {new Date().getFullYear()} Kjødes Frisørsalong AS.
           </p>
-        </div>
+        </section>
 
-        <div className="text-s flex items-center justify-center sm:justify-start -ml-22.5">
+        <address className="flex items-center justify-center sm:justify-start -ml-22.5">
           <p style={{ fontFamily: "'Great Vibes', cursive" }}>
             Utviklet av{" "}
             <a
@@ -34,14 +34,14 @@ export default function Footer() {
               Reketino
             </a>
           </p>
-        </div>
+        </address>
 
-        <div className=" sm:items-end text-sm">
+        <nav className=" sm:items-end text-sm">
           <p className="font-serif font-semibold mb-1">
             Følg oss på sosiale medier
           </p>
 
-          <div className="flex flex-row items-center justify-center gap-4 mt-2">
+          <ul className="flex flex-row items-center justify-center gap-4 mt-2">
             <Link
               href="https://www.instagram.com/kjodesfrisorsalongas/"
               target="_blank"
@@ -51,7 +51,7 @@ export default function Footer() {
               <FaInstagram
                 size={40}
                 className="hover:scale-110 active:scale-90 hover:opacity-85 transition-opacity"
-              ></FaInstagram>
+              />
             </Link>
 
             <Link
@@ -63,11 +63,11 @@ export default function Footer() {
               <FaFacebook
                 size={40}
                 className="hover:scale-110 active:scale-90 hover:opacity-85 transition-opacity"
-              ></FaFacebook>
+              />
             </Link>
-          </div>
-        </div>
-      </footer>
-    </main>
+          </ul>
+        </nav>
+      </section>
+    </footer>
   );
 }
