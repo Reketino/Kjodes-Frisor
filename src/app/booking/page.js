@@ -35,6 +35,11 @@ export default function BookingPage() {
               "
               />
             </figure>
+            <header className="space-y-2">
+              <h1 className="text-3xl font-serif">
+                Åpner booking
+              </h1>
+            </header>
           </section>
         </aside>
       )}
