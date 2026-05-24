@@ -1,6 +1,11 @@
 "use client";
 
+import { useState } from "react";
+import { FaScissors } from "react-icons/fa6";
+
 export default function BookingPage() {
+  const [loaded, setLoaded] = useState(false);
+
   return (
     <main className="fixed top-20 left-0 right-0 bottom-0">
       <iframe
