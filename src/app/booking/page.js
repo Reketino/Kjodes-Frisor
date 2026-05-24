@@ -52,11 +52,11 @@ export default function BookingPage() {
         title="Bestill time hos Kjødes Frisørsalong"
         onLoad={() => setLoaded (true)}
         aria-hidden={!loaded}
-        className="
+        className={`
         w-full h-screen border-0
         transition-opacity
         duration-700
-        "
+        `}
       />
     </main>
   );
