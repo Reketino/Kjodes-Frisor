@@ -7,7 +7,7 @@ export default function BookingPage() {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <main className="fixed top-20 inset-x-0 bottom-0">
+    <main className="fixed top-20 inset-x-0 bottom-0 overflow-hidden">
       {!loaded && (
         <BookingLoader />
       )}
@@ -18,7 +18,10 @@ export default function BookingPage() {
         onLoad={() => setLoaded(true)}
         aria-hidden={!loaded}
         className={`
-        w-full h-full border-0
+        w-full 
+        h-[calc(100%+85px)]
+        -translate-y-21.25
+        border-0
         transition-opacity
         duration-700
         ${loaded ? "opacity-100" : "opacity-0"}
