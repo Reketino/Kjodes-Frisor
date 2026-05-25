@@ -30,6 +30,9 @@ export const metadata = {
   },
 
   openGraph: {
+  type: "website",
+  locale: "nb_NO",
+
     title: "Kjødes Frisørsalong",
 
     description:
