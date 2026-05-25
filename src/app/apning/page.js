@@ -35,7 +35,7 @@ export default function AapningPage() {
             const isHelg = ["Lørdag", "Søndag"].includes(service.day);
 
             return (
-              <div
+              <li
                 key={service.day}
                 className={`group p-6 rounded-4xl bg-white/10 backdrop-blur-md shadow-md transition-all duration-300
            hover:bg-neutral-900  hover:-translate-y-1
@@ -54,7 +54,7 @@ export default function AapningPage() {
                 >
                   {service.time}
                 </p>
-              </div>
+              </li>
             );
           })}
         </ul>
