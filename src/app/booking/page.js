@@ -11,14 +11,14 @@ export default function BookingPage() {
       {!loaded && (
         <BookingLoader />
       )}
-      
+
       <iframe
         src="https://booking.easysalon.no/5e80c0b6-24ab-4f8d-a88e-015ef5fdee34"
         title="Bestill time hos Kjødes Frisørsalong"
         onLoad={() => setLoaded(true)}
         aria-hidden={!loaded}
         className={`
-        w-full h-screen border-0
+        w-full h-full border-0
         transition-opacity
         duration-700
         ${loaded ? "opacity-100" : "opacity-0"}
