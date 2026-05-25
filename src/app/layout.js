@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import Footer from "@/components/Footer";
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -21,33 +20,32 @@ const greatVibes = Great_Vibes({
 
 export const metadata = {
   metadataBase: new URL("https://kjodesfrisorsalong.no"),
-  
+
   title: "Kjødes Frisørsalong",
 
   description: "Frisør i Sykkylven – klipp, styling, farge og timebestilling.",
 
   icons: {
-    icon:"/favicon.ico",
+    icon: "/favicon.ico",
   },
 
   openGraph: {
     title: "Kjødes Frisørsalong",
 
-     description: 
-     "Frisør i Sykkylven – klipp, styling, farge og timebestilling.",
+    description:
+      "Frisør i Sykkylven – klipp, styling, farge og timebestilling.",
 
-  url: "https://kjodesfrisorsalong.no",
+    url: "https://kjodesfrisorsalong.no",
 
-  images: [
-    {
-      url: "/assets/Logo.png",
-      width: 1200,
-      height:630,
-      alt: "Kjødes Frisørsalong logo",
-
-    }
-  ]
-  }
+    images: [
+      {
+        url: "/assets/Logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Kjødes Frisørsalong logo",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
