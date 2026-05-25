@@ -1,19 +1,18 @@
 import React from "react";
 import Image from "next/image";
 
-
 export default function AapningPage() {
   return (
     <main className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
       <Image
-      src="/assets/kalender.webp"
-      alt="Klokke"
-      fill
-      priority
-      fetchPriority="high"
-      quality={75}
-      sizes="100vw"
-      className="object-cover"
+        src="/assets/kalender.webp"
+        alt="Klokke"
+        fill
+        priority
+        fetchPriority="high"
+        quality={75}
+        sizes="100vw"
+        className="object-cover"
       />
 
       <div className="absolute inset-0 bg-black/70 z-0 pointer-events-none"></div>
