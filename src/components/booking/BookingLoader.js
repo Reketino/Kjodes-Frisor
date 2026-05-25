@@ -1,38 +1,38 @@
 import { FaScissors } from "react-icons/fa6";
 
 export default function BookingLoader() {
-    return (
-        <aside
-          aria-live="polite"
-          className=" 
+  return (
+    <aside
+      aria-live="polite"
+      className=" 
         absolute inset-0 z-10
         flex items-center justify-center
         bg-background
         "
-        >
-          <section
-            className="
+    >
+      <section
+        className="
           flex flex-col
           items-center gap-8
           text-center
           "
-          >
-            <figure>
-              <FaScissors
-                aria-hidden="true"
-                className="
+      >
+        <figure>
+          <FaScissors
+            aria-hidden="true"
+            className="
               text-6xl
               rotate-[-20deg]
               animate-pulse
               "
-              />
-            </figure>
-            <header className="space-y-2">
-              <h1 className="text-3xl font-serif">Åpner booking</h1>
+          />
+        </figure>
+        <header className="space-y-2">
+          <h1 className="text-3xl font-serif">Åpner booking</h1>
 
-              <p className="text-neutral-400">Gjør saksen klar...</p>
-            </header>
-          </section>
-        </aside>
-    );
+          <p className="text-neutral-400">Gjør saksen klar...</p>
+        </header>
+      </section>
+    </aside>
+  );
 }
