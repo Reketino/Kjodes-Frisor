@@ -7,7 +7,7 @@ export default function BookingPage() {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <main className="fixed top-20 left-0 right-0 bottom-0">
+    <main className="fixed top-20 inset-x-0 bottom-0">
       {!loaded && (
         <BookingLoader />
       )}
