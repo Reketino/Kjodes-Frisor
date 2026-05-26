@@ -4,7 +4,8 @@ import Image from "next/image";
 export const metadata = {
   title: "Om oss",
 
-  description: "Les historien bak Kjødes Frisørsalong i Sykkylven fra Jonar Kjøde til dagens eiere Elise Kjøde Klokkehaug og Marte Berge Hoel.",
+  description:
+    "Les historien bak Kjødes Frisørsalong i Sykkylven fra Jonar Kjøde til dagens eiere Elise Kjøde Klokkehaug og Marte Berge Hoel.",
 
   alternates: {
     cannonical: "/om",
@@ -108,9 +109,9 @@ export default function OmPage() {
         <Image
           src="/salong.jpeg"
           alt="Bilde av salongen"
-          className='w-full max-w-3xl rounded-4xl shadow-lg object-cover
+          className="w-full max-w-3xl rounded-4xl shadow-lg object-cover
       grayscale hover:scale-101 hover:grayscale-0  
-      transition-all duration-700"'
+      transition-all duration-700"
           width={1920}
           height={1080}
         />
