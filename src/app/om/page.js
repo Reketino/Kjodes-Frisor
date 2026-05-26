@@ -8,7 +8,7 @@ export const metadata = {
     "Les historien bak Kjødes Frisørsalong i Sykkylven fra Jonar Kjøde til dagens eiere Elise Kjøde Klokkehaug og Marte Berge Hoel.",
 
   alternates: {
-    cannonical: "/om",
+    canonical: "/om",
   },
 
   openGraph: {
