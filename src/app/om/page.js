@@ -1,6 +1,33 @@
 import React from "react";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Om oss",
+
+  description: "Les historien bak Kjødes Frisørsalong i Sykkylven fra Jonar Kjøde til dagens eiere Elise Kjøde Klokkehaug og Marte Berge Hoel.",
+
+  alternates: {
+    cannonical: "/om",
+  },
+
+  openGraph: {
+    title: "Om oss | Kjødes Frisørsalong",
+
+    description: "Les historien bak Kjødes Frisørsalong i Sykkylven.",
+
+    url: "/om",
+
+    images: [
+      {
+        url: "/salong.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Kjødes Frisørsalong",
+      },
+    ],
+  },
+};
+
 export default function OmPage() {
   return (
     <main>
