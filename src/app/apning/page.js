@@ -7,7 +7,7 @@ export const metadata = {
   description: "Se åpningstidene til Kjødes Frisørsalong i Sykkylven.",
 
   alternates: {
-    cannonical: "/apning",
+    canonical: "/apning",
   },
 
   openGraph: {
