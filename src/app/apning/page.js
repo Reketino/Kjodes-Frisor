@@ -1,6 +1,34 @@
 import React from "react";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Åpningstider",
+
+  description: "Se åpningstidene til Kjødes Frisørsalong i Sykkylven.",
+
+  alternates: {
+    cannonical: "/apning"
+  },
+
+  openGraph: {
+    title: "Åpningstider | Kjødes Frisørsalong",
+
+      description:
+      "Se åpningstidene til Kjødes Frisørsalong i Sykkylven.",
+
+      url: "/apning",
+
+      images: [
+        {
+          url: "/assets/Logo.png",
+          width: 1200,
+          height: 630,
+          alt: "Kjødes Frisørsalong",
+        }
+      ]
+  }
+}
+
 export default function AapningPage() {
   return (
     <main className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
