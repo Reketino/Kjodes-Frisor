@@ -235,7 +235,7 @@ export default function Home() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="w-full h-full"
-              ></iframe>
+              />
             </div>
             <div
               className="w-full h-80 md:h-96 overflow-hidden rounded-xl shadow-lg
@@ -249,7 +249,7 @@ export default function Home() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="w-full h-full"
-              ></iframe>
+              />
             </div>
           </aside>
 
