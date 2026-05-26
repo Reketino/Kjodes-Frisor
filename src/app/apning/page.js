@@ -1,6 +1,33 @@
 import React from "react";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Åpningstider",
+
+  description: "Se åpningstidene til Kjødes Frisørsalong i Sykkylven.",
+
+  alternates: {
+    cannonical: "/apning",
+  },
+
+  openGraph: {
+    title: "Åpningstider | Kjødes Frisørsalong",
+
+    description: "Se åpningstidene til Kjødes Frisørsalong i Sykkylven.",
+
+    url: "/apning",
+
+    images: [
+      {
+        url: "/assets/Logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Kjødes Frisørsalong",
+      },
+    ],
+  },
+};
+
 export default function AapningPage() {
   return (
     <main className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
@@ -15,12 +42,12 @@ export default function AapningPage() {
         className="object-cover"
       />
 
-      <div className="absolute inset-0 bg-black/70 z-0 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-black/70 z-0 pointer-events-none" />
 
       <section className="relative z-10 w-full max-w-4xl px-4 py-10 text-center ">
-        <h2 className=" text-6xl mb-8 font-semibold text-stone-500">
+        <h1 className=" text-6xl mb-8 font-semibold text-stone-500">
           Åpningstider
-        </h2>
+        </h1>
         <ul className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-8">
           {[
             { day: "Mandag", time: "09-17" },
