@@ -25,7 +25,7 @@ export default function KontaktPage() {
           </p>
 
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div className="bg-white/15 backdrop-blur-md rounded-2xl p-6 shadow-lg transition hover:shadow-xl hover:-translate-y-1">
+            <address className="bg-white/15 backdrop-blur-md rounded-2xl p-6 shadow-lg transition hover:shadow-xl hover:-translate-y-1">
               <a 
               href="https://maps.google.com/?q=Storgata+5+6230+Sykkylven"
               target="_blank"
@@ -50,10 +50,10 @@ export default function KontaktPage() {
                 <FaEnvelope size={25} />
                 kjodesfrisorsalong@gmail.com
               </a>
-            </div>
+            </address>
             <div className="rounded-xl overflow-hidden shadow-lg transition-transform duration-200 hover:scale-102">
               <iframe
-                title="Kart over Kjødes Frtisørsalong"
+                title="Kart over Kjødes Frisørsalong"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1137.5755979821693!2d6.578945757154498!3d62.39117212283398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4616b8b29d9b0869%3A0x8371ab46b8d9392e!2sStorgata%205%2C%206230%20Sykkylven!5e1!3m2!1sno!2sno!4v1761674085785!5m2!1sno!2sno"
                 style={{ border: 0 }}
                 allowFullScreen=""
