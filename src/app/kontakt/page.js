@@ -1,6 +1,13 @@
 import React from "react";
 import { FaPhoneSquareAlt, FaMapPin, FaEnvelope } from "react-icons/fa";
 
+export const metadata = {
+  title: "Kontakt",
+
+  description:
+  "Kontakt Kjødes Frisørsalong eller bestill time.",
+}
+
 export default function KontaktPage() {
   return (
     <main className="grow">
