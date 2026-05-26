@@ -7,7 +7,24 @@ export const metadata = {
   description: "Kontakt Kjødes Frisørsalong eller bestill time.",
 
   alternates: {
-    cannonical: "/kontakt",
+    canonical: "/kontakt",
+  },
+
+  openGraph: {
+    title: "Kontakt | Kjødes Frisørsalong",
+
+    description: "Kontakt Kjødes Frisørsalong i Sykkylven eller bestill time.",
+
+    url: "/kontakt",
+
+    images: [
+      {
+        url: "/assets/Logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Kjødes Frisørsalong",
+      },
+    ],
   },
 };
 
@@ -60,7 +77,7 @@ export default function KontaktPage() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="w-full h-64 md:h-80"
-              ></iframe>
+              />
             </div>
           </div>
         </div>
