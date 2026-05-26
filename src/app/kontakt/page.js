@@ -6,6 +6,10 @@ export const metadata = {
 
   description:
   "Kontakt Kjødes Frisørsalong eller bestill time.",
+
+  alternates: {
+    cannonical: "/kontakt",
+  },
 }
 
 export default function KontaktPage() {
