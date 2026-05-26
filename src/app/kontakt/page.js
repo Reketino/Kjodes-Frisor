@@ -22,13 +22,14 @@ export default function KontaktPage() {
 
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div className="bg-white/15 backdrop-blur-md rounded-2xl p-6 shadow-lg transition hover:shadow-xl hover:-translate-y-1">
-              <div className="flex flex-row items-center justify-center mb-2 gap-1">
+              <a 
+              href="https://maps.google.com/?q=Storgata+5+6230+Sykkylven"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl hover:text-red-500 flex items-center justify-center mb-2 gap-1">
                 <FaMapPin size={25} />
-                <p className="text-xl  hover:text-red-500">
-                  {" "}
-                  Storgata 5, 6230 Sykkylven
-                </p>
-              </div>
+                Storgata 5, 6230 Sykkylven
+              </a>
 
               <a
                 href="tel:70254680"
