@@ -50,7 +50,12 @@ export default function OmPage() {
 
         <header className="md:w-1/2 text-center md:text-left">
         
-          <h1 className="text-5xl font-serif mb-6 text-neutral-500">Om oss</h1>
+          <h1 
+          id="about-heading"
+          className="text-5xl font-serif mb-6 text-neutral-500"
+          >
+            Om oss
+          </h1>
           <p className="text-lg leading-relaxed text-neutral-400">
             <strong>Kjødes Frisørsalong</strong> har lange tradisjoner i
             Sykkylven. Frisørmester <strong>Jonar Kjøde</strong> startet
