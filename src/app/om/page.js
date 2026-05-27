@@ -32,9 +32,7 @@ export const metadata = {
 export default function OmPage() {
   return (
     <main aria-labelledby="about-heading">
-
       <article className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 py-16 max-w-6xl mx-auto mt-6">
-
         <figure className="md:w-1/2 flex justify-center">
           <Image
             src="/jonar/jonarkjode.jpg"
@@ -49,10 +47,9 @@ export default function OmPage() {
         </figure>
 
         <header className="md:w-1/2 text-center md:text-left">
-        
-          <h1 
-          id="about-heading"
-          className="text-5xl font-serif mb-6 text-neutral-500"
+          <h1
+            id="about-heading"
+            className="text-5xl font-serif mb-6 text-neutral-500"
           >
             Om oss
           </h1>
@@ -80,16 +77,12 @@ export default function OmPage() {
         </figure>
 
         <section className="md:w-1/2 text-center md:text-right">
-
           <p className="text-lg leading-relaxed text-neutral-400 mt-2">
-
             I dag drives salongen videre av barnebarnet hans,{" "}
             <strong>Elise Kjøde Klokkehaug</strong>, som tilbyr klipp og stell
-            for både damer og herrer.
-
-            Hos Kjødes møter du den samme kvaliteten,roen og personlige 
-            servicen som alltid har vært salongens varemerke.
-
+            for både damer og herrer. Hos Kjødes møter du den samme
+            kvaliteten,roen og personlige servicen som alltid har vært salongens
+            varemerke.
           </p>
         </section>
       </article>
@@ -110,11 +103,9 @@ export default function OmPage() {
         <section className="md:w-1/2 text-center md:text-left">
           <p className="text-lg leading-relaxed text-neutral-400 mt-2">
             <strong>Marte Berge Hoel</strong> startet frisørkarrieren hos Cancam
-            og ble lærling hos Elise i 2019. 
-            I 2022 kjøpte hun seg inn i{" "}
+            og ble lærling hos Elise i 2019. I 2022 kjøpte hun seg inn i{" "}
             <strong>Kjødes Frisørsalong</strong> og driver nå salongen sammen
-            med Elise. 
-            Marte kombinerer kreativitet og presisjon, og setter
+            med Elise. Marte kombinerer kreativitet og presisjon, og setter
             alltid kunden i fokus for en personlig og profesjonell opplevelse.
           </p>
         </section>
@@ -122,15 +113,15 @@ export default function OmPage() {
 
       <section className="px-6 py-16 max-w-6xl mx-auto">
         <figure className="flex flex-col items-center gap-5">
-        <Image
-          src="/salong.jpeg"
-          alt="Bilde av salongen"
-          className="w-full max-w-3xl rounded-4xl shadow-lg object-cover
+          <Image
+            src="/salong.jpeg"
+            alt="Bilde av salongen"
+            className="w-full max-w-3xl rounded-4xl shadow-lg object-cover
       grayscale hover:scale-101 hover:grayscale-0  
       transition-all duration-700"
-          width={1920}
-          height={1080}
-        />
+            width={1920}
+            height={1080}
+          />
           <figcaption className=" md:w-1/2 font-semibold leading-relaxed text-neutral-400 text-xl text-center">
             Velkommen til Kjødes Frisørsalong – hvor tradisjon møter moderne
             stil i hjertet av Sykkylven!
