@@ -31,8 +31,10 @@ export const metadata = {
 
 export default function OmPage() {
   return (
-    <main>
-      <section className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 py-16 max-w-6xl mx-auto mt-6">
+    <main aria-labelledby="about-heading">
+
+      <article className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 py-16 max-w-6xl mx-auto mt-6">
+
         <figure className="md:w-1/2 flex justify-center">
           <Image
             src="/jonar/jonarkjode.jpg"
@@ -46,7 +48,8 @@ export default function OmPage() {
           />
         </figure>
 
-        <div className="md:w-1/2 text-center md:text-left">
+        <header className="md:w-1/2 text-center md:text-left">
+        
           <h1 className="text-5xl font-serif mb-6 text-neutral-500">Om oss</h1>
           <p className="text-lg leading-relaxed text-neutral-400">
             <strong>Kjødes Frisørsalong</strong> har lange tradisjoner i
@@ -55,8 +58,8 @@ export default function OmPage() {
             opp et godt rykte og en trofast kundekrets gjennom solid håndverk og
             ekte omtanke.
           </p>
-        </div>
-      </section>
+        </header>
+      </article>
 
       <section className="flex flex-col md:flex-row-reverse items-center justify-center gap-10 px-6 py-10 max-w-6xl mx-auto ">
         <div className="relative md:w-1/2 flex justify-center group">
