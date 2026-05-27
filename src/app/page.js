@@ -4,6 +4,34 @@ import Image from "next/image";
 import { FaPhoneSquareAlt, FaMapPin } from "react-icons/fa";
 import { FaScissors } from "react-icons/fa6";
 
+export const metadata = {
+  title: "Frisør i Sykkylven",
+
+  description:
+    "Velkommen til Kjødes Frisørsalong i Sykkylven. Klipp, styling, farge, bryn og enkel timebestilling.",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title: "Kjødes Frisørsalong | Frisør i Sykkylven",
+
+    description: "Velkommen til Kjødes Frisørsalong i Sykkylven.",
+
+    url: "/",
+
+    images: [
+      {
+        url: "/salong.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Kjødes Frisørsalong",
+      },
+    ],
+  },
+};
+
 export default function Home() {
   return (
     <main>
