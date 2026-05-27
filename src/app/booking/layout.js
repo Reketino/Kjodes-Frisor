@@ -1,18 +1,18 @@
 export const metadata = {
   title: "Bestill time",
 
-  description: ".",
+  description: "Bestill time hos Kjødes Frisørsalong i Sykkylven.",
 
   alternates: {
-    canonical: "/kontakt",
+    canonical: "/booking",
   },
 
   openGraph: {
-    title: "Kontakt | Kjødes Frisørsalong",
+    title: "Bestill time | Kjødes Frisørsalong",
 
-    description: "Kontakt Kjødes Frisørsalong i Sykkylven eller bestill time.",
+    description: "Bestill time hos Kjødes Frisørsalong i Sykkylven.",
 
-    url: "/kontakt",
+    url: "/booking",
 
     images: [
       {
