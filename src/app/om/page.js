@@ -66,8 +66,8 @@ export default function OmPage() {
         </header>
       </article>
 
-      <section className="flex flex-col md:flex-row-reverse items-center justify-center gap-10 px-6 py-10 max-w-6xl mx-auto ">
-        <div className="relative md:w-1/2 flex justify-center group">
+      <article className="flex flex-col md:flex-row-reverse items-center justify-center gap-10 px-6 py-10 max-w-6xl mx-auto ">
+        <figure className="relative md:w-1/2 flex justify-center group">
           <Image
             src="/elise/elisekjode.jpg"
             alt="Elise Kjøde Klokkehaug – nåværende eier av Kjødes Frisørsalong"
@@ -77,17 +77,17 @@ export default function OmPage() {
             width={500}
             height={500}
           />
-        </div>
+        </figure>
 
-        <div className="md:w-1/2 text-center md:text-right">
+        <section className="md:w-1/2 text-center md:text-right">
           <p className="text-lg leading-relaxed text-neutral-400 mt-2">
             I dag drives salongen videre av barnebarnet hans,{" "}
             <strong>Elise Kjøde Klokkehaug</strong>, som tilbyr klipp og stell
             for både damer og herrer. Hos Kjødes møter du den samme kvaliteten,
             roen og personlige servicen som alltid har vært salongens varemerke.
           </p>
-        </div>
-      </section>
+        </section>
+      </article>
 
       <section className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 py-10 max-w-6xl mx-auto">
         <div className="relative md:w-1/2 flex justify-center group">
