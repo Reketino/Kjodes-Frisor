@@ -5,7 +5,7 @@ import { FaPhoneSquareAlt, FaMapPin } from "react-icons/fa";
 import { FaScissors } from "react-icons/fa6";
 
 export const metadata = {
-  title: "Frisør i Sykkylven",
+  title: "Kjødes Frisørsalong",
 
   description:
     "Velkommen til Kjødes Frisørsalong i Sykkylven. Klipp, styling, farge, bryn og enkel timebestilling.",
