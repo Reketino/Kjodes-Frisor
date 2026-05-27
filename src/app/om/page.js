@@ -110,15 +110,18 @@ export default function OmPage() {
         <section className="md:w-1/2 text-center md:text-left">
           <p className="text-lg leading-relaxed text-neutral-400 mt-2">
             <strong>Marte Berge Hoel</strong> startet frisørkarrieren hos Cancam
-            og ble lærling hos Elise i 2019. I 2022 kjøpte hun seg inn i{" "}
+            og ble lærling hos Elise i 2019. 
+            I 2022 kjøpte hun seg inn i{" "}
             <strong>Kjødes Frisørsalong</strong> og driver nå salongen sammen
-            med Elise. Marte kombinerer kreativitet og presisjon, og setter
+            med Elise. 
+            Marte kombinerer kreativitet og presisjon, og setter
             alltid kunden i fokus for en personlig og profesjonell opplevelse.
           </p>
         </section>
       </article>
 
-      <section className="flex flex-col items-center justify-center gap-5 px-6 py-16 max-w-6xl mx-auto mt-2">
+      <section className="px-6 py-16 max-w-6xl mx-auto">
+        <figure className="flex flex-col items-center gap-5">
         <Image
           src="/salong.jpeg"
           alt="Bilde av salongen"
@@ -128,12 +131,11 @@ export default function OmPage() {
           width={1920}
           height={1080}
         />
-        <div className="md:w-1/2 text-center">
-          <p className="font-semibold leading-relaxed text-neutral-400 text-xl">
+          <figcaption className=" md:w-1/2 font-semibold leading-relaxed text-neutral-400 text-xl text-center">
             Velkommen til Kjødes Frisørsalong – hvor tradisjon møter moderne
             stil i hjertet av Sykkylven!
-          </p>
-        </div>
+          </figcaption>
+        </figure>
       </section>
     </main>
   );
