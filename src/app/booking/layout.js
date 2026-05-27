@@ -24,3 +24,7 @@ export const metadata = {
     ],
   },
 };
+
+export default function BookingLayout({ children }) {
+    return children;
+}
