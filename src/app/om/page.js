@@ -33,7 +33,7 @@ export default function OmPage() {
   return (
     <main>
       <section className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 py-16 max-w-6xl mx-auto mt-6">
-        <div className="md:w-1/2 flex justify-center">
+        <figure className="md:w-1/2 flex justify-center">
           <Image
             src="/jonar/jonarkjode.jpg"
             alt="Jonar Kjøde – grunnlegger av Kjødes Frisørsalong"
@@ -44,7 +44,7 @@ export default function OmPage() {
             loading="eager"
             fetchPriority="high"
           />
-        </div>
+        </figure>
 
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-5xl font-serif mb-6 text-neutral-500">Om oss</h1>
