@@ -33,7 +33,7 @@ export default function HeroSection() {
           </p>
           <nav 
           className="flex flex-col gap-4 items-center"
-          aria-label="handlinger"
+          aria-label="Handlinger"
           >
           <Link
             href="/booking"
