@@ -11,9 +11,7 @@ export default function HeroSection() {
           src="/assets/hero.jpg"
           alt="Hero"
           fill
-          className="object-cover object-center object-position sm:object-[center_40%] 
-          
-        "
+          className="object-cover object-center object-position sm:object-[center_40%]"
           priority
         />
 
