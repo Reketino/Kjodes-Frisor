@@ -6,7 +6,10 @@ import { FaScissors } from "react-icons/fa6";
 
 export default function HeroSection() {
     return (
-           <section className="relative flex items-center justify-center text-center h-[80vh] sm:h-[90vh] overflow-hidden">
+           <section 
+           className="relative flex items-center justify-center text-center h-[80vh] sm:h-[90vh] overflow-hidden"
+           aria-label="Hero seksjon"
+           >
         <Image
           src="/assets/hero.jpg"
           alt="Hero"
@@ -15,7 +18,10 @@ export default function HeroSection() {
           priority
         />
 
-        <div className="absolute inset-0 bg-black/50" />
+        <div 
+        className="absolute inset-0 bg-black/50" 
+        aria-hidden="true"
+        />
 
         <div className="relative z-10 max-w-[90%] sm:max-w-2xl px-2 sm:px-4">
           <h1 className="text-5xl sm:text-6xl font-serif text-white tracking-tight leading-tight drop-shadow-md mb-2">
