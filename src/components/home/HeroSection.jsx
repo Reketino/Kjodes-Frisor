@@ -31,7 +31,10 @@ export default function HeroSection() {
           <p className=" text-2xl text-neutral-200 mb-8">
             Din frisør i hjertet av Sykkylven
           </p>
-          <nav className="flex flex-col gap-4 items-center">
+          <nav 
+          className="flex flex-col gap-4 items-center"
+          aria-label="handlinger"
+          >
           <Link
             href="/booking"
             className="
