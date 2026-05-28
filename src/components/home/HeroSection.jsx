@@ -23,7 +23,7 @@ export default function HeroSection() {
         aria-hidden="true"
         />
 
-        <div className="relative z-10 max-w-[90%] sm:max-w-2xl px-2 sm:px-4">
+        <header className="relative z-10 max-w-[90%] sm:max-w-2xl px-2 sm:px-4">
           <h1 className="text-5xl sm:text-6xl font-serif text-white tracking-tight leading-tight drop-shadow-md mb-2">
             Kjødes Frisørsalong
           </h1>
@@ -58,7 +58,7 @@ export default function HeroSection() {
               <p className="text-2xl"> 70 25 46 80</p>
             </div>
           </a>
-        </div>
+        </header>
       </section>   
     )
 }
