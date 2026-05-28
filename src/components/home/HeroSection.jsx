@@ -48,7 +48,7 @@ export default function HeroSection() {
           >
             
               <FaScissors size={36} />
-              <p className="text-2xl"> Bestill time</p>
+              <span className="text-2xl"> Bestill time</span>
           </Link>
           <p className="text-2xl text-neutral-200">eller ring</p>
           <a
@@ -60,7 +60,7 @@ export default function HeroSection() {
          transition-color hover:bg-stone-900 hover:scale-105 active:scale-90 min-w-50"
           >
               <FaPhoneSquareAlt size={36} />
-              <p className="text-2xl"> 70 25 46 80</p>
+              <span className="text-2xl"> 70 25 46 80</span>
           </a>
           </nav>
         </header>
