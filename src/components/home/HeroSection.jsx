@@ -28,36 +28,38 @@ export default function HeroSection() {
             Kjødes Frisørsalong
           </h1>
 
-          <p className=" text-2xl text-neutral-200 mb-6 sm:mb-8">
+          <p className=" text-2xl text-neutral-200 mb-8">
             Din frisør i hjertet av Sykkylven
           </p>
+          <nav className="flex flex-col gap-4 items-center">
           <Link
             href="/booking"
             className="
-              inline-block bg-white/20  text-shadow-gray-400 
+              inline-flex items-center justify-center gap-2
+               bg-white/20  text-shadow-gray-400 
             px-5 py-2 rounded-full font-semibold 
            transition-transform hover:-translate-y-1
             transition-color hover:bg-stone-900
             hover:scale-105 active:scale-90 min-w-50
           "
           >
-            <div className="flex flex-row gap-2 items-center justify-center">
+            
               <FaScissors size={36} />
               <p className="text-2xl"> Bestill time</p>
-            </div>
           </Link>
-          <p className="text-2xl text-neutral-200 mt-4 mb-4">eller ring</p>
+          <p className="text-2xl text-neutral-200">eller ring</p>
           <a
             href="tel:70254680"
-            className="inline-block bg-white/20 text-shadow-gray-400 
+            className="
+            inline-flex items-center justify-center gap-2
+             bg-white/20 text-shadow-gray-400 
         px-5 py-2 rounded-full font-semibold transition-transform hover hover:-translate-y-1
          transition-color hover:bg-stone-900 hover:scale-105 active:scale-90 min-w-50"
           >
-            <div className="flex flex-row gap-2 items-center justify-center">
               <FaPhoneSquareAlt size={36} />
               <p className="text-2xl"> 70 25 46 80</p>
-            </div>
           </a>
+          </nav>
         </header>
       </section>   
     )
