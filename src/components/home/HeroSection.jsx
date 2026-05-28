@@ -40,10 +40,12 @@ export default function HeroSection() {
             className="
               inline-flex items-center justify-center gap-2
                bg-white/20  text-shadow-gray-400 
-            px-5 py-2 rounded-full font-semibold 
-           transition-transform hover:-translate-y-1
-            transition-color hover:bg-stone-900
-            hover:scale-105 active:scale-90 min-w-50
+            px-5 py-2 rounded-full font-semibold
+            transition-all 
+            hover:-translate-y-1
+             hover:bg-stone-900
+            hover:scale-105 
+            active:scale-90 min-w-50
           "
           >
             
@@ -56,8 +58,13 @@ export default function HeroSection() {
             className="
             inline-flex items-center justify-center gap-2
              bg-white/20 text-shadow-gray-400 
-        px-5 py-2 rounded-full font-semibold transition-transform hover hover:-translate-y-1
-         transition-color hover:bg-stone-900 hover:scale-105 active:scale-90 min-w-50"
+        px-5 py-2 rounded-full font-semibold  
+        transition-all
+       hover:-translate-y-1
+          hover:bg-stone-900 
+          hover:scale-105 
+          active:scale-90 min-w-50
+          "
           >
               <FaPhoneSquareAlt size={36} />
               <span className="text-2xl"> 70 25 46 80</span>
