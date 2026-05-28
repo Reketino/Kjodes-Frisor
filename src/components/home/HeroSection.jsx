@@ -12,7 +12,7 @@ export default function HeroSection() {
     >
       <Image
         src="/assets/hero.jpg"
-        alt="Hero"
+        alt="Frisør utstyr"
         fill
         className="object-cover object-center sm:object-[center_40%]"
         priority
