@@ -6,7 +6,7 @@ export default function IntroSection() {
           className="bg-background text-foreground py-15 px-4 sm:px-8"
           aria-labelledby="intro-heading"
           >
-        <div className="max-w-4xl mx-auto text-center space-y-6">
+        <header className="max-w-4xl mx-auto text-center space-y-6">
           <h2
           id="intro-heading"
           className="text-3xl sm:text-4xl font-serif font-semibold"
@@ -18,7 +18,7 @@ export default function IntroSection() {
             sitter i stolen. Hos oss får du tid, trygghet og en klipp som passer
             deg – ikke bare trenden.
           </p>
-        </div>
+        </header>
       </section>
     )
 }
