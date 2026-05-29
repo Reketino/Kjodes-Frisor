@@ -44,6 +44,20 @@ export default function ServicesSection() {
           Våre tjenester
         </h2> 
         </header>
+
+        <ul className="max-w-5xl mx-auto grid sm:grid-cols-3 gap-8">
+            {services.map((service) => (
+            <li key={service.title}>
+            <article className="p-6 rounded-2xl bg-white/10 hover:scale-105 transition">
+              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+              <p className="text-neutral-400 text-base leading-relaxed">
+                {service.desc}
+              </p>
+              </article>
+            </li>
+            ))} 
+        </ul>
+
         </section> 
         )
 }
