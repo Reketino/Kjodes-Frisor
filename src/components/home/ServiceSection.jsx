@@ -30,4 +30,20 @@ export default function ServicesSection() {
               desc: "Velkommen innom når det passer deg, eller bestill time på forhånd for garantert plass.",
             },
         ];
+        return (
+        <section 
+        className="py-8 px-6 bg-background text-foreground text-center"
+        aria-labelledby="services-heading"
+        >
+
+        <header>
+        <h2
+        id="services-heading"
+        className="text-3xl sm:text-4xl font-serif font-semibold mb-8"
+        >
+          Våre tjenester
+        </h2> 
+        </header>
+        </section> 
+        )
 }
