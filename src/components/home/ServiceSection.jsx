@@ -58,7 +58,7 @@ export default function ServicesSection() {
         ))}
       </ul>
 
-      <div className=" mt-8 flex flex-col sm:flex-row items-center justify-center gap-8 w-full max-w-xl mx-auto">
+      <nav className=" mt-8 flex flex-col sm:flex-row items-center justify-center gap-8 w-full max-w-xl mx-auto">
           <Link
             href="/booking"
             className="flex items-center justify-center  font-semibold   
@@ -86,7 +86,7 @@ export default function ServicesSection() {
               <p>70 25 46 80</p>
             </div>
           </a>
-        </div>
+        </nav>
     </section>
   );
 }
