@@ -58,7 +58,10 @@ export default function ServicesSection() {
         ))}
       </ul>
 
-      <nav className=" mt-8 flex flex-col sm:flex-row items-center justify-center gap-8 w-full max-w-xl mx-auto">
+      <nav 
+      className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-8 w-full max-w-xl mx-auto"
+      aria-label="Bestilling og kontakt"
+      >
           <Link
             href="/booking"
             className="flex items-center justify-center  font-semibold   
@@ -67,10 +70,10 @@ export default function ServicesSection() {
            transition-colors hover:-translate-y-1 hover:bg-stone-900 
            hover:scale-105 active:scale-90 w-64"
           >
-            <div className="flex flex-row gap-2 items-center justify-center text-2xl">
+            <span className="flex flex-row gap-2 items-center justify-center text-2xl">
               <FaScissors size={25} />
               Bestill time
-            </div>
+            </span>
           </Link>
 
           <a
