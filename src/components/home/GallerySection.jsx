@@ -22,12 +22,14 @@ export default function GallerySection() {
          className="py-20 bg-stone-200 text-neutral-800 mt-6"
          aria-labelledby="gallery-heading"
          >
+        <header>
         <h2 
         id="gallery-heading"
         className="text-3xl text-center font-serif font-semibold mb-8"
         >
           Et glimt fra salongen
         </h2>
+        </header>
 
         <div className="group relative max-w-5xl mx-auto grid sm:grid-cols-3 gap-4 px-6">
           <img
