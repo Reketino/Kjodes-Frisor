@@ -31,7 +31,7 @@ export default function GallerySection() {
         </h2>
         </header>
 
-        <div className="group relative max-w-5xl mx-auto grid sm:grid-cols-3 gap-4 px-6">
+        <ul className="group relative max-w-5xl mx-auto grid sm:grid-cols-3 gap-4 px-6">
           <img
             src="/glimt/glimt1.jpg"
             alt="Vipper"
@@ -50,7 +50,7 @@ export default function GallerySection() {
             className="rounded-2xl object-cover h-64 w-full transition-all duration-300
             group-hover:scale-101 group-hover:shadow-2xl"
           />
-        </div>
+        </ul>
       </section>
     )
 }
