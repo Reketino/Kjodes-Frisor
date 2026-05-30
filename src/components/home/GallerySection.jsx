@@ -32,24 +32,27 @@ export default function GallerySection() {
         </header>
 
         <ul className="group relative max-w-5xl mx-auto grid sm:grid-cols-3 gap-4 px-6">
-          <img
-            src="/glimt/glimt1.jpg"
-            alt="Vipper"
-            className="rounded-2xl object-cover h-64 w-full transition-all duration-300
-            group-hover:scale-101 group-hover:shadow-2xl"
-          />
-          <img
-            src="/glimt/glimt2.jpg"
-            alt="Frisyre"
-            className="rounded-2xl object-cover h-64 w-full transition-all duration-300
-            group-hover:scale-101 group-hover:shadow-2xl"
-          />
-          <img
-            src="/glimt/glimt3.jpg"
-            alt="Frisyre"
-            className="rounded-2xl object-cover h-64 w-full transition-all duration-300
-            group-hover:scale-101 group-hover:shadow-2xl"
-          />
+            {galleryImages.map((image) => (
+                <li key={image.src}>
+                    <figure>
+                        <Image
+                        src={image.src}
+                        alt={image.alt}
+                        width={600}
+                        height={400}
+                        className="
+                        rounded-2xl 
+                        object-cover 
+                        h-64 w-full 
+                        transition-all 
+                        duration-300
+                        group-hover:scale-101 
+                        group-hover:shadow-2xl
+                        "
+                        />
+                    </figure>
+                </li>
+            ))}
         </ul>
       </section>
     )
