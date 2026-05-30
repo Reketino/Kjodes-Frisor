@@ -48,7 +48,9 @@ export default function ServicesSection() {
         {services.map((service) => (
           <li key={service.title}>
             <article className="p-6 rounded-2xl bg-white/10 hover:scale-105 transition">
-              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+              <h3 className="text-xl font-semibold mb-2">
+                {service.title}
+                </h3>
 
               <p className="text-neutral-400 text-base leading-relaxed">
                 {service.desc}
@@ -76,8 +78,9 @@ export default function ServicesSection() {
            w-64
            "
           >
-            <span className="flex flex-row gap-2 items-center justify-center text-2xl">
+            
               <FaScissors size={25} />
+              <span className="text-2xl">
               Bestill time
             </span>
           </Link>
@@ -96,10 +99,11 @@ export default function ServicesSection() {
            w-64
            "
           >
-            <div className="flex flex-row gap-2 items-center justify-center text-2xl">
               <FaPhoneSquareAlt size={25} />
-              <p>70 25 46 80</p>
-            </div>
+
+              <span className="text-2xl">
+                70 25 46 80
+                </span>
           </a>
         </nav>
     </section>
