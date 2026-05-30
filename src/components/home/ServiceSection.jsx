@@ -64,11 +64,17 @@ export default function ServicesSection() {
       >
           <Link
             href="/booking"
-            className="flex items-center justify-center  font-semibold   
+            className="
+            flex items-center justify-center  font-semibold   
           rounded-full gap-2 px-6 py-4 
            bg-white/10 text-shadow-gray-400
-           transition-colors hover:-translate-y-1 hover:bg-stone-900 
-           hover:scale-105 active:scale-90 w-64"
+           transition-all 
+           hover:-translate-y-1 
+           hover:bg-stone-900 
+           hover:scale-105 
+           active:scale-90 
+           w-64
+           "
           >
             <span className="flex flex-row gap-2 items-center justify-center text-2xl">
               <FaScissors size={25} />
@@ -78,11 +84,17 @@ export default function ServicesSection() {
 
           <a
             href="tel:70254680"
-            className="flex items-center justify-center font-semibold   
+            className="
+            flex items-center justify-center font-semibold   
           rounded-full gap-2 px-6 py-4
            bg-white/10 text-shadow-gray-400
-           transition-colors hover:-translate-y-1 hover:bg-stone-900 
-           hover:scale-105 active:scale-90 w-64"
+           transition-all 
+           hover:-translate-y-1 
+           hover:bg-stone-900 
+           hover:scale-105 
+           active:scale-90 
+           w-64
+           "
           >
             <div className="flex flex-row gap-2 items-center justify-center text-2xl">
               <FaPhoneSquareAlt size={25} />
