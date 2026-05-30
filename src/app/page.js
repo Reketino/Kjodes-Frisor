@@ -5,6 +5,7 @@ import { FaPhoneSquareAlt, FaMapPin } from "react-icons/fa";
 import { FaScissors } from "react-icons/fa6";
 import HeroSection from "@/components/home/HeroSection";
 import IntroSection from "@/components/home/IntroSection";
+import ServicesSection from "@/components/home/ServiceSection";
 
 export const metadata = {
   title: "Kjødes Frisørsalong",
