@@ -48,9 +48,7 @@ export default function ServicesSection() {
         {services.map((service) => (
           <li key={service.title}>
             <article className="p-6 rounded-2xl bg-white/10 hover:scale-105 transition">
-              <h3 className="text-xl font-semibold mb-2">
-                {service.title}
-                </h3>
+              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
 
               <p className="text-neutral-400 text-base leading-relaxed">
                 {service.desc}
@@ -60,13 +58,13 @@ export default function ServicesSection() {
         ))}
       </ul>
 
-      <nav 
-      className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-8 w-full max-w-xl mx-auto"
-      aria-label="Bestilling og kontakt"
+      <nav
+        className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-8 w-full max-w-xl mx-auto"
+        aria-label="Bestilling og kontakt"
       >
-          <Link
-            href="/booking"
-            className="
+        <Link
+          href="/booking"
+          className="
             flex items-center justify-center  font-semibold   
           rounded-full gap-2 px-6 py-4 
            bg-white/10 text-shadow-gray-400
@@ -77,17 +75,14 @@ export default function ServicesSection() {
            active:scale-90 
            w-64
            "
-          >
-            
-              <FaScissors size={25} />
-              <span className="text-2xl">
-              Bestill time
-            </span>
-          </Link>
+        >
+          <FaScissors size={25} />
+          <span className="text-2xl">Bestill time</span>
+        </Link>
 
-          <a
-            href="tel:70254680"
-            className="
+        <a
+          href="tel:70254680"
+          className="
             flex items-center justify-center font-semibold   
           rounded-full gap-2 px-6 py-4
            bg-white/10 text-shadow-gray-400
@@ -98,14 +93,12 @@ export default function ServicesSection() {
            active:scale-90 
            w-64
            "
-          >
-              <FaPhoneSquareAlt size={25} />
+        >
+          <FaPhoneSquareAlt size={25} />
 
-              <span className="text-2xl">
-                70 25 46 80
-                </span>
-          </a>
-        </nav>
+          <span className="text-2xl">70 25 46 80</span>
+        </a>
+      </nav>
     </section>
   );
 }
