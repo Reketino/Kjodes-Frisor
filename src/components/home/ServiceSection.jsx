@@ -58,35 +58,47 @@ export default function ServicesSection() {
         ))}
       </ul>
 
-      <nav className=" mt-8 flex flex-col sm:flex-row items-center justify-center gap-8 w-full max-w-xl mx-auto">
-          <Link
-            href="/booking"
-            className="flex items-center justify-center  font-semibold   
+      <nav
+        className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-8 w-full max-w-xl mx-auto"
+        aria-label="Bestilling og kontakt"
+      >
+        <Link
+          href="/booking"
+          className="
+            flex items-center justify-center  font-semibold   
           rounded-full gap-2 px-6 py-4 
            bg-white/10 text-shadow-gray-400
-           transition-colors hover:-translate-y-1 hover:bg-stone-900 
-           hover:scale-105 active:scale-90 w-64"
-          >
-            <div className="flex flex-row gap-2 items-center justify-center text-2xl">
-              <FaScissors size={25} />
-              Bestill time
-            </div>
-          </Link>
+           transition-all 
+           hover:-translate-y-1 
+           hover:bg-stone-900 
+           hover:scale-105 
+           active:scale-90 
+           w-64
+           "
+        >
+          <FaScissors size={25} />
+          <span className="text-2xl">Bestill time</span>
+        </Link>
 
-          <a
-            href="tel:70254680"
-            className="flex items-center justify-center font-semibold   
+        <a
+          href="tel:70254680"
+          className="
+            flex items-center justify-center font-semibold   
           rounded-full gap-2 px-6 py-4
            bg-white/10 text-shadow-gray-400
-           transition-colors hover:-translate-y-1 hover:bg-stone-900 
-           hover:scale-105 active:scale-90 w-64"
-          >
-            <div className="flex flex-row gap-2 items-center justify-center text-2xl">
-              <FaPhoneSquareAlt size={25} />
-              <p>70 25 46 80</p>
-            </div>
-          </a>
-        </nav>
+           transition-all 
+           hover:-translate-y-1 
+           hover:bg-stone-900 
+           hover:scale-105 
+           active:scale-90 
+           w-64
+           "
+        >
+          <FaPhoneSquareAlt size={25} />
+
+          <span className="text-2xl">70 25 46 80</span>
+        </a>
+      </nav>
     </section>
   );
 }
