@@ -19,9 +19,15 @@ export default function TeamSection() {
     ]
 
     return (
-          <section className=" text-shadow-stone-300 py-16 px-6">
+          <section 
+          className=" text-shadow-stone-300 py-16 px-6"
+          aria-labelledby="team-heading"
+          >
             <div className="max-w-6xl mx-auto text-center">
-              <h2 className=" text-4xl  font-serif font-semibold mb-8">
+              <h2
+              id="team-heading" 
+              className=" text-4xl  font-serif font-semibold mb-8"
+              >
                 Våre Frisører
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-25 justify-items-center">
