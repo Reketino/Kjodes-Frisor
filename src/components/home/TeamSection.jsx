@@ -33,6 +33,12 @@ export default function TeamSection() {
                </header>
               <ul className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-25 justify-items-center">
 
+                {stylists.map((stylist) => (
+                    <li key={stylist.name}>
+                        
+                    </li>
+                ))}
+
               </ul>
           </section>    
     )
