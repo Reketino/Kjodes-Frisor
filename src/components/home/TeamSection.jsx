@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 export default function TeamSection() {
-    const stylist = [
+    const stylists = [
         {
             name: "Elise Klokkehaug Kjøde",
             role: "Eier & Frisør",
