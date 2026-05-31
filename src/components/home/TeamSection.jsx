@@ -37,7 +37,11 @@ export default function TeamSection() {
                     <li key={stylist.name}>
 
                         <article className="flex flex-col items-center">
-                            
+
+                            <figure className="w-96 aspect-square overflow-hidden rounded-3xl shadow-lg">
+                                
+                            </figure>
+
                         </article>
 
                     </li>
