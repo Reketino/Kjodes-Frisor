@@ -35,7 +35,11 @@ export default function TeamSection() {
 
                 {stylists.map((stylist) => (
                     <li key={stylist.name}>
-                        
+
+                        <article className="flex flex-col items-center">
+                            
+                        </article>
+
                     </li>
                 ))}
 
