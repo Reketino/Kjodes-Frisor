@@ -6,6 +6,7 @@ import { FaScissors } from "react-icons/fa6";
 import HeroSection from "@/components/home/HeroSection";
 import IntroSection from "@/components/home/IntroSection";
 import ServicesSection from "@/components/home/ServiceSection";
+import GallerySection from "@/components/home/GallerySection";
 
 export const metadata = {
   title: "Kjødes Frisørsalong",
