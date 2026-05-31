@@ -31,9 +31,9 @@ export default function TeamSection() {
                 Våre Frisører
               </h2>
                </header>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-25 justify-items-center">
-                
-              </div>
+              <ul className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-25 justify-items-center">
+
+              </ul>
           </section>    
     )
 }
