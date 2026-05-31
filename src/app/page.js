@@ -6,6 +6,7 @@ import { FaScissors } from "react-icons/fa6";
 import HeroSection from "@/components/home/HeroSection";
 import IntroSection from "@/components/home/IntroSection";
 import ServicesSection from "@/components/home/ServiceSection";
+import GallerySection from "@/components/home/GallerySection";
 
 export const metadata = {
   title: "Kjødes Frisørsalong",
@@ -44,32 +45,7 @@ export default function Home() {
 
       <ServicesSection />
 
-      <section className="py-20 bg-stone-200 text-neutral-800 mt-6">
-        <h2 className="text-3xl text-center font-serif font-semibold mb-8">
-          Et glimt fra salongen
-        </h2>
-
-        <div className="group relative max-w-5xl mx-auto grid sm:grid-cols-3 gap-4 px-6">
-          <img
-            src="/glimt/glimt1.jpg"
-            alt="Vipper"
-            className="rounded-2xl object-cover h-64 w-full transition-all duration-300
-            group-hover:scale-101 group-hover:shadow-2xl"
-          />
-          <img
-            src="/glimt/glimt2.jpg"
-            alt="Frisyre"
-            className="rounded-2xl object-cover h-64 w-full transition-all duration-300
-            group-hover:scale-101 group-hover:shadow-2xl"
-          />
-          <img
-            src="/glimt/glimt3.jpg"
-            alt="Frisyre"
-            className="rounded-2xl object-cover h-64 w-full transition-all duration-300
-            group-hover:scale-101 group-hover:shadow-2xl"
-          />
-        </div>
-      </section>
+      <GallerySection />
 
       <section className=" text-shadow-stone-300 py-16 px-6">
         <div className="max-w-6xl mx-auto text-center">
