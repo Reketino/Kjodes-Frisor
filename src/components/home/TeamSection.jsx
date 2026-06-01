@@ -39,7 +39,18 @@ export default function TeamSection() {
                         <article className="flex flex-col items-center">
 
                             <figure className="w-96 aspect-square overflow-hidden rounded-3xl shadow-lg">
-                                
+                                <Image
+                                src={stylist.image}
+                                alt={stylist.alt}
+                                width={250}
+                                height={350}
+                                className="
+                                w-full h-full object-cover
+                                transition-transform duration-300
+                                hover:scale-105
+                                "
+                                />
+                                      
                             </figure>
 
                         </article>
