@@ -24,7 +24,10 @@ export default function LocationSection() {
                </address>
                </header>
      
-               <aside className="group relative grid grid-cols-1 md:grid-cols-2 gap-12">
+               <section 
+               className="group relative grid grid-cols-1 md:grid-cols-2 gap-12"
+               aria-label="Kart og gatevisning"
+               >
                  <div
                    className="w-full h-80 md:h-96 overflow-hidden rounded-xl shadow-lg
              transform transition-transform duration-200 group-hover:scale-102 group-hover:shadow-yellow-200"
@@ -53,7 +56,7 @@ export default function LocationSection() {
                      className="w-full h-full"
                    />
                  </div>
-               </aside>
+               </section>
      
                <h2 className="text-4xl font-serif font-semibold mt-6">Velkommen!</h2>
              </div>
