@@ -16,7 +16,7 @@ export default function LocationSection() {
                >
                  Vi holder til i
                </h2>
-               <address className="flex flex-row items-center justify-center mb-4">
+               <address className="not-italic flex items-center justify-center gap-2 mb-4">
                  <FaMapPin size={28} />
                  <span className="text-2xl font-semibold">
                     Storgata 5, 6230 Sykkylven
