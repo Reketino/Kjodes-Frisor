@@ -8,16 +8,21 @@ export default function LocationSection() {
       aria-labelledby="location-heading"
       >
              <div className=" flex flex-col items-center max-w-4xl mx-auto">
+
+                <header>
                <h2
                id="location-heading"
                className="text-4xl font-serif font-semibold mb-4"
                >
                  Vi holder til i
                </h2>
-               <div className="flex flex-row items-center justify-center mb-4">
+               <address className="flex flex-row items-center justify-center mb-4">
                  <FaMapPin size={28} />
-                 <p className="text-2xl font-semibold">Storgata 5, 6230 Sykkylven</p>
-               </div>
+                 <span className="text-2xl font-semibold">
+                    Storgata 5, 6230 Sykkylven
+                    </span>
+               </address>
+               </header>
      
                <aside className="group relative grid grid-cols-1 md:grid-cols-2 gap-12">
                  <div
