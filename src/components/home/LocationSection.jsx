@@ -3,9 +3,15 @@ import { FaMapPin } from "react-icons/fa";
 
 export default function LocationSection() {
     return(
-      <section className="bg-stone-200 text-neutral-900 py-12 px-6 lg:px-12 text-center">
+      <section 
+      className="bg-stone-200 text-neutral-900 py-12 px-6 lg:px-12 text-center"
+      aria-labelledby="location-heading"
+      >
              <div className=" flex flex-col items-center max-w-4xl mx-auto">
-               <h2 className="text-4xl font-serif font-semibold mb-4">
+               <h2
+               id="location-heading"
+               className="text-4xl font-serif font-semibold mb-4"
+               >
                  Vi holder til i
                </h2>
                <div className="flex flex-row items-center justify-center mb-4">
