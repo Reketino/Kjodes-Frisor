@@ -8,6 +8,7 @@ import IntroSection from "@/components/home/IntroSection";
 import ServicesSection from "@/components/home/ServiceSection";
 import GallerySection from "@/components/home/GallerySection";
 import TeamSection from "@/components/home/TeamSection";
+import LocationSection from "@/components/home/LocationSection";
 
 export const metadata = {
   title: "Kjødes Frisørsalong",
