@@ -3,17 +3,31 @@ import { FaMapPin } from "react-icons/fa";
 
 export default function LocationSection() {
     return(
-      <section className="bg-stone-200 text-neutral-900 py-12 px-6 lg:px-12 text-center">
+      <section 
+      className="bg-stone-200 text-neutral-900 py-12 px-6 lg:px-12 text-center"
+      aria-labelledby="location-heading"
+      >
              <div className=" flex flex-col items-center max-w-4xl mx-auto">
-               <h2 className="text-4xl font-serif font-semibold mb-4">
+
+                <header>
+               <h2
+               id="location-heading"
+               className="text-4xl font-serif font-semibold mb-4"
+               >
                  Vi holder til i
                </h2>
-               <div className="flex flex-row items-center justify-center mb-4">
+               <address className="not-italic flex items-center justify-center gap-2 mb-4">
                  <FaMapPin size={28} />
-                 <p className="text-2xl font-semibold">Storgata 5, 6230 Sykkylven</p>
-               </div>
+                 <span className="text-2xl font-semibold">
+                    Storgata 5, 6230 Sykkylven
+                    </span>
+               </address>
+               </header>
      
-               <aside className="group relative grid grid-cols-1 md:grid-cols-2 gap-12">
+               <section 
+               className="group relative grid grid-cols-1 md:grid-cols-2 gap-12"
+               aria-label="Kart og gatevisning"
+               >
                  <div
                    className="w-full h-80 md:h-96 overflow-hidden rounded-xl shadow-lg
              transform transition-transform duration-200 group-hover:scale-102 group-hover:shadow-yellow-200"
@@ -42,7 +56,7 @@ export default function LocationSection() {
                      className="w-full h-full"
                    />
                  </div>
-               </aside>
+               </section>
      
                <h2 className="text-4xl font-serif font-semibold mt-6">Velkommen!</h2>
              </div>
