@@ -39,6 +39,7 @@ export default function TeamSection() {
                         <article className="flex flex-col items-center">
 
                             <figure className="w-96 aspect-square overflow-hidden rounded-3xl shadow-lg">
+
                                 <Image
                                 src={stylist.image}
                                 alt={stylist.alt}
@@ -52,6 +53,14 @@ export default function TeamSection() {
                                 />
                                       
                             </figure>
+
+                            <h3 className="text-xl font-semibold mt-4">
+                                {stylist.name}
+                            </h3>
+
+                            <p className="text-neutral-400 leading-relaxed">
+                                {stylist.role}
+                            </p>
 
                         </article>
 
