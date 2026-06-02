@@ -82,7 +82,10 @@ export default function KontaktPage() {
                 className="text-xl  hover:text-green-700 transition flex flex-row items-center justify-center mb-4 gap-2"
               >
                 <FaPhoneSquareAlt size={25} />
+
+                <span>
                 70 25 46 80
+                </span>
               </a>
 
               <a
@@ -90,7 +93,10 @@ export default function KontaktPage() {
                 className="text-xl hover:text-green-700 transition flex flex-row  items-center justify-center gap-2"
               >
                 <FaEnvelope size={25} />
+                
+                <span>
                 kjodesfrisorsalong@gmail.com
+                </span>
               </a>
             </address>
             <div className="rounded-xl overflow-hidden shadow-lg transition-transform duration-200 hover:scale-102">
