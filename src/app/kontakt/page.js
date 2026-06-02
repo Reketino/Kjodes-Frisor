@@ -53,7 +53,18 @@ export default function KontaktPage() {
           className="grid md:grid-cols-2 gap-10 items-center"
           aria-label="Kontaktinformasjon & kart"
           >
-            <address className="bg-white/15 backdrop-blur-md rounded-2xl p-6 shadow-lg transition hover:shadow-xl hover:-translate-y-1">
+            <address className="
+            not-italic
+            bg-white/15 
+            backdrop-blur-md 
+            rounded-2xl 
+            p-6 
+            shadow-lg 
+            transition 
+            hover:shadow-xl 
+            hover:-translate-y-1
+            "
+            >
               <a
                 href="https://maps.google.com/?q=Storgata+5+6230+Sykkylven"
                 target="_blank"
