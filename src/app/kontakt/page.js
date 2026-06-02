@@ -31,9 +31,15 @@ export const metadata = {
 export default function KontaktPage() {
   return (
     <main className="grow">
-      <section className="bg-stone-400 text-neutral-900 py-10 px-6 min-h-[calc(100vh-180px)]">
+      <section 
+      className="bg-stone-400 text-neutral-900 py-10 px-6 min-h-[calc(100vh-180px)]"
+      aria-labelledby="contact-heading"
+      >
         <div className="max-w-5xl mx-auto text-center space-y-6">
-          <h1 className="text-5xl font-serif font-semibold mb-4">
+          <h1
+          id="contact-heading" 
+          className="text-5xl font-serif font-semibold mb-4"
+          >
             Kontakt oss
           </h1>
           <p className="text-xl mb-10">
