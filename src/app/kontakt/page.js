@@ -109,8 +109,12 @@ export default function KontaktPage() {
                 referrerPolicy="no-referrer-when-downgrade"
                 className="w-full h-64 md:h-80"
               />
+              <figcaption className="sr-only">
+                Kart som viser plassering til Kjødes Frisørsalong i Sykkylven
+              </figcaption>
             </figure>
           </section>
+          
         </div>
       </section>
     </main>
