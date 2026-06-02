@@ -36,15 +36,18 @@ export default function KontaktPage() {
       aria-labelledby="contact-heading"
       >
         <div className="max-w-5xl mx-auto text-center space-y-6">
+
+          <header className="mb-10">
           <h1
           id="contact-heading" 
           className="text-5xl font-serif font-semibold mb-4"
           >
             Kontakt oss
           </h1>
-          <p className="text-xl mb-10">
+          <p className="text-xl">
             Har du spørsmål eller vil bestille time? Vi hører gjerne fra deg!
           </p>
+          </header>
 
           <section 
           className="grid md:grid-cols-2 gap-10 items-center"
