@@ -69,7 +69,7 @@ export default function KontaktPage() {
                 href="https://maps.google.com/?q=Storgata+5+6230+Sykkylven"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xl hover:text-red-500 flex items-center justify-center mb-2 gap-1"
+                className="text-xl hover:text-red-500 flex items-center justify-center mb-4 gap-2"
               >
                 <FaMapPin size={25} />
                 <span>
@@ -79,7 +79,7 @@ export default function KontaktPage() {
 
               <a
                 href="tel:70254680"
-                className="text-xl  hover:text-green-700 transition flex flex-row items-center justify-center mb-2 gap-1"
+                className="text-xl  hover:text-green-700 transition flex flex-row items-center justify-center mb-4 gap-2"
               >
                 <FaPhoneSquareAlt size={25} />
                 70 25 46 80
@@ -87,7 +87,7 @@ export default function KontaktPage() {
 
               <a
                 href="mailto:kjodesfrisorsalong@gmail.com"
-                className="text-xl hover:text-green-700 transition flex flex-row  items-center justify-center gap-1"
+                className="text-xl hover:text-green-700 transition flex flex-row  items-center justify-center gap-2"
               >
                 <FaEnvelope size={25} />
                 kjodesfrisorsalong@gmail.com
