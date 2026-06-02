@@ -31,29 +31,29 @@ export const metadata = {
 export default function KontaktPage() {
   return (
     <main className="grow">
-      <section 
-      className="bg-stone-400 text-neutral-900 py-10 px-6 min-h-[calc(100vh-180px)]"
-      aria-labelledby="contact-heading"
+      <section
+        className="bg-stone-400 text-neutral-900 py-10 px-6 min-h-[calc(100vh-180px)]"
+        aria-labelledby="contact-heading"
       >
         <div className="max-w-5xl mx-auto text-center space-y-6">
-
           <header className="mb-10">
-          <h1
-          id="contact-heading" 
-          className="text-5xl font-serif font-semibold mb-4"
-          >
-            Kontakt oss
-          </h1>
-          <p className="text-xl">
-            Har du spørsmål eller vil bestille time? Vi hører gjerne fra deg!
-          </p>
+            <h1
+              id="contact-heading"
+              className="text-5xl font-serif font-semibold mb-4"
+            >
+              Kontakt oss
+            </h1>
+            <p className="text-xl">
+              Har du spørsmål eller vil bestille time? Vi hører gjerne fra deg!
+            </p>
           </header>
 
-          <section 
-          className="grid md:grid-cols-2 gap-10 items-center"
-          aria-label="Kontaktinformasjon & kart"
+          <section
+            className="grid md:grid-cols-2 gap-10 items-center"
+            aria-label="Kontaktinformasjon & kart"
           >
-            <address className="
+            <address
+              className="
             not-italic
             bg-white/15 
             backdrop-blur-md 
@@ -72,9 +72,7 @@ export default function KontaktPage() {
                 className="text-xl hover:text-red-500 flex items-center justify-center mb-4 gap-2"
               >
                 <FaMapPin size={25} />
-                <span>
-                Storgata 5, 6230 Sykkylven
-                </span>
+                <span>Storgata 5, 6230 Sykkylven</span>
               </a>
 
               <a
@@ -83,9 +81,7 @@ export default function KontaktPage() {
               >
                 <FaPhoneSquareAlt size={25} />
 
-                <span>
-                70 25 46 80
-                </span>
+                <span>70 25 46 80</span>
               </a>
 
               <a
@@ -94,9 +90,7 @@ export default function KontaktPage() {
               >
                 <FaEnvelope size={25} />
 
-                <span>
-                kjodesfrisorsalong@gmail.com
-                </span>
+                <span>kjodesfrisorsalong@gmail.com</span>
               </a>
             </address>
             <figure className="rounded-xl overflow-hidden shadow-lg transition-transform duration-200 hover:scale-102">
@@ -114,7 +108,6 @@ export default function KontaktPage() {
               </figcaption>
             </figure>
           </section>
-          
         </div>
       </section>
     </main>
