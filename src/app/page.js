@@ -1,8 +1,4 @@
 import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { FaPhoneSquareAlt, FaMapPin } from "react-icons/fa";
-import { FaScissors } from "react-icons/fa6";
 import HeroSection from "@/components/home/HeroSection";
 import IntroSection from "@/components/home/IntroSection";
 import ServicesSection from "@/components/home/ServiceSection";
@@ -53,7 +49,7 @@ export default function Home() {
       <TeamSection />
 
       <LocationSection />
-      
+
     </main>
   );
 }
