@@ -72,7 +72,9 @@ export default function KontaktPage() {
                 className="text-xl hover:text-red-500 flex items-center justify-center mb-2 gap-1"
               >
                 <FaMapPin size={25} />
+                <span>
                 Storgata 5, 6230 Sykkylven
+                </span>
               </a>
 
               <a
