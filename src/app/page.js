@@ -37,7 +37,6 @@ export const metadata = {
 export default function Home() {
   return (
     <main>
-      
       <HeroSection />
 
       <IntroSection />
@@ -49,7 +48,6 @@ export default function Home() {
       <TeamSection />
 
       <LocationSection />
-
     </main>
   );
 }
