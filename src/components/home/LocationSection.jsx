@@ -63,8 +63,15 @@ export default function LocationSection() {
                    />
                  </div>
                  <div
-                   className="w-full h-80 md:h-96 overflow-hidden rounded-xl shadow-lg
-             transform transition-transform duration-200 group-hover:scale-102 group-hover:shadow-yellow-200"
+                   className=" 
+                    w-full h-80 md:h-96 
+                   overflow-hidden rounded-2xl 
+                   shadow-lg
+                   transition-all
+                   duration-300
+                   hover:-translate-y-1
+                   hover:shadow-xl
+                   "
                  >
                    <iframe
                      title="Street View ved Kjødes Frisørsalong"
