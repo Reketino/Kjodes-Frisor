@@ -31,7 +31,7 @@ export default function LocationSection() {
                  size={24} 
                  className="text-red-500"
                  />
-                 <span className="text-2xl font-semibold">
+                 <span className="text-xl font-semibold">
                     Storgata 5, 6230 Sykkylven
                     </span>
                </address>
