@@ -85,7 +85,7 @@ export default function LocationSection() {
                    />
                  </div>
                </section>
-               <footer className="mt-10">
+               <footer className="mt-10 flex items-center justify-center gap-2">
                <h2 className="text-3xl font-serif font-semibold">Velkommen!</h2>
                </footer>
              </div>
