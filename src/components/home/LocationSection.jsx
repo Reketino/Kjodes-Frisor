@@ -27,7 +27,10 @@ export default function LocationSection() {
                 
                 "
                 >
-                 <FaMapPin size={28} />
+                 <FaMapPin 
+                 size={24} 
+                 className="text-red-500"
+                 />
                  <span className="text-2xl font-semibold">
                     Storgata 5, 6230 Sykkylven
                     </span>
