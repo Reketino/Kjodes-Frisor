@@ -1,5 +1,6 @@
 import React from "react";
 import { FaMapPin } from "react-icons/fa";
+import { FaScissors } from "react-icons/fa6";
 
 export default function LocationSection() {
     return(
@@ -42,8 +43,15 @@ export default function LocationSection() {
                aria-label="Kart og gatevisning"
                >
                  <div
-                   className="w-full h-80 md:h-96 overflow-hidden rounded-xl shadow-lg
-             transform transition-transform duration-200 group-hover:scale-102 group-hover:shadow-yellow-200"
+                   className="
+                   w-full h-80 md:h-96 
+                   overflow-hidden rounded-2xl 
+                   shadow-lg
+                   transition-all
+                   duration-300
+                   hover:-translate-y-1
+                   hover:shadow-xl
+                   "
                  >
                    <iframe
                      title="Kart over Kjødes Frtisørsalong"
@@ -56,8 +64,15 @@ export default function LocationSection() {
                    />
                  </div>
                  <div
-                   className="w-full h-80 md:h-96 overflow-hidden rounded-xl shadow-lg
-             transform transition-transform duration-200 group-hover:scale-102 group-hover:shadow-yellow-200"
+                   className=" 
+                    w-full h-80 md:h-96 
+                   overflow-hidden rounded-2xl 
+                   shadow-lg
+                   transition-all
+                   duration-300
+                   hover:-translate-y-1
+                   hover:shadow-xl
+                   "
                  >
                    <iframe
                      title="Street View ved Kjødes Frisørsalong"
@@ -70,8 +85,11 @@ export default function LocationSection() {
                    />
                  </div>
                </section>
-     
-               <h2 className="text-4xl font-serif font-semibold mt-6">Velkommen!</h2>
+               <footer className="mt-10 flex items-center justify-center gap-2">
+                <FaScissors className="text-neutral-700 text-xl" />
+
+               <h2 className="text-3xl font-serif font-semibold">Velkommen innom</h2>
+               </footer>
              </div>
            </section>
     )
