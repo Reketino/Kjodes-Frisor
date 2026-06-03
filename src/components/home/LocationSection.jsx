@@ -9,14 +9,15 @@ export default function LocationSection() {
       >
              <div className=" flex flex-col items-center max-w-4xl mx-auto">
 
-                <header>
+                <header className="mb-8">
                <h2
                id="location-heading"
-               className="text-4xl font-serif font-semibold mb-4"
+               className="text-5xl font-serif font-semibold"
                >
                  Vi holder til i
                </h2>
-               <address className="not-italic flex items-center justify-center gap-2 mb-4">
+               <address className="not-italic flex items-center justify-center gap-2 mt-4
+                mb-2">
                  <FaMapPin size={28} />
                  <span className="text-2xl font-semibold">
                     Storgata 5, 6230 Sykkylven
@@ -25,7 +26,7 @@ export default function LocationSection() {
                </header>
      
                <section 
-               className="group relative grid grid-cols-1 md:grid-cols-2 gap-12"
+               className="group relative grid grid-cols-1 md:grid-cols-2 gap-10"
                aria-label="Kart og gatevisning"
                >
                  <div
