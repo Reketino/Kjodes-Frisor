@@ -9,10 +9,10 @@ export default function LocationSection() {
       >
              <div className=" flex flex-col items-center max-w-4xl mx-auto">
 
-                <header className="mb-8">
+                <header className="mb-10">
                <h2
                id="location-heading"
-               className="text-5xl font-serif font-semibold"
+               className="text-4xl font-serif font-semibold mb-6"
                >
                  Vi holder til i
                </h2>
