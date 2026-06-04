@@ -16,6 +16,7 @@ export default function LocationSection() {
           >
             Vi holder til i
           </h2>
+          <address className="not-italic">
           <a
           href="https://maps.google.com/?q=Storgata+5+6230+Sykkylven"
           target="_blank"
@@ -38,6 +39,7 @@ export default function LocationSection() {
               Storgata 5, 6230 Sykkylven
             </span>
           </a>
+          </address>
         </header>
 
         <section
