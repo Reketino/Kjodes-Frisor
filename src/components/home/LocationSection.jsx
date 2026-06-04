@@ -28,7 +28,9 @@ export default function LocationSection() {
                backdrop-blur-sm
                shadow-md
                not-italic 
-                
+              transition-all
+              hover:-translate-y-1
+              hover:bg-white/60
                 "
           >
             <FaMapPin size={24} className="text-red-500" />
