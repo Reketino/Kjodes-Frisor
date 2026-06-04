@@ -11,7 +11,7 @@ export default function HeroSection() {
       aria-label="Hero seksjon"
     >
       <Image
-        src="/assets/hero.jpg"
+        src="/assets/hero.webp"
         alt="Frisør utstyr"
         fill
         className="object-cover object-center sm:object-[center_40%]"
