@@ -73,7 +73,7 @@ export default function LocationSection() {
               Kart som viser plassering til Kjødes Frisørsalong i Sykkylven
             </figcaption>
           </figure>
-          <div
+          <figure
             className=" 
                     w-full h-80 md:h-96 
                    overflow-hidden rounded-2xl 
@@ -93,7 +93,11 @@ export default function LocationSection() {
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-full"
             />
-          </div>
+
+            <figcaption className="sr-only">
+              Street View utenfor Kjødes Frisørsalong
+            </figcaption>
+          </figure>
         </section>
         <footer className="mt-10 flex items-center justify-center gap-2">
           <FaScissors className="text-neutral-700 text-xl" />
