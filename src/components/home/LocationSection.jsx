@@ -16,7 +16,11 @@ export default function LocationSection() {
           >
             Vi holder til i
           </h2>
-          <address
+          <address className="not-italic">
+          <a
+          href="https://maps.google.com/?q=Storgata+5+6230+Sykkylven"
+          target="_blank"
+          rel="noopener noreferrer"
             className="
                inline-flex items-center gap-3 
                px-6 py-3
@@ -25,13 +29,18 @@ export default function LocationSection() {
                backdrop-blur-sm
                shadow-md
                not-italic 
-                
+              transition-all
+              hover:-translate-y-1
+              hover:bg-white/60
+              hover:shadow-lg
+              hover:text-neutral-800
                 "
           >
             <FaMapPin size={24} className="text-red-500" />
             <span className="text-xl font-semibold">
               Storgata 5, 6230 Sykkylven
             </span>
+          </a>
           </address>
         </header>
 
@@ -39,7 +48,7 @@ export default function LocationSection() {
           className="group relative grid grid-cols-1 md:grid-cols-2 gap-10"
           aria-label="Kart og gatevisning"
         >
-          <div
+          <figure
             className="
                    w-full h-80 md:h-96 
                    overflow-hidden rounded-2xl 
@@ -51,7 +60,7 @@ export default function LocationSection() {
                    "
           >
             <iframe
-              title="Kart over Kjødes Frtisørsalong"
+              title="Kart over Kjødes Frisørsalong"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1137.5755979821693!2d6.578945757154498!3d62.39117212283398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4616b8b29d9b0869%3A0x8371ab46b8d9392e!2sStorgata%205%2C%206230%20Sykkylven!5e1!3m2!1sno!2sno!4v1761674085785!5m2!1sno!2sno"
               style={{ border: 0 }}
               allowFullScreen=""
@@ -59,8 +68,12 @@ export default function LocationSection() {
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-full"
             />
-          </div>
-          <div
+
+            <figcaption className="sr-only">
+              Kart som viser plassering til Kjødes Frisørsalong i Sykkylven
+            </figcaption>
+          </figure>
+          <figure
             className=" 
                     w-full h-80 md:h-96 
                    overflow-hidden rounded-2xl 
@@ -80,14 +93,18 @@ export default function LocationSection() {
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-full"
             />
-          </div>
+
+            <figcaption className="sr-only">
+              Street View utenfor Kjødes Frisørsalong
+            </figcaption>
+          </figure>
         </section>
         <footer className="mt-10 flex items-center justify-center gap-2">
           <FaScissors className="text-neutral-700 text-xl" />
 
-          <h2 className="text-3xl font-serif font-semibold text-neutral-700">
+          <p className="text-3xl font-serif font-semibold text-neutral-700">
             Velkommen innom
-          </h2>
+          </p>
         </footer>
       </div>
     </section>
