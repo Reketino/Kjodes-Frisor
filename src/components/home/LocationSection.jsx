@@ -12,7 +12,7 @@ export default function LocationSection() {
         <header className="mb-10">
           <h2
             id="location-heading"
-            className="text-4xl font-serif font-semibold mb-6"
+            className="text-4xl font-serif font-semibold mb-6 text-neutral-800"
           >
             Vi holder til i
           </h2>
@@ -37,7 +37,7 @@ export default function LocationSection() {
                 "
           >
             <FaMapPin size={24} className="text-red-500" />
-            <span className="text-xl font-semibold">
+            <span className="text-xl font-semibold text-neutral-800">
               Storgata 5, 6230 Sykkylven
             </span>
           </a>
@@ -102,7 +102,7 @@ export default function LocationSection() {
         <footer className="mt-10 flex items-center justify-center gap-2">
           <FaScissors className="text-neutral-700 text-xl" />
 
-          <p className="text-3xl font-serif font-semibold text-neutral-700">
+          <p className="text-3xl font-serif font-semibold text-neutral-800">
             Velkommen innom
           </p>
         </footer>
