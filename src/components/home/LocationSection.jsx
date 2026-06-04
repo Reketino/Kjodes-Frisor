@@ -92,9 +92,9 @@ export default function LocationSection() {
         <footer className="mt-10 flex items-center justify-center gap-2">
           <FaScissors className="text-neutral-700 text-xl" />
 
-          <h2 className="text-3xl font-serif font-semibold text-neutral-700">
+          <p className="text-3xl font-serif font-semibold text-neutral-700">
             Velkommen innom
-          </h2>
+          </p>
         </footer>
       </div>
     </section>
