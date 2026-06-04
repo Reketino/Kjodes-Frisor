@@ -17,11 +17,11 @@ export default function LocationSection() {
             Vi holder til i
           </h2>
           <address className="not-italic">
-          <a
-          href="https://maps.google.com/?q=Storgata+5+6230+Sykkylven"
-          target="_blank"
-          rel="noopener noreferrer"
-            className="
+            <a
+              href="https://maps.google.com/?q=Storgata+5+6230+Sykkylven"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
                inline-flex items-center gap-3 
                px-6 py-3
                rounded-full
@@ -35,12 +35,12 @@ export default function LocationSection() {
               hover:shadow-lg
               hover:text-neutral-800
                 "
-          >
-            <FaMapPin size={24} className="text-red-500" />
-            <span className="text-xl font-semibold text-neutral-800">
-              Storgata 5, 6230 Sykkylven
-            </span>
-          </a>
+            >
+              <FaMapPin size={24} className="text-red-500" />
+              <span className="text-xl font-semibold text-neutral-800">
+                Storgata 5, 6230 Sykkylven
+              </span>
+            </a>
           </address>
         </header>
 
