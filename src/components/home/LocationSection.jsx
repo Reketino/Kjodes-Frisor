@@ -48,7 +48,7 @@ export default function LocationSection() {
           className="group relative grid grid-cols-1 md:grid-cols-2 gap-10"
           aria-label="Kart og gatevisning"
         >
-          <div
+          <figure
             className="
                    w-full h-80 md:h-96 
                    overflow-hidden rounded-2xl 
@@ -68,7 +68,11 @@ export default function LocationSection() {
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-full"
             />
-          </div>
+
+            <figcaption className="sr-only">
+              Kart som viser plassering til Kjødes Frisørsalong i Sykkylven
+            </figcaption>
+          </figure>
           <div
             className=" 
                     w-full h-80 md:h-96 
