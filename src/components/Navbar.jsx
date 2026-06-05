@@ -24,7 +24,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <div className="hidden md:flex space-x-8 text-sm uppercase tracking-wide">
+        <ul className="hidden md:flex space-x-8 text-sm uppercase tracking-wide">
           <Link href="/om" className="hover:text-gray-300 transition">
             Om oss
           </Link>
@@ -34,7 +34,7 @@ export default function Navbar() {
           <Link href="/apning" className="hover:text-gray-300 transition">
             Åpningstider
           </Link>
-        </div>
+        </ul>
 
         <button
           type="button"
