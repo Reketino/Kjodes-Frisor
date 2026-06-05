@@ -11,7 +11,7 @@ export default function Navbar() {
     className="fixed top-0 left-0 w-full bg-stone-900 text-white  shadow-md z-50"
     aria-label="Hovednavigasjon"
     >
-      <div className=" mx-auto flex items-center justify-between px-7 py-5">
+      <ul className=" mx-auto flex items-center justify-between px-7 py-5">
         <Link href="/" className="flex items-center space-x-2">
           <Image
             src="/assets/Logo.png"
@@ -48,7 +48,7 @@ export default function Navbar() {
           <span className="block w-6 h-0.5 bg-white"></span>
           <span className="block w-6 h-0.5 bg-white"></span>
         </button>
-      </div>
+      </ul>
 
       {isOpen && (
         <div className="md:hidden bg-stone-900 text-center pb-4">
