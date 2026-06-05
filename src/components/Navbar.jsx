@@ -7,7 +7,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-stone-900 text-white  shadow-md z-50">
+    <nav 
+    className="fixed top-0 left-0 w-full bg-stone-900 text-white  shadow-md z-50"
+    aria-label="Hovednavigasjon"
+    >
       <div className=" mx-auto flex items-center justify-between px-7 py-5">
         <Link href="/" className="flex items-center space-x-2">
           <Image
