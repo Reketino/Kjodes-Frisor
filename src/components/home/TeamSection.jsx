@@ -13,7 +13,7 @@ export default function TeamSection() {
     {
       name: "Marte Berge Hoel",
       role: "Eier & Frisør",
-      image: "/marte/martehoel.jpg",
+      image: "/marte/martehoel.webp",
       alt: "Marte Berge Hoel",
     },
   ];
@@ -35,12 +35,13 @@ export default function TeamSection() {
         {stylists.map((stylist) => (
           <li key={stylist.name}>
             <article className="flex flex-col items-center">
-              <figure className="w-96 aspect-square overflow-hidden rounded-3xl shadow-lg">
+              <figure className="w-96 aspect-4/5 overflow-hidden rounded-3xl shadow-lg">
                 <Image
                   src={stylist.image}
                   alt={stylist.alt}
-                  width={250}
-                  height={350}
+                  width={1154}
+                  height={2046}
+                  quality={100}
                   className="
                                 w-full h-full object-cover
                                 transition-transform duration-300
