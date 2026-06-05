@@ -41,7 +41,7 @@ export default function TeamSection() {
                   alt={stylist.alt}
                   width={1200}
                   height={1500}
-                  quality={100}
+                  quality={90}
                   className="
                                 w-full h-full object-cover
                                 transition-transform duration-300
