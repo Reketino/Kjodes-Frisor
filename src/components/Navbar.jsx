@@ -7,7 +7,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-stone-900 text-white  shadow-md z-50">
+    <nav 
+    className="fixed top-0 left-0 w-full bg-stone-900 text-white  shadow-md z-50"
+    aria-label="Hovednavigasjon"
+    >
       <div className=" mx-auto flex items-center justify-between px-7 py-5">
         <Link href="/" className="flex items-center space-x-2">
           <Image
@@ -21,7 +24,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <div className="hidden md:flex space-x-8 text-sm uppercase tracking-wide">
+        <ul className="hidden md:flex space-x-8 text-sm uppercase tracking-wide">
           <Link href="/om" className="hover:text-gray-300 transition">
             Om oss
           </Link>
@@ -31,7 +34,7 @@ export default function Navbar() {
           <Link href="/apning" className="hover:text-gray-300 transition">
             Åpningstider
           </Link>
-        </div>
+        </ul>
 
         <button
           type="button"
