@@ -39,7 +39,7 @@ export default function TeamSection() {
                 <Image
                   src={stylist.image}
                   alt={stylist.alt}
-                  width={1154}
+                  width={1200}
                   height={2046}
                   quality={100}
                   className="
