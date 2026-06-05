@@ -6,7 +6,7 @@ export default function TeamSection() {
     {
       name: "Elise Klokkehaug Kjøde",
       role: "Eier & Frisør",
-      image: "/elise/elisekjode.jpeg",
+      image: "/elise/elisekjode.webp",
       alt: "Elise Klokkehaug Kjøde",
     },
 
