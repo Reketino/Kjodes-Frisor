@@ -40,7 +40,7 @@ export default function TeamSection() {
                   src={stylist.image}
                   alt={stylist.alt}
                   width={1200}
-                  height={2046}
+                  height={1500}
                   quality={100}
                   className="
                                 w-full h-full object-cover
