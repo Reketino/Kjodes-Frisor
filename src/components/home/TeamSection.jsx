@@ -41,7 +41,6 @@ export default function TeamSection() {
                   alt={stylist.alt}
                   width={1200}
                   height={1500}
-                  quality={90}
                   sizes="(max-width: 768px) 100vw, 384px"
                   className="
                                 w-full h-full object-cover
