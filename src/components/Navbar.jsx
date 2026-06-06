@@ -7,9 +7,9 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav 
-    className="fixed top-0 left-0 w-full bg-stone-900 text-white  shadow-md z-50"
-    aria-label="Hovednavigasjon"
+    <nav
+      className="fixed top-0 left-0 w-full bg-stone-900 text-white  shadow-md z-50"
+      aria-label="Hovednavigasjon"
     >
       <div className=" mx-auto flex items-center justify-between px-7 py-5">
         <Link href="/" className="flex items-center space-x-2">
@@ -25,15 +25,23 @@ export default function Navbar() {
         </Link>
 
         <ul className="hidden md:flex space-x-8 text-sm uppercase tracking-wide">
-          <Link href="/om" className="hover:text-gray-300 transition">
-            Om oss
-          </Link>
-          <Link href="/kontakt" className="hover:text-gray-300 transition">
-            Kontakt oss
-          </Link>
-          <Link href="/apning" className="hover:text-gray-300 transition">
-            Åpningstider
-          </Link>
+          <li>
+            <Link href="/om" className="hover:text-gray-300 transition">
+              Om oss
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/kontakt" className="hover:text-gray-300 transition">
+              Kontakt oss
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/apning" className="hover:text-gray-300 transition">
+              Åpningstider
+            </Link>
+          </li>
         </ul>
 
         <button
@@ -51,28 +59,39 @@ export default function Navbar() {
       </div>
 
       {isOpen && (
-        <ul className="md:hidden bg-stone-900 text-center pb-4">
-          <Link
-            href="/om"
-            className="block py-2 hover:text-gray-300 transition"
-            onClick={() => setIsOpen(false)}
-          >
-            Om oss
-          </Link>
-          <Link
-            href="/kontakt"
-            className="block py-2 hover:text-gray-300 transition"
-            onClick={() => setIsOpen(false)}
-          >
-            Kontakt oss
-          </Link>
-          <Link
-            href="/apning"
-            className="block py-2 hover:text-gray-300 transition"
-            onClick={() => setIsOpen(false)}
-          >
-            Åpningstider
-          </Link>
+        <ul
+          id="mobile-menu"
+          className="md:hidden bg-stone-900 text-center pb-4"
+        >
+          <li>
+            <Link
+              href="/om"
+              className="block py-2 hover:text-gray-300 transition"
+              onClick={() => setIsOpen(false)}
+            >
+              Om oss
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              href="/kontakt"
+              className="block py-2 hover:text-gray-300 transition"
+              onClick={() => setIsOpen(false)}
+            >
+              Kontakt oss
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              href="/apning"
+              className="block py-2 hover:text-gray-300 transition"
+              onClick={() => setIsOpen(false)}
+            >
+              Åpningstider
+            </Link>
+          </li>
         </ul>
       )}
     </nav>
