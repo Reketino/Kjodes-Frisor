@@ -54,6 +54,7 @@ export default function Navbar() {
         <ul
         id="mobile-menu" 
         className="md:hidden bg-stone-900 text-center pb-4">
+          <li>
           <Link
             href="/om"
             className="block py-2 hover:text-gray-300 transition"
@@ -61,6 +62,7 @@ export default function Navbar() {
           >
             Om oss
           </Link>
+          </li>
           <Link
             href="/kontakt"
             className="block py-2 hover:text-gray-300 transition"
