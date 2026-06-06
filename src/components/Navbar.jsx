@@ -76,13 +76,13 @@ export default function Navbar() {
           </li>
 
           <li>
-          <Link
-            href="/apning"
-            className="block py-2 hover:text-gray-300 transition"
-            onClick={() => setIsOpen(false)}
-          >
-            Åpningstider
-          </Link>
+            <Link
+              href="/apning"
+              className="block py-2 hover:text-gray-300 transition"
+              onClick={() => setIsOpen(false)}
+            >
+              Åpningstider
+            </Link>
           </li>
         </ul>
       )}
