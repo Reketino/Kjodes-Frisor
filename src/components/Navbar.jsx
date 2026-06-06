@@ -26,10 +26,11 @@ export default function Navbar() {
 
         <ul className="hidden md:flex space-x-8 text-sm uppercase tracking-wide">
           <li>
-          <Link href="/om" className="hover:text-gray-300 transition">
-            Om oss
-          </Link>
+            <Link href="/om" className="hover:text-gray-300 transition">
+              Om oss
+            </Link>
           </li>
+
           <Link href="/kontakt" className="hover:text-gray-300 transition">
             Kontakt oss
           </Link>
