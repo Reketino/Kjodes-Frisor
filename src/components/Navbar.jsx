@@ -7,9 +7,9 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav 
-    className="fixed top-0 left-0 w-full bg-stone-900 text-white  shadow-md z-50"
-    aria-label="Hovednavigasjon"
+    <nav
+      className="fixed top-0 left-0 w-full bg-stone-900 text-white  shadow-md z-50"
+      aria-label="Hovednavigasjon"
     >
       <div className=" mx-auto flex items-center justify-between px-7 py-5">
         <Link href="/" className="flex items-center space-x-2">
@@ -52,16 +52,17 @@ export default function Navbar() {
 
       {isOpen && (
         <ul
-        id="mobile-menu" 
-        className="md:hidden bg-stone-900 text-center pb-4">
+          id="mobile-menu"
+          className="md:hidden bg-stone-900 text-center pb-4"
+        >
           <li>
-          <Link
-            href="/om"
-            className="block py-2 hover:text-gray-300 transition"
-            onClick={() => setIsOpen(false)}
-          >
-            Om oss
-          </Link>
+            <Link
+              href="/om"
+              className="block py-2 hover:text-gray-300 transition"
+              onClick={() => setIsOpen(false)}
+            >
+              Om oss
+            </Link>
           </li>
           <Link
             href="/kontakt"
