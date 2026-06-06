@@ -75,6 +75,7 @@ export default function Navbar() {
             </Link>
           </li>
 
+          <li>
           <Link
             href="/apning"
             className="block py-2 hover:text-gray-300 transition"
@@ -82,6 +83,7 @@ export default function Navbar() {
           >
             Åpningstider
           </Link>
+          </li>
         </ul>
       )}
     </nav>
