@@ -30,10 +30,11 @@ export default function Navbar() {
               Om oss
             </Link>
           </li>
+
           <li>
-          <Link href="/kontakt" className="hover:text-gray-300 transition">
-            Kontakt oss
-          </Link>
+            <Link href="/kontakt" className="hover:text-gray-300 transition">
+              Kontakt oss
+            </Link>
           </li>
           <Link href="/apning" className="hover:text-gray-300 transition">
             Åpningstider
