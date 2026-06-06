@@ -55,6 +55,7 @@ export default function Navbar() {
           id="mobile-menu"
           className="md:hidden bg-stone-900 text-center pb-4"
         >
+
           <li>
             <Link
               href="/om"
@@ -64,6 +65,8 @@ export default function Navbar() {
               Om oss
             </Link>
           </li>
+
+          <li>
           <Link
             href="/kontakt"
             className="block py-2 hover:text-gray-300 transition"
@@ -71,6 +74,8 @@ export default function Navbar() {
           >
             Kontakt oss
           </Link>
+          </li>
+          
           <Link
             href="/apning"
             className="block py-2 hover:text-gray-300 transition"
