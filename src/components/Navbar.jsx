@@ -12,7 +12,11 @@ export default function Navbar() {
       aria-label="Hovednavigasjon"
     >
       <div className=" mx-auto flex items-center justify-between px-7 py-5">
-        <Link href="/" className="flex items-center space-x-2">
+        <Link 
+        href="/"
+        aria-label="Kjødes Frisørsalong - Gå til forsiden" 
+        className="flex items-center space-x-2"
+        >
           <Image
             src="/assets/Logo.png"
             alt="Kjødes Frisørsalong logo"
