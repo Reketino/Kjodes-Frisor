@@ -90,13 +90,13 @@ export default function OmPage() {
       <article className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 py-10 max-w-6xl mx-auto">
         <figure className="relative md:w-1/2 flex justify-center group">
           <Image
-            src="/marte/marte2.jpg"
+            src="/marte/marte2.webp"
             alt="Marte Berge Hoel – Eier av Kjødes Frisørsalong"
             className="w-full max-w-sm rounded-2xl shadow-lg object-cover
       grayscale hover:scale-101 hover:grayscale-0  
       transition-all duration-700"
-            width={500}
-            height={500}
+            width={1200}
+            height={1500}
           />
         </figure>
 
