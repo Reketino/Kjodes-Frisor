@@ -35,12 +35,12 @@ export default function OmPage() {
       <article className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 py-16 max-w-6xl mx-auto mt-6">
         <figure className="md:w-1/2 flex justify-center">
           <Image
-            src="/jonar/jonarkjode.jpg"
+            src="/jonar/jonarkjode.webp"
             alt="Jonar Kjøde – grunnlegger av Kjødes Frisørsalong"
             className="w-full max-w-sm rounded-2xl shadow-lg object-cover 
           transition-all duration-700 hover:scale-101"
-            width={500}
-            height={500}
+            width={1200}
+            height={1500}
             loading="eager"
             fetchPriority="high"
           />
