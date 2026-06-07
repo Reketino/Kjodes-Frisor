@@ -114,7 +114,7 @@ export default function OmPage() {
       <section className="px-6 py-16 max-w-6xl mx-auto">
         <figure className="flex flex-col items-center gap-5">
           <Image
-            src="/salong.jpeg"
+            src="/salong.webp"
             alt="Bilde av salongen"
             className="w-full max-w-3xl rounded-4xl shadow-lg object-cover
       grayscale hover:scale-101 hover:grayscale-0  
