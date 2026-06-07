@@ -124,6 +124,7 @@ export default function OmPage() {
       transition-all duration-700"
             width={1920}
             height={1080}
+            sizes="(max-width: 768px) 100vw, 384px"
           />
           <figcaption className=" md:w-1/2 font-semibold leading-relaxed text-neutral-400 text-xl text-center">
             Velkommen til Kjødes Frisørsalong – hvor tradisjon møter moderne
