@@ -74,6 +74,7 @@ export default function OmPage() {
       transition-all duration-700"
             width={1200}
             height={1500}
+            sizes="(max-width: 768px) 100vw, 384px"
           />
         </figure>
 
