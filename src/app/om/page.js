@@ -20,7 +20,7 @@ export const metadata = {
 
     images: [
       {
-        url: "/salong.jpeg",
+        url: "/salong.webp",
         width: 1200,
         height: 630,
         alt: "Kjødes Frisørsalong",
