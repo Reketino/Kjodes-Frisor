@@ -81,7 +81,7 @@ export default function OmPage() {
             I dag drives salongen videre av barnebarnet hans,{" "}
             <strong>Elise Kjøde Klokkehaug</strong>, som tilbyr klipp og stell
             for både damer og herrer. Hos Kjødes møter du den samme
-            kvaliteten,roen og personlige servicen som alltid har vært salongens
+            kvaliteten, roen og personlige servicen som alltid har vært salongens
             varemerke.
           </p>
         </section>
