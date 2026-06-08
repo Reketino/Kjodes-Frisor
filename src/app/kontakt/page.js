@@ -70,7 +70,14 @@ export default function KontaktPage() {
                 href="https://maps.google.com/?q=Storgata+5+6230+Sykkylven"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xl hover:text-red-500 flex items-center justify-center mb-4 gap-2"
+                className="
+                flex items-center justify-center gap-3
+                p-4
+                rounded-xl
+                transition-all
+                hover:bg-white/20
+                hover:-translate-y-1
+                "
               >
                 <FaMapPin size={25} aria-hidden="true" />
                 <span>Storgata 5, 6230 Sykkylven</span>
@@ -79,7 +86,14 @@ export default function KontaktPage() {
               <a
                 href="tel:70254680"
                 title="Ring Kjødes Frisørsalong"
-                className="text-xl  hover:text-green-700 transition flex flex-row items-center justify-center mb-4 gap-2"
+                className="
+                flex items-center justify-center gap-3
+                p-4
+                rounded-xl
+                transition-all
+                hover:bg-white/20
+                hover:-translate-y-1
+                "
               >
                 <FaPhoneSquareAlt size={25} aria-hidden="true" />
 
@@ -89,7 +103,14 @@ export default function KontaktPage() {
               <a
                 href="mailto:kjodesfrisorsalong@gmail.com"
                 title="Send e-post til Kjødes Frisørsalong"
-                className="text-xl hover:text-green-700 transition flex flex-row  items-center justify-center gap-2"
+                className="
+                flex items-center justify-center gap-3
+                p-4
+                rounded-xl
+                transition-all
+                hover:bg-white/20
+                hover:-translate-y-1
+                "
               >
                 <FaEnvelope size={25} aria-hidden="true" />
 
