@@ -67,10 +67,10 @@ export default function AapningPage() {
            hover:bg-neutral-900  hover:-translate-y-1
            ${isHelg ? "hover:shadow-red-500/30" : "hover:shadow-green-500/30"}`}
               >
-                <h3 className=" text-4xl font-semibold mb-2 text-stone-400">
+                <p className=" text-4xl font-semibold mb-2 text-stone-400">
                   {service.day}
-                </h3>
-                <p
+                </p>
+                <time
                   className={`text-2xl leading-relaxed transition-colors duration-300  
           ${
             isHelg
@@ -79,7 +79,7 @@ export default function AapningPage() {
           }`}
                 >
                   {service.time}
-                </p>
+                </time>
               </li>
             );
           })}
