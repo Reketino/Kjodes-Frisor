@@ -71,10 +71,7 @@ export default function KontaktPage() {
                 rel="noopener noreferrer"
                 className="text-xl hover:text-red-500 flex items-center justify-center mb-4 gap-2"
               >
-                <FaMapPin 
-                size={25} 
-                aria-hidden="true"
-                />
+                <FaMapPin size={25} aria-hidden="true" />
                 <span>Storgata 5, 6230 Sykkylven</span>
               </a>
 
@@ -83,10 +80,7 @@ export default function KontaktPage() {
                 title="Ring Kjødes Frisørsalong"
                 className="text-xl  hover:text-green-700 transition flex flex-row items-center justify-center mb-4 gap-2"
               >
-                <FaPhoneSquareAlt 
-                size={25} 
-                aria-hidden="true"
-                />
+                <FaPhoneSquareAlt size={25} aria-hidden="true" />
 
                 <span>70 25 46 80</span>
               </a>
@@ -96,10 +90,7 @@ export default function KontaktPage() {
                 title="Send e-post til Kjødes Frisørsalong"
                 className="text-xl hover:text-green-700 transition flex flex-row  items-center justify-center gap-2"
               >
-                <FaEnvelope 
-                size={25} 
-                aria-hidden="true"
-                />
+                <FaEnvelope size={25} aria-hidden="true" />
 
                 <span>kjodesfrisorsalong@gmail.com</span>
               </a>
