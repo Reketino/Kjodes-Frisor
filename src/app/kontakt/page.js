@@ -71,7 +71,10 @@ export default function KontaktPage() {
                 rel="noopener noreferrer"
                 className="text-xl hover:text-red-500 flex items-center justify-center mb-4 gap-2"
               >
-                <FaMapPin size={25} />
+                <FaMapPin 
+                size={25} 
+                aria-hidden="true"
+                />
                 <span>Storgata 5, 6230 Sykkylven</span>
               </a>
 
