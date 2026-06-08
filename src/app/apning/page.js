@@ -70,7 +70,7 @@ export default function AapningPage() {
                 <p className=" text-4xl font-semibold mb-2 text-stone-400">
                   {service.day}
                 </p>
-                <p
+                <time
                   className={`text-2xl leading-relaxed transition-colors duration-300  
           ${
             isHelg
@@ -79,7 +79,7 @@ export default function AapningPage() {
           }`}
                 >
                   {service.time}
-                </p>
+                </time>
               </li>
             );
           })}
