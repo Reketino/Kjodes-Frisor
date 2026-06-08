@@ -55,10 +55,11 @@ export default function KontaktPage() {
             <address
               className="
             not-italic
-            bg-white/15 
+            bg-white/20
             backdrop-blur-md 
-            rounded-2xl 
-            p-6 
+            border border-white/20
+            rounded-3xl 
+            p-8 
             shadow-lg 
             transition 
             hover:shadow-xl 
