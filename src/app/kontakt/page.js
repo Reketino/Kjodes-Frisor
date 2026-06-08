@@ -82,7 +82,10 @@ export default function KontaktPage() {
                 href="tel:70254680"
                 className="text-xl  hover:text-green-700 transition flex flex-row items-center justify-center mb-4 gap-2"
               >
-                <FaPhoneSquareAlt size={25} />
+                <FaPhoneSquareAlt 
+                size={25} 
+                aria-hidden="true"
+                />
 
                 <span>70 25 46 80</span>
               </a>
