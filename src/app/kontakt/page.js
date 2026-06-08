@@ -93,6 +93,7 @@ export default function KontaktPage() {
 
               <a
                 href="mailto:kjodesfrisorsalong@gmail.com"
+                title="Send e-post til Kjødes Frisørsalong"
                 className="text-xl hover:text-green-700 transition flex flex-row  items-center justify-center gap-2"
               >
                 <FaEnvelope 
