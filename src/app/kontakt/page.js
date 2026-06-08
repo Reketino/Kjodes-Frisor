@@ -78,7 +78,7 @@ export default function KontaktPage() {
                 p-4
                 rounded-xl
                 transition-all
-                hover:bg-white/20
+                hover:bg-white/25
                 hover:-translate-y-1
                 "
               >
@@ -98,7 +98,7 @@ export default function KontaktPage() {
                 p-4
                 rounded-xl
                 transition-all
-                hover:bg-white/20
+                hover:bg-white/25
                 hover:-translate-y-1
                 "
               >
@@ -119,7 +119,7 @@ export default function KontaktPage() {
                 p-4
                 rounded-xl
                 transition-all
-                hover:bg-white/20
+                hover:bg-white/25
                 hover:-translate-y-1
                 "
               >
