@@ -60,6 +60,7 @@ export default function KontaktPage() {
             border border-white/20
             rounded-3xl 
             p-8 
+            space-y-2
             shadow-lg 
             transition 
             hover:shadow-xl 
@@ -77,6 +78,7 @@ export default function KontaktPage() {
                 flex items-center justify-center gap-3
                 p-4
                 rounded-xl
+                bg-white/10
                 transition-all
                 hover:bg-white/25
                 hover:-translate-y-1
@@ -87,7 +89,7 @@ export default function KontaktPage() {
                 aria-hidden="true" 
                 className="text-red-500"
                 />
-                <span>Storgata 5, 6230 Sykkylven</span>
+                <span className="text-xl font-medium">Storgata 5, 6230 Sykkylven</span>
               </a>
 
               <a
@@ -97,6 +99,7 @@ export default function KontaktPage() {
                 flex items-center justify-center gap-3
                 p-4
                 rounded-xl
+               bg-white/10
                 transition-all
                 hover:bg-white/25
                 hover:-translate-y-1
@@ -108,7 +111,7 @@ export default function KontaktPage() {
                 className="text-green-700"
                 />
 
-                <span>70 25 46 80</span>
+                <span className="text-xl font-medium">70 25 46 80</span>
               </a>
 
               <a
@@ -118,6 +121,7 @@ export default function KontaktPage() {
                 flex items-center justify-center gap-3
                 p-4
                 rounded-xl
+              bg-white/10
                 transition-all
                 hover:bg-white/25
                 hover:-translate-y-1
@@ -129,10 +133,22 @@ export default function KontaktPage() {
                 className="text-blue-700"
                 />
 
-                <span>kjodesfrisorsalong@gmail.com</span>
+                <span className="text-xl font-medium">kjodesfrisorsalong@gmail.com</span>
               </a>
             </address>
-            <figure className="rounded-xl overflow-hidden shadow-lg transition-transform duration-200 hover:scale-102">
+            <div className="
+             bg-white/20
+            backdrop-blur-md 
+            border border-white/20
+            rounded-3xl 
+            p-2
+            shadow-lg 
+            transition 
+            hover:shadow-xl 
+            hover:-translate-y-1
+            "
+            >
+            <figure className="overflow-hidden rounded-2xl">
               <iframe
                 title="Kart over Kjødes Frisørsalong"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1137.5755979821693!2d6.578945757154498!3d62.39117212283398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4616b8b29d9b0869%3A0x8371ab46b8d9392e!2sStorgata%205%2C%206230%20Sykkylven!5e1!3m2!1sno!2sno!4v1761674085785!5m2!1sno!2sno"
@@ -140,12 +156,13 @@ export default function KontaktPage() {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="w-full h-64 md:h-80"
+                className="w-full h-80 md:h-105"
               />
               <figcaption className="sr-only">
                 Kart som viser plassering til Kjødes Frisørsalong i Sykkylven
               </figcaption>
             </figure>
+            </div>
           </section>
         </div>
       </section>
