@@ -94,7 +94,10 @@ export default function KontaktPage() {
                 href="mailto:kjodesfrisorsalong@gmail.com"
                 className="text-xl hover:text-green-700 transition flex flex-row  items-center justify-center gap-2"
               >
-                <FaEnvelope size={25} />
+                <FaEnvelope 
+                size={25} 
+                aria-hidden="true"
+                />
 
                 <span>kjodesfrisorsalong@gmail.com</span>
               </a>
