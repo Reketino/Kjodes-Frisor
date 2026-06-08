@@ -66,6 +66,9 @@ export default function KontaktPage() {
             hover:-translate-y-1
             "
             >
+              <h2 className="text-2xl font-semibold mb-6">
+                Kontaktinformasjon
+              </h2>
               <a
                 href="https://maps.google.com/?q=Storgata+5+6230+Sykkylven"
                 target="_blank"
