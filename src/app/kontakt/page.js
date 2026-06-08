@@ -80,6 +80,7 @@ export default function KontaktPage() {
 
               <a
                 href="tel:70254680"
+                title="Ring Kjødes Frisørsalong"
                 className="text-xl  hover:text-green-700 transition flex flex-row items-center justify-center mb-4 gap-2"
               >
                 <FaPhoneSquareAlt 
