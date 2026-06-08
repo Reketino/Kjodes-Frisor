@@ -82,7 +82,11 @@ export default function KontaktPage() {
                 hover:-translate-y-1
                 "
               >
-                <FaMapPin size={25} aria-hidden="true" />
+                <FaMapPin 
+                size={25} 
+                aria-hidden="true" 
+                className="text-red-500"
+                />
                 <span>Storgata 5, 6230 Sykkylven</span>
               </a>
 
@@ -98,7 +102,11 @@ export default function KontaktPage() {
                 hover:-translate-y-1
                 "
               >
-                <FaPhoneSquareAlt size={25} aria-hidden="true" />
+                <FaPhoneSquareAlt 
+                size={25} 
+                aria-hidden="true" 
+                className="text-green-700"
+                />
 
                 <span>70 25 46 80</span>
               </a>
@@ -115,7 +123,11 @@ export default function KontaktPage() {
                 hover:-translate-y-1
                 "
               >
-                <FaEnvelope size={25} aria-hidden="true" />
+                <FaEnvelope 
+                size={25} 
+                aria-hidden="true" 
+                className="text-blue-700"
+                />
 
                 <span>kjodesfrisorsalong@gmail.com</span>
               </a>
