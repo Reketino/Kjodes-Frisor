@@ -72,6 +72,7 @@ export default function AapningPage() {
             { day: "Søndag", time: "Stengt" },
           ].map((service) => {
             const isHelg = ["Lørdag", "Søndag"].includes(service.day);
+            const isToday = service.day === days[today];
 
             return (
               <li key={service.day}>
