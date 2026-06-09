@@ -80,7 +80,19 @@ export default function AapningPage() {
                 <article
                   className={`group p-6 rounded-4xl bg-white/10 backdrop-blur-md shadow-md transition-all duration-300
            hover:bg-neutral-900  hover:-translate-y-1
-           ${isHelg ? "hover:shadow-red-500/30" : "hover:shadow-green-500/30"}`}
+
+           ${
+            isToday
+            ? "bg-green-500/15 border border-green-500"
+            : "bg-white/10"
+           }
+
+
+           ${
+            isHelg 
+            ? "hover:shadow-red-500/30" 
+            : "hover:shadow-green-500/30"
+          }`}
                 >
                   <p className=" text-4xl font-semibold mb-2 text-stone-400">
                     {service.day}
