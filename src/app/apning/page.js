@@ -42,15 +42,14 @@ export default function AapningPage() {
   ];
 
   const openingHours = [
-            { day: "Mandag", time: "09-16:30" },
-            { day: "Tirsdag", time: "09-16:30" },
-            { day: "Onsdag", time: "09-16:30" },
-            { day: "Torsdag", time: "09-16:30" },
-            { day: "Fredag", time: "09-16" },
-            { day: "Lørdag", time: "Stengt" },
-            { day: "Søndag", time: "Stengt" },
+    { day: "Mandag", time: "09-16:30" },
+    { day: "Tirsdag", time: "09-16:30" },
+    { day: "Onsdag", time: "09-16:30" },
+    { day: "Torsdag", time: "09-16:30" },
+    { day: "Fredag", time: "09-16" },
+    { day: "Lørdag", time: "Stengt" },
+    { day: "Søndag", time: "Stengt" },
   ];
-
 
   return (
     <main className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
@@ -72,15 +71,7 @@ export default function AapningPage() {
           Åpningstider
         </h1>
         <ul className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-8">
-          {[
-            { day: "Mandag", time: "09-16:30" },
-            { day: "Tirsdag", time: "09-16:30" },
-            { day: "Onsdag", time: "09-16:30" },
-            { day: "Torsdag", time: "09-16:30" },
-            { day: "Fredag", time: "09-16" },
-            { day: "Lørdag", time: "Stengt" },
-            { day: "Søndag", time: "Stengt" },
-          ].map((service) => {
+          {openingHours.map((service) => {
             const isHelg = ["Lørdag", "Søndag"].includes(service.day);
             const isToday = service.day === days[today];
 
@@ -89,6 +80,11 @@ export default function AapningPage() {
                 <article
                   className={`group p-6 rounded-4xl bg-white/10 backdrop-blur-md shadow-md transition-all duration-300
            hover:bg-neutral-900  hover:-translate-y-1
+
+           ${
+             isToday ? "bg-green-500/15 border border-green-500" : "bg-white/10"
+           }
+
            ${isHelg ? "hover:shadow-red-500/30" : "hover:shadow-green-500/30"}`}
                 >
                   <p className=" text-4xl font-semibold mb-2 text-stone-400">
@@ -106,8 +102,8 @@ export default function AapningPage() {
                   </time>
 
                   {isToday && (
-                    <span 
-                    className="
+                    <span
+                      className="
                     block mt-1.5
                     text-sm
                     font-semibold
