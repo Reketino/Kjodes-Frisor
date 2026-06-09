@@ -42,15 +42,14 @@ export default function AapningPage() {
   ];
 
   const openingHours = [
-            { day: "Mandag", time: "09-16:30" },
-            { day: "Tirsdag", time: "09-16:30" },
-            { day: "Onsdag", time: "09-16:30" },
-            { day: "Torsdag", time: "09-16:30" },
-            { day: "Fredag", time: "09-16" },
-            { day: "Lørdag", time: "Stengt" },
-            { day: "Søndag", time: "Stengt" },
+    { day: "Mandag", time: "09-16:30" },
+    { day: "Tirsdag", time: "09-16:30" },
+    { day: "Onsdag", time: "09-16:30" },
+    { day: "Torsdag", time: "09-16:30" },
+    { day: "Fredag", time: "09-16" },
+    { day: "Lørdag", time: "Stengt" },
+    { day: "Søndag", time: "Stengt" },
   ];
-
 
   return (
     <main className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
@@ -98,8 +97,8 @@ export default function AapningPage() {
                   </time>
 
                   {isToday && (
-                    <span 
-                    className="
+                    <span
+                      className="
                     block mt-1.5
                     text-sm
                     font-semibold
