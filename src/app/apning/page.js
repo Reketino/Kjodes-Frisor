@@ -108,7 +108,7 @@ export default function AapningPage() {
                   {isToday && (
                     <span 
                     className="
-                    block mt-3
+                    block mt-1.5
                     text-sm
                     font-semibold
                     text-green-400
