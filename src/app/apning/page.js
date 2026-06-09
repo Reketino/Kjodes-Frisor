@@ -66,7 +66,10 @@ export default function AapningPage() {
 
       <div className="absolute inset-0 bg-black/70 z-0 pointer-events-none" />
 
-      <section className="relative z-10 w-full max-w-4xl px-4 py-10 text-center ">
+      <section 
+      className="relative z-10 w-full max-w-4xl px-4 py-10 text-center "
+      aria-labelledby="opening-hours-heading"
+      >
         <h1 className=" text-6xl mb-8 font-semibold text-stone-500">
           Åpningstider
         </h1>
