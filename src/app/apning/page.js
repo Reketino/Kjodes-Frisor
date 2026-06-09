@@ -104,6 +104,19 @@ export default function AapningPage() {
                   >
                     {service.time}
                   </time>
+
+                  {isToday && (
+                    <span 
+                    className="
+                    block mt-3
+                    text-sm
+                    font-semibold
+                    text-green-400
+                    "
+                    >
+                      Åpent idag
+                    </span>
+                  )}
                 </article>
               </li>
             );
