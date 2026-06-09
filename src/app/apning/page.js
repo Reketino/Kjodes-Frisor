@@ -29,6 +29,29 @@ export const metadata = {
 };
 
 export default function AapningPage() {
+  const today = new Date().getDay();
+
+  const days = [
+    "Søndag",
+    "Mandag",
+    "Tirsdag",
+    "Onsdag",
+    "Torsdag",
+    "Fredag",
+    "Lørdag",
+  ];
+
+  const openingHours = [
+            { day: "Mandag", time: "09-16:30" },
+            { day: "Tirsdag", time: "09-16:30" },
+            { day: "Onsdag", time: "09-16:30" },
+            { day: "Torsdag", time: "09-16:30" },
+            { day: "Fredag", time: "09-16" },
+            { day: "Lørdag", time: "Stengt" },
+            { day: "Søndag", time: "Stengt" },
+  ];
+
+
   return (
     <main className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
       <Image
@@ -59,27 +82,42 @@ export default function AapningPage() {
             { day: "Søndag", time: "Stengt" },
           ].map((service) => {
             const isHelg = ["Lørdag", "Søndag"].includes(service.day);
+            const isToday = service.day === days[today];
 
             return (
-              <li
-                key={service.day}
-                className={`group p-6 rounded-4xl bg-white/10 backdrop-blur-md shadow-md transition-all duration-300
+              <li key={service.day}>
+                <article
+                  className={`group p-6 rounded-4xl bg-white/10 backdrop-blur-md shadow-md transition-all duration-300
            hover:bg-neutral-900  hover:-translate-y-1
            ${isHelg ? "hover:shadow-red-500/30" : "hover:shadow-green-500/30"}`}
-              >
-                <p className=" text-4xl font-semibold mb-2 text-stone-400">
-                  {service.day}
-                </p>
-                <time
-                  className={`text-2xl leading-relaxed transition-colors duration-300  
+                >
+                  <p className=" text-4xl font-semibold mb-2 text-stone-400">
+                    {service.day}
+                  </p>
+                  <time
+                    className={`text-2xl leading-relaxed transition-colors duration-300  
           ${
             isHelg
               ? "text-stone-200 group-hover:text-red-600"
               : "text-stone-200 group-hover:text-green-500"
           }`}
-                >
-                  {service.time}
-                </time>
+                  >
+                    {service.time}
+                  </time>
+
+                  {isToday && (
+                    <span 
+                    className="
+                    block mt-1.5
+                    text-sm
+                    font-semibold
+                    text-green-400
+                    "
+                    >
+                      Åpent idag
+                    </span>
+                  )}
+                </article>
               </li>
             );
           })}
