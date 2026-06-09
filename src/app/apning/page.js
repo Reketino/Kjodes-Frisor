@@ -72,15 +72,7 @@ export default function AapningPage() {
           Åpningstider
         </h1>
         <ul className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-8">
-          {[
-            { day: "Mandag", time: "09-16:30" },
-            { day: "Tirsdag", time: "09-16:30" },
-            { day: "Onsdag", time: "09-16:30" },
-            { day: "Torsdag", time: "09-16:30" },
-            { day: "Fredag", time: "09-16" },
-            { day: "Lørdag", time: "Stengt" },
-            { day: "Søndag", time: "Stengt" },
-          ].map((service) => {
+          {openingHours.map((service) => {
             const isHelg = ["Lørdag", "Søndag"].includes(service.day);
             const isToday = service.day === days[today];
 
