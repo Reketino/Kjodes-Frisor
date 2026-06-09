@@ -31,6 +31,16 @@ export const metadata = {
 export default function AapningPage() {
   const today = new Date().getDay();
 
+  const days = [
+    "Søndag",
+    "Mandag",
+    "Tirsdag",
+    "Onsdag",
+    "Torsdag",
+    "Fredag",
+    "Lørdag",
+  ];
+
 
   return (
     <main className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
