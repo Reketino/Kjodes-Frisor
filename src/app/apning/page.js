@@ -61,8 +61,8 @@ export default function AapningPage() {
             const isHelg = ["Lørdag", "Søndag"].includes(service.day);
 
             return (
-              <li
-                key={service.day}
+              <li key={service.day}>
+                <article
                 className={`group p-6 rounded-4xl bg-white/10 backdrop-blur-md shadow-md transition-all duration-300
            hover:bg-neutral-900  hover:-translate-y-1
            ${isHelg ? "hover:shadow-red-500/30" : "hover:shadow-green-500/30"}`}
@@ -80,6 +80,7 @@ export default function AapningPage() {
                 >
                   {service.time}
                 </time>
+                </article>
               </li>
             );
           })}
