@@ -29,6 +29,9 @@ export const metadata = {
 };
 
 export default function AapningPage() {
+  const today = new Date().getDay();
+
+
   return (
     <main className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
       <Image
