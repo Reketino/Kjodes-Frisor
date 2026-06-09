@@ -70,7 +70,10 @@ export default function AapningPage() {
       className="relative z-10 w-full max-w-4xl px-4 py-10 text-center "
       aria-labelledby="opening-hours-heading"
       >
-        <h1 className=" text-6xl mb-8 font-semibold text-stone-500">
+        <h1 
+        id="opening-hours-heading"
+        className=" text-6xl mb-8 font-semibold text-stone-500"
+        >
           Åpningstider
         </h1>
         <ul className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-8">
