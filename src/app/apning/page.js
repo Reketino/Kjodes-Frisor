@@ -93,9 +93,9 @@ export default function AapningPage() {
 
            ${isHelg ? "hover:shadow-red-500/30" : "hover:shadow-green-500/30"}`}
                 >
-                  <p className=" text-4xl font-semibold mb-2 text-stone-400">
+                  <h2 className=" text-4xl font-semibold mb-2 text-stone-400">
                     {service.day}
-                  </p>
+                  </h2>
                   <time
                   dateTime={service.dateTime}
                     className={`text-2xl leading-relaxed transition-colors duration-300  
