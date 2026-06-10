@@ -84,13 +84,17 @@ export default function AapningPage() {
             return (
               <li key={service.day}>
                 <article
-                  className={`group p-6 rounded-4xl bg-white/10 backdrop-blur-md shadow-md transition-all duration-300
+                  className={`
+                    group p-6 rounded-4xl 
+                    bg-white/10 border-2 
+                    backdrop-blur-md shadow-md 
+                    transition-all duration-300
            hover:bg-neutral-900  hover:-translate-y-1
 
            ${
              isToday
-               ? "bg-green-500/20 border-2 border-green-400"
-               : "bg-white/10"
+               ? "bg-green-500/20 border-2 border-green-500"
+               : "bg-white/10 border-2 border-stone-500" 
            }
 
            ${isHelg ? "hover:shadow-red-500/30" : "hover:shadow-green-500/30"}`}
