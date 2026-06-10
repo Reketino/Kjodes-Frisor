@@ -85,6 +85,7 @@ export default function AapningPage() {
               <li key={service.day}>
                 <article
                   className={`
+                    relative
                     group p-6 rounded-4xl 
                     bg-white/10 border-2 
                     backdrop-blur-md shadow-md 
@@ -118,10 +119,15 @@ export default function AapningPage() {
                   {isToday && (
                     <span
                       className="
-                    block mt-1.5
+                      absolute
+                      top-4
+                      right-4
+                      rounded-full
+                    bg-green-600
+                    px-3 py-1
                     text-sm
                     font-semibold
-                    text-green-500
+                    text-white
                     "
                     >
                       Åpent i dag
