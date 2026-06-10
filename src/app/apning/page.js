@@ -42,13 +42,13 @@ export default function AapningPage() {
   ];
 
   const openingHours = [
-    { day: "Mandag", time: "09-16:30", dateTime: "09:00-16:30" },
-    { day: "Tirsdag", time: "09-16:30", dateTime: "09:00-16:30" },
-    { day: "Onsdag", time: "09-16:30", dateTime: "09:00-16:30" },
-    { day: "Torsdag", time: "09-16:30", dateTime: "09:00-16:30" },
-    { day: "Fredag", time: "09-16", dateTime: "09:00-16:00" },
-    { day: "Lørdag", time: "Stengt", dateTime: "" },
-    { day: "Søndag", time: "Stengt", dateTime: "" },
+    { day: "Mandag", time: "09-16:30", dateTime: "09:00/16:30" },
+    { day: "Tirsdag", time: "09-16:30", dateTime: "09:00/16:30" },
+    { day: "Onsdag", time: "09-16:30", dateTime: "09:00/16:30" },
+    { day: "Torsdag", time: "09-16:30", dateTime: "09:00/16:30" },
+    { day: "Fredag", time: "09-16", dateTime: "09:00/16:00" },
+    { day: "Lørdag", time: "Stengt", dateTime: undefined },
+    { day: "Søndag", time: "Stengt", dateTime: undefined },
   ];
 
   return (
@@ -85,6 +85,7 @@ export default function AapningPage() {
               <li key={service.day}>
                 <article
                   className={`
+                    relative
                     group p-6 rounded-4xl 
                     bg-white/10 border-2 
                     backdrop-blur-md shadow-md 
@@ -118,10 +119,15 @@ export default function AapningPage() {
                   {isToday && (
                     <span
                       className="
-                    block mt-1.5
+                      absolute
+                      top-4
+                      right-4
+                      rounded-full
+                    bg-green-600
+                    px-3 py-1
                     text-sm
                     font-semibold
-                    text-green-500
+                    text-white
                     "
                     >
                       Åpent i dag
