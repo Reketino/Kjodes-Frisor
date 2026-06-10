@@ -72,7 +72,7 @@ export default function AapningPage() {
       >
         <h1
           id="opening-hours-heading"
-          className=" text-6xl mb-8 font-semibold text-stone-500"
+          className=" text-5xl md:text-6xl font-serif font-semibold text-stone-400 mb-8"
         >
           Åpningstider
         </h1>
