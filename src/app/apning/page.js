@@ -116,7 +116,7 @@ export default function AapningPage() {
                     text-green-400
                     "
                     >
-                      Åpent idag
+                      Åpent i dag
                     </span>
                   )}
                 </article>
