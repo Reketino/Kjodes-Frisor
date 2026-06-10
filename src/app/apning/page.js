@@ -88,7 +88,7 @@ export default function AapningPage() {
            hover:bg-neutral-900  hover:-translate-y-1
 
            ${
-             isToday ? "bg-green-500/15 border border-green-500" : "bg-white/10"
+             isToday ? "bg-green-500/20 border-2 border-green-400" : "bg-white/10"
            }
 
            ${isHelg ? "hover:shadow-red-500/30" : "hover:shadow-green-500/30"}`}
