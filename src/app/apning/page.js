@@ -42,11 +42,11 @@ export default function AapningPage() {
   ];
 
   const openingHours = [
-    { day: "Mandag", time: "09-16:30" },
-    { day: "Tirsdag", time: "09-16:30" },
-    { day: "Onsdag", time: "09-16:30" },
-    { day: "Torsdag", time: "09-16:30" },
-    { day: "Fredag", time: "09-16" },
+    { day: "Mandag", time: "09-16:30", dateTime: "09:00-16:30" },
+    { day: "Tirsdag", time: "09-16:30", dateTime: "09:00-16:30" },
+    { day: "Onsdag", time: "09-16:30", dateTime: "09:00-16:30" },
+    { day: "Torsdag", time: "09-16:30", dateTime: "09:00-16:30" },
+    { day: "Fredag", time: "09-16", dateTime: "09:00-16:00" },
     { day: "Lørdag", time: "Stengt" },
     { day: "Søndag", time: "Stengt" },
   ];
