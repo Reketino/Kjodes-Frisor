@@ -30,6 +30,7 @@ export const metadata = {
 
 export default function AapningPage() {
   const today = new Date().getDay();
+  
 
   const days = [
     "Søndag",
@@ -80,6 +81,7 @@ export default function AapningPage() {
           {openingHours.map((service) => {
             const isHelg = ["Lørdag", "Søndag"].includes(service.day);
             const isToday = service.day === days[today];
+            const isClosedToday = isToday && service.time === "Stengt";
 
             return (
               <li key={service.day}>
