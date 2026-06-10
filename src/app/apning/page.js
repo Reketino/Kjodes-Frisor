@@ -97,6 +97,7 @@ export default function AapningPage() {
                     {service.day}
                   </p>
                   <time
+                  dateTime={service.dateTime}
                     className={`text-2xl leading-relaxed transition-colors duration-300  
           ${
             isHelg
