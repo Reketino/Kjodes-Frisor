@@ -120,7 +120,7 @@ export default function AapningPage() {
                     block mt-1.5
                     text-sm
                     font-semibold
-                    text-green-400
+                    text-green-500
                     "
                     >
                       Åpent i dag
