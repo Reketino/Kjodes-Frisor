@@ -42,13 +42,13 @@ export default function AapningPage() {
   ];
 
   const openingHours = [
-    { day: "Mandag", time: "09-16:30" },
-    { day: "Tirsdag", time: "09-16:30" },
-    { day: "Onsdag", time: "09-16:30" },
-    { day: "Torsdag", time: "09-16:30" },
-    { day: "Fredag", time: "09-16" },
-    { day: "Lørdag", time: "Stengt" },
-    { day: "Søndag", time: "Stengt" },
+    { day: "Mandag", time: "09-16:30", dateTime: "09:00-16:30" },
+    { day: "Tirsdag", time: "09-16:30", dateTime: "09:00-16:30" },
+    { day: "Onsdag", time: "09-16:30", dateTime: "09:00-16:30" },
+    { day: "Torsdag", time: "09-16:30", dateTime: "09:00-16:30" },
+    { day: "Fredag", time: "09-16", dateTime: "09:00-16:00" },
+    { day: "Lørdag", time: "Stengt", dateTime: "" },
+    { day: "Søndag", time: "Stengt", dateTime: "" },
   ];
 
   return (
@@ -72,7 +72,7 @@ export default function AapningPage() {
       >
         <h1
           id="opening-hours-heading"
-          className=" text-6xl mb-8 font-semibold text-stone-500"
+          className=" text-5xl md:text-6xl font-serif font-semibold text-stone-400 mb-8"
         >
           Åpningstider
         </h1>
@@ -84,19 +84,27 @@ export default function AapningPage() {
             return (
               <li key={service.day}>
                 <article
-                  className={`group p-6 rounded-4xl bg-white/10 backdrop-blur-md shadow-md transition-all duration-300
-           hover:bg-neutral-900  hover:-translate-y-1
+                  className={`
+                    group p-6 rounded-4xl 
+                    bg-white/10 border-2 
+                    backdrop-blur-md shadow-md 
+                    transition-all duration-300
+                  hover:bg-neutral-900  
+                    hover:-translate-y-1
 
            ${
-             isToday ? "bg-green-500/15 border border-green-500" : "bg-white/10"
+             isToday
+               ? "bg-green-500/20 border-2 border-green-500"
+               : "bg-white/10 border-2 border-stone-500"
            }
 
            ${isHelg ? "hover:shadow-red-500/30" : "hover:shadow-green-500/30"}`}
                 >
-                  <p className=" text-4xl font-semibold mb-2 text-stone-400">
+                  <h2 className=" text-4xl font-semibold mb-2 text-stone-400">
                     {service.day}
-                  </p>
+                  </h2>
                   <time
+                    dateTime={service.dateTime}
                     className={`text-2xl leading-relaxed transition-colors duration-300  
           ${
             isHelg
@@ -113,10 +121,10 @@ export default function AapningPage() {
                     block mt-1.5
                     text-sm
                     font-semibold
-                    text-green-400
+                    text-green-500
                     "
                     >
-                      Åpent idag
+                      Åpent i dag
                     </span>
                   )}
                 </article>
