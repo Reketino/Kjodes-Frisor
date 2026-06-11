@@ -9,7 +9,8 @@ export default function BookingLoader() {
       className=" 
         absolute inset-0 z-10
         flex items-center justify-center
-        bg-background
+        bg-background/90
+        backdrop-blur-sm
         "
     >
       <section
