@@ -30,7 +30,7 @@ export default function BookingLoader() {
           />
         </figure>
         <header className="space-y-2">
-          <h1 className="text-3xl font-serif">Åpner booking</h1>
+          <h2 className="text-3xl font-serif">Åpner booking</h2>
 
           <p className="text-neutral-400">Gjør saksen klar...</p>
         </header>
