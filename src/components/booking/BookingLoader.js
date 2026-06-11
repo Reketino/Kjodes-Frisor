@@ -3,7 +3,7 @@ import { FaScissors } from "react-icons/fa6";
 export default function BookingLoader() {
   return (
     <aside
-    role="status"
+      role="status"
       aria-live="polite"
       aria-busy="true"
       className=" 
