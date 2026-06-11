@@ -24,8 +24,8 @@ export default function BookingLoader() {
             aria-hidden="true"
             className="
               text-6xl
-              rotate-[-20deg]
-              animate-pulse
+              -rotate-20
+              animate-bounce
               "
           />
         </figure>
