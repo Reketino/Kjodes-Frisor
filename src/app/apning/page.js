@@ -120,7 +120,7 @@ export default function AapningPage() {
 
                   {isToday && (
                     <span
-                      className="
+                      className={`
                       absolute
                       top-4
                       right-4
@@ -130,7 +130,8 @@ export default function AapningPage() {
                     text-sm
                     font-semibold
                     text-white
-                    "
+                    ${isClosedToday ? "bg-red-600" : "bg-green-600"}
+                    `}
                     >
                       Åpent i dag
                     </span>
