@@ -133,7 +133,7 @@ export default function AapningPage() {
                     ${isClosedToday ? "bg-red-600" : "bg-green-600"}
                     `}
                     >
-                      Åpent i dag
+                      {isClosedToday ? "Stengt i dag" : "Åpent i dag"}
                     </span>
                   )}
                 </article>
