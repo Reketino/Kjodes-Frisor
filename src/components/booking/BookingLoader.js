@@ -4,6 +4,7 @@ export default function BookingLoader() {
   return (
     <aside
       aria-live="polite"
+      aria-busy="true"
       className=" 
         absolute inset-0 z-10
         flex items-center justify-center
