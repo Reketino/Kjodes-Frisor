@@ -62,8 +62,10 @@ export default function ServicesSection() {
         className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-8 w-full max-w-xl mx-auto"
         aria-label="Bestilling og kontakt"
       >
-        <Link
-          href="/booking"
+        <a
+          href="https://booking.easysalon.no/5e80c0b6-24ab-4f8d-a88e-015ef5fdee34"
+          target="_blank"
+          rel="noopener noreferrer"
           className="
             flex items-center justify-center  font-semibold   
           rounded-full gap-2 px-6 py-4 
@@ -78,7 +80,7 @@ export default function ServicesSection() {
         >
           <FaScissors size={25} />
           <span className="text-2xl">Bestill time</span>
-        </Link>
+        </a>
 
         <a
           href="tel:70254680"

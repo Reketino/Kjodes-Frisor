@@ -1,7 +1,11 @@
+
+
 export default function sitemap() {
+const baseUrl = "https://kjodesfrisorsalong.no"
+
   return [
     {
-      url: "https://kjodesfrisorsalong.no",
+      url: baseUrl,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
