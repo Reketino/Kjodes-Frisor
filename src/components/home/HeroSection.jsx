@@ -32,7 +32,7 @@ export default function HeroSection() {
           className="flex flex-col gap-4 items-center"
           aria-label="Handlinger"
         >
-          <Link
+          <a
             href="https://booking.easysalon.no/5e80c0b6-24ab-4f8d-a88e-015ef5fdee34"
             target="_blank"
             rel="noopener noreferrer"
@@ -49,7 +49,7 @@ export default function HeroSection() {
           >
             <FaScissors size={36} />
             <span className="text-2xl"> Bestill time</span>
-          </Link>
+          </a>
           <p className="text-2xl text-neutral-200">eller ring</p>
           <a
             href="tel:70254680"
