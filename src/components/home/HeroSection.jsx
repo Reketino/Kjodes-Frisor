@@ -33,7 +33,9 @@ export default function HeroSection() {
           aria-label="Handlinger"
         >
           <Link
-            href="/booking"
+            href="https://booking.easysalon.no/5e80c0b6-24ab-4f8d-a88e-015ef5fdee34"
+            target="_blank"
+            rel="noopener noreferrer"
             className="
               inline-flex items-center justify-center gap-2
                bg-white/20  text-shadow-gray-400 

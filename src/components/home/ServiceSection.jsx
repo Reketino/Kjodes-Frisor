@@ -63,7 +63,9 @@ export default function ServicesSection() {
         aria-label="Bestilling og kontakt"
       >
         <Link
-          href="/booking"
+          href="https://booking.easysalon.no/5e80c0b6-24ab-4f8d-a88e-015ef5fdee34"
+          target="_blank"
+          rel="noopener noreferrer"
           className="
             flex items-center justify-center  font-semibold   
           rounded-full gap-2 px-6 py-4 
