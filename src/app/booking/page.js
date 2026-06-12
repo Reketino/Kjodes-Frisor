@@ -8,6 +8,11 @@ const BOOKING_URL =
 
 export default function BookingPage() {
     useEffect(() => {
+        const timer = setTimeout(() => {
+            window.location.replace(BOOKING_URL);
+        }, 800);
         
-    })
+        return () => clearTimeout(timer);
+    }, []);
+    
 }
