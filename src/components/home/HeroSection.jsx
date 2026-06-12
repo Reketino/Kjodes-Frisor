@@ -46,7 +46,7 @@ export default function HeroSection() {
             active:scale-90 min-w-50
           "
           >
-            <FaScissors size={36} />
+            <FaScissors size={36} aria-hidden="true" />
             <span className="text-2xl"> Bestill time</span>
           </a>
           <p className="text-2xl text-neutral-200">eller ring</p>
