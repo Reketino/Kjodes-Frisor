@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { FaScissors } from "react-icons/fa6";
@@ -47,7 +46,7 @@ export default function HeroSection() {
             active:scale-90 min-w-50
           "
           >
-            <FaScissors size={36} />
+            <FaScissors size={36} aria-hidden="true" />
             <span className="text-2xl"> Bestill time</span>
           </a>
           <p className="text-2xl text-neutral-200">eller ring</p>
@@ -64,7 +63,7 @@ export default function HeroSection() {
           active:scale-90 min-w-50
           "
           >
-            <FaPhoneSquareAlt size={36} />
+            <FaPhoneSquareAlt size={36} aria-hidden="true" />
             <span className="text-2xl"> 70 25 46 80</span>
           </a>
         </nav>
