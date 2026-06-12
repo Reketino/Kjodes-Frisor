@@ -14,5 +14,10 @@ export default function BookingPage() {
         
         return () => clearTimeout(timer);
     }, []);
-    
+
+    return (
+        <main className="min-h-screen">
+            <BookingLoader />
+        </main>
+    )
 }
