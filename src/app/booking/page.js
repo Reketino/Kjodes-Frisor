@@ -1,30 +1,23 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect } from "react";
 import BookingLoader from "@/components/booking/BookingLoader";
 
+const BOOKING_URL = 
+"https://booking.easysalon.no/5e80c0b6-24ab-4f8d-a88e-015ef5fdee34";
+
 export default function BookingPage() {
-  const [loaded, setLoaded] = useState(false);
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            window.location.replace(BOOKING_URL);
+        }, 800);
+        
+        return () => clearTimeout(timer);
+    }, []);
 
-  return (
-    <main className="fixed top-20 inset-x-0 bottom-0 overflow-hidden">
-      {!loaded && <BookingLoader />}
-
-      <iframe
-        src="https://booking.easysalon.no/5e80c0b6-24ab-4f8d-a88e-015ef5fdee34"
-        title="Bestill time hos Kjødes Frisørsalong"
-        onLoad={() => setLoaded(true)}
-        aria-hidden={!loaded}
-        className={`
-        w-full 
-        h-[calc(100%+85px)]
-        -translate-y-21.25
-        border-0
-        transition-opacity
-        duration-700
-        ${loaded ? "opacity-100" : "opacity-0"}
-        `}
-      />
-    </main>
-  );
+    return (
+        <main className="min-h-screen">
+            <BookingLoader />
+        </main>
+    )
 }

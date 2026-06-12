@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { FaScissors } from "react-icons/fa6";
 
@@ -31,10 +32,8 @@ export default function HeroSection() {
           className="flex flex-col gap-4 items-center"
           aria-label="Handlinger"
         >
-          <a
-            href="https://booking.easysalon.no/5e80c0b6-24ab-4f8d-a88e-015ef5fdee34"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/booking"
             className="
               inline-flex items-center justify-center gap-2
                bg-white/20  text-shadow-gray-400 
@@ -48,7 +47,7 @@ export default function HeroSection() {
           >
             <FaScissors size={36} aria-hidden="true" />
             <span className="text-2xl"> Bestill time</span>
-          </a>
+          </Link>
           <p className="text-2xl text-neutral-200">eller ring</p>
           <a
             href="tel:70254680"

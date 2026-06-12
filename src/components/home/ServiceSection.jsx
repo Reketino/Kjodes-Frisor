@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { FaScissors } from "react-icons/fa6";
 
@@ -62,9 +63,7 @@ export default function ServicesSection() {
         aria-label="Bestilling og kontakt"
       >
         <a
-          href="https://booking.easysalon.no/5e80c0b6-24ab-4f8d-a88e-015ef5fdee34"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/booking"
           className="
             flex items-center justify-center  font-semibold   
           rounded-full gap-2 px-6 py-4 
