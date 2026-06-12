@@ -63,7 +63,7 @@ export default function HeroSection() {
           active:scale-90 min-w-50
           "
           >
-            <FaPhoneSquareAlt size={36} />
+            <FaPhoneSquareAlt size={36} aria-hidden="true" />
             <span className="text-2xl"> 70 25 46 80</span>
           </a>
         </nav>
