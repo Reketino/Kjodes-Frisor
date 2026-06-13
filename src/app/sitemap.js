@@ -1,7 +1,5 @@
-
-
 export default function sitemap() {
-const baseUrl = "https://kjodesfrisorsalong.no"
+  const baseUrl = "https://kjodesfrisorsalong.no";
 
   return [
     {
