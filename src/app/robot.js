@@ -1,10 +1,11 @@
 export default function robots() {
   return {
-    rules: {
+    rules: [
+      {
       userAgent: "*",
       allow: "/",
-    },
-
+      }
+    ],
     sitemap: "https://kjodesfrisorsalong.no/sitemap.xml",
     host: "https://kjodesfrisorsalong.no"
   };
