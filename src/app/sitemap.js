@@ -16,5 +16,11 @@ const baseUrl = "https://kjodesfrisorsalong.no"
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/kontakt`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    }
   ];
 }
