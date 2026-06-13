@@ -2,11 +2,11 @@ export default function robots() {
   return {
     rules: [
       {
-      userAgent: "*",
-      allow: "/",
-      }
+        userAgent: "*",
+        allow: "/",
+      },
     ],
     sitemap: "https://kjodesfrisorsalong.no/sitemap.xml",
-    host: "https://kjodesfrisorsalong.no"
+    host: "https://kjodesfrisorsalong.no",
   };
 }
