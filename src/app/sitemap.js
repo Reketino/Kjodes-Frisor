@@ -19,7 +19,7 @@ const baseUrl = "https://kjodesfrisorsalong.no"
     {
       url: `${baseUrl}/kontakt`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: "weekly",
       priority: 0.8,
     }
   ];
