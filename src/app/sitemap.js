@@ -21,6 +21,12 @@ const baseUrl = "https://kjodesfrisorsalong.no"
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
-    }
+    },
+    {
+      url: `${baseUrl}/apning`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
   ];
 }
