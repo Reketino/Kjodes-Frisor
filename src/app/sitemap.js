@@ -30,7 +30,7 @@ export default function sitemap() {
       url: `${baseUrl}/booking`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.9,
     },
   ];
 }
