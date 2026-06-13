@@ -6,5 +6,6 @@ export default function robots() {
     },
 
     sitemap: "https://kjodesfrisorsalong.no/sitemap.xml",
+    host: "https://kjodesfrisorsalong.no"
   };
 }
