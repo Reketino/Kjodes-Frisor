@@ -19,19 +19,19 @@ const baseUrl = "https://kjodesfrisorsalong.no"
     {
       url: `${baseUrl}/kontakt`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/apning`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: "monthly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/booking`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: "monthly",
       priority: 0.7,
     },
   ];
