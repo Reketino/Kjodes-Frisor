@@ -30,7 +30,7 @@ export default function Footer() {
         </section>
 
         <address className="not-italic">
-          <p style={{ fontFamily: "'Great Vibes', cursive" }}>
+          <p className={greatVibes.className}>
             Utviklet av{" "}
             <a
               href="https://github.com/Reketino"
