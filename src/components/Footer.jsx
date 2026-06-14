@@ -3,6 +3,7 @@ import React from "react";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
+import { greatVibes } from "@/font/fonts";
 
 export default function Footer() {
   return (
