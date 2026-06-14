@@ -10,19 +10,19 @@ export default function Footer() {
     <footer className="bg-stone-900 border-t border-stone-700">
       <section
         className="
-      flex flex-wrap items-center 
-      justify-between 
+      flex flex-col items-center 
+      md:flex-row md:justify-between 
       px-6 gap-6 py-4
       "
       >
         <section className="flex items-center gap-3">
           <Link href="/">
-            <Image
-              src="/assets/Logo.png"
-              alt="Logo til Kjødes Frisørsalong"
-              width={50}
-              height={50}
-            />
+          <Image
+            src="/assets/Logo.png"
+            alt="Logo til Kjødes Frisørsalong"
+            width={50}
+            height={50}
+          />
           </Link>
           <small className="font-serif">
             © {new Date().getFullYear()} Kjødes Frisørsalong AS.
