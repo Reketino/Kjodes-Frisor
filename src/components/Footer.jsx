@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Footer() {
@@ -14,12 +15,14 @@ export default function Footer() {
       "
       >
         <section className="flex items-center gap-3">
+          <Link href="/">
           <Image
             src="/assets/Logo.png"
             alt="Logo til Kjødes Frisørsalong"
             width={50}
             height={50}
           />
+          </Link>
           <small className="font-serif">
             © {new Date().getFullYear()} Kjødes Frisørsalong AS.
           </small>
