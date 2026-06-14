@@ -3,14 +3,15 @@ import React from "react";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
+import { greatVibes } from "@/font/fonts";
 
 export default function Footer() {
   return (
     <footer className="bg-stone-900 border-t border-stone-700">
       <section
         className="
-      flex flex-wrap items-center 
-      justify-between 
+      flex flex-col items-center 
+      md:flex-row md:justify-between 
       px-6 gap-6 py-4
       "
       >
@@ -29,7 +30,7 @@ export default function Footer() {
         </section>
 
         <address className="not-italic">
-          <p style={{ fontFamily: "'Great Vibes', cursive" }}>
+          <p className={greatVibes.className}>
             Utviklet av{" "}
             <a
               href="https://github.com/Reketino"
