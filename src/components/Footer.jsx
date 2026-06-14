@@ -61,7 +61,7 @@ export default function Footer() {
             </li>
 
             <li>
-              <Link
+              <a
                 href="https://www.facebook.com/profile.php?id=100058599266291"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -71,7 +71,7 @@ export default function Footer() {
                   size={40}
                   className="hover:scale-110 active:scale-90 hover:opacity-85 transition"
                 />
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
