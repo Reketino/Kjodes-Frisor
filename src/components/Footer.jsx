@@ -15,12 +15,14 @@ export default function Footer() {
       "
       >
         <section className="flex items-center gap-3">
+          <Link href="/">
           <Image
             src="/assets/Logo.png"
             alt="Logo til Kjødes Frisørsalong"
             width={50}
             height={50}
           />
+          </Link>
           <small className="font-serif">
             © {new Date().getFullYear()} Kjødes Frisørsalong AS.
           </small>
@@ -47,7 +49,7 @@ export default function Footer() {
 
           <ul className="flex items-center justify-center gap-4">
             <li>
-              <Link
+              <a
                 href="https://www.instagram.com/kjodesfrisorsalongas/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -57,11 +59,11 @@ export default function Footer() {
                   size={40}
                   className="hover:scale-110 active:scale-90 hover:opacity-85 transition"
                 />
-              </Link>
+              </a>
             </li>
 
             <li>
-              <Link
+              <a
                 href="https://www.facebook.com/profile.php?id=100058599266291"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -71,7 +73,7 @@ export default function Footer() {
                   size={40}
                   className="hover:scale-110 active:scale-90 hover:opacity-85 transition"
                 />
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
