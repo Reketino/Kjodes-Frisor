@@ -17,12 +17,12 @@ export default function Footer() {
       >
         <section className="flex items-center gap-3">
           <Link href="/">
-          <Image
-            src="/assets/Logo.png"
-            alt="Logo til Kjødes Frisørsalong"
-            width={50}
-            height={50}
-          />
+            <Image
+              src="/assets/Logo.png"
+              alt="Logo til Kjødes Frisørsalong"
+              width={50}
+              height={50}
+            />
           </Link>
           <small className="font-serif">
             © {new Date().getFullYear()} Kjødes Frisørsalong AS.
