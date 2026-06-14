@@ -47,7 +47,7 @@ export default function Footer() {
 
           <ul className="flex items-center justify-center gap-4">
             <li>
-              <Link
+              <a
                 href="https://www.instagram.com/kjodesfrisorsalongas/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -57,7 +57,7 @@ export default function Footer() {
                   size={40}
                   className="hover:scale-110 active:scale-90 hover:opacity-85 transition"
                 />
-              </Link>
+              </a>
             </li>
 
             <li>
