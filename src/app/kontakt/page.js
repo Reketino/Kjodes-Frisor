@@ -98,8 +98,9 @@ export default function KontaktPage() {
                 href="tel:70254680"
                 title="Ring Kjødes Frisørsalong"
                 className="
-                flex items-center justify-center gap-3
-                p-4
+                flex items-center 
+                md:justify-center 
+                gap-3 p-4
                 rounded-xl
                bg-white/10
                 transition-all
