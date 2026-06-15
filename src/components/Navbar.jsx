@@ -54,7 +54,7 @@ export default function Navbar() {
           aria-expanded={isOpen}
           aria-controls="mobile-menu"
           className="md:hidden flex flex-col space-y-1"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => setIsOpen((prev) => !prev)}
         >
           <span className="block w-6 h-0.5 bg-white"></span>
           <span className="block w-6 h-0.5 bg-white"></span>
