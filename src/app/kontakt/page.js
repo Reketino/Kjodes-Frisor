@@ -91,7 +91,7 @@ export default function KontaktPage() {
                   aria-hidden="true"
                   className="text-red-500"
                 />
-                <span className="text-xl font-medium">
+                <span className="text-base md:text-xl font-medium text-center md:text-left">
                   Storgata 5, 6230 Sykkylven
                 </span>
               </a>
@@ -117,7 +117,7 @@ export default function KontaktPage() {
                   className="text-green-700"
                 />
 
-                <span className="text-xl font-medium">70 25 46 80</span>
+                <span className="text-base md:text-xl font-medium text-center md:text-left">70 25 46 80</span>
               </a>
 
               <a
@@ -131,9 +131,9 @@ export default function KontaktPage() {
                 rounded-xl
               bg-white/10
               min-w-0
-                transition-all
-                hover:bg-white/25
-                hover:-translate-y-1
+              transition-all
+            hover:bg-white/25
+              hover:-translate-y-1
                 "
               >
                 <FaEnvelope
@@ -142,7 +142,7 @@ export default function KontaktPage() {
                   className="text-blue-700"
                 />
 
-                <span className="text-lg md:text-xl font-medium break-all">
+                <span className="min-w-0 text-base md:text-xl font-medium text-center md:text-left break-all">
                   kjodesfrisorsalong@gmail.com
                 </span>
               </a>
