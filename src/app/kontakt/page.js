@@ -89,7 +89,7 @@ export default function KontaktPage() {
                 <FaMapPin
                   size={25}
                   aria-hidden="true"
-                  className="text-red-500"
+                  className="w-6 h-6 shrink-0 text-red-500"
                 />
                 <span className="text-base md:text-xl font-medium text-center md:text-left">
                   Storgata 5, 6230 Sykkylven
@@ -114,7 +114,7 @@ export default function KontaktPage() {
                 <FaPhoneSquareAlt
                   size={25}
                   aria-hidden="true"
-                  className="text-green-700"
+                  className="w-6 h-6 shrink-0 text-green-700"
                 />
 
                 <span className="text-base md:text-xl font-medium text-center md:text-left">70 25 46 80</span>
@@ -139,7 +139,7 @@ export default function KontaktPage() {
                 <FaEnvelope
                   size={25}
                   aria-hidden="true"
-                  className="text-blue-700"
+                  className="w-6 h-6 shrink-0 text-blue-700"
                 />
 
                 <span className="min-w-0 text-base md:text-xl font-medium text-center md:text-left break-all">
