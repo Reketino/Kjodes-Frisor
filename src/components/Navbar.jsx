@@ -14,6 +14,7 @@ export default function Navbar() {
       <div className=" mx-auto flex items-center justify-between px-7 py-5">
         <Link
           href="/"
+          onClick={() => setIsOpen(false)}
           aria-label="Kjødes Frisørsalong - Gå til forsiden"
           className="flex items-center space-x-2"
         >
@@ -54,11 +55,11 @@ export default function Navbar() {
           aria-expanded={isOpen}
           aria-controls="mobile-menu"
           className="md:hidden flex flex-col space-y-1"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => setIsOpen((prev) => !prev)}
         >
-          <span className="block w-6 h-0.5 bg-white"></span>
-          <span className="block w-6 h-0.5 bg-white"></span>
-          <span className="block w-6 h-0.5 bg-white"></span>
+          <span aria-hidden="true" className="block w-6 h-0.5 bg-white"></span>
+          <span aria-hidden="true" className="block w-6 h-0.5 bg-white"></span>
+          <span aria-hidden="true" className="block w-6 h-0.5 bg-white"></span>
         </button>
       </div>
 
