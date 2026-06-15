@@ -121,8 +121,9 @@ export default function KontaktPage() {
                 href="mailto:kjodesfrisorsalong@gmail.com"
                 title="Send e-post til Kjødes Frisørsalong"
                 className="
-                flex items-center justify-center gap-3
-                p-4
+                flex items-center 
+                md:justify-center 
+                gap-3 p-4
                 rounded-xl
               bg-white/10
               min-w-0
