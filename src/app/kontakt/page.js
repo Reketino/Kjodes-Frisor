@@ -117,7 +117,9 @@ export default function KontaktPage() {
                   className="w-6 h-6 shrink-0 text-green-700"
                 />
 
-                <span className="text-base md:text-xl font-medium text-center md:text-left">70 25 46 80</span>
+                <span className="text-base md:text-xl font-medium text-center md:text-left">
+                  70 25 46 80
+                </span>
               </a>
 
               <a
