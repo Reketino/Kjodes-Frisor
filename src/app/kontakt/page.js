@@ -77,6 +77,7 @@ export default function KontaktPage() {
                 className="
                 flex items-center 
                 justify-center 
+                md:justify-start
                 gap-3 p-4
                 rounded-xl
                 bg-white/10
@@ -99,8 +100,9 @@ export default function KontaktPage() {
                 href="tel:70254680"
                 title="Ring Kjødes Frisørsalong"
                 className="
-                flex items-center 
+                flex items-center
                justify-center 
+               md:justify-start
                 gap-3 p-4
                 rounded-xl
                bg-white/10
@@ -124,6 +126,7 @@ export default function KontaktPage() {
                 className="
                 flex items-center 
                 justify-center 
+                md:justify-start
                 gap-3 p-4
                 rounded-xl
               bg-white/10
