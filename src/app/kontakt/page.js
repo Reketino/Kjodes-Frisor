@@ -32,7 +32,7 @@ export default function KontaktPage() {
   return (
     <main className="grow">
       <section
-        className="bg-stone-400 text-neutral-900 py-10 px-6 min-h-[calc(100vh-180px)]"
+        className="bg-stone-400 text-neutral-900 py-10 px-6 min-h-[calc(100vh-180px)] overflow-hidden"
         aria-labelledby="contact-heading"
       >
         <div className="max-w-5xl mx-auto text-center space-y-6">
@@ -59,7 +59,7 @@ export default function KontaktPage() {
             backdrop-blur-md 
             border border-white/20
             rounded-3xl 
-            p-8 
+            p-4 md:p-8 
             space-y-2
             shadow-lg 
             transition 
@@ -75,8 +75,9 @@ export default function KontaktPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-                flex items-center justify-center gap-3
-                p-4
+                flex items-center 
+                md:justify-center 
+                gap-3 p-4
                 rounded-xl
                 bg-white/10
                 transition-all
@@ -98,8 +99,9 @@ export default function KontaktPage() {
                 href="tel:70254680"
                 title="Ring Kjødes Frisørsalong"
                 className="
-                flex items-center justify-center gap-3
-                p-4
+                flex items-center 
+                md:justify-center 
+                gap-3 p-4
                 rounded-xl
                bg-white/10
                 transition-all
@@ -120,10 +122,12 @@ export default function KontaktPage() {
                 href="mailto:kjodesfrisorsalong@gmail.com"
                 title="Send e-post til Kjødes Frisørsalong"
                 className="
-                flex items-center justify-center gap-3
-                p-4
+                flex items-center 
+                md:justify-center 
+                gap-3 p-4
                 rounded-xl
               bg-white/10
+              min-w-0
                 transition-all
                 hover:bg-white/25
                 hover:-translate-y-1
@@ -135,7 +139,7 @@ export default function KontaktPage() {
                   className="text-blue-700"
                 />
 
-                <span className="text-xl font-medium">
+                <span className="text-lg md:text-xl font-medium break-all">
                   kjodesfrisorsalong@gmail.com
                 </span>
               </a>
