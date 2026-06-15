@@ -76,7 +76,7 @@ export default function KontaktPage() {
                 rel="noopener noreferrer"
                 className="
                 flex items-center 
-                md:justify-center 
+                justify-center 
                 gap-3 p-4
                 rounded-xl
                 bg-white/10
@@ -100,7 +100,7 @@ export default function KontaktPage() {
                 title="Ring Kjødes Frisørsalong"
                 className="
                 flex items-center 
-                md:justify-center 
+               justify-center 
                 gap-3 p-4
                 rounded-xl
                bg-white/10
@@ -123,7 +123,7 @@ export default function KontaktPage() {
                 title="Send e-post til Kjødes Frisørsalong"
                 className="
                 flex items-center 
-                md:justify-center 
+                justify-center 
                 gap-3 p-4
                 rounded-xl
               bg-white/10
