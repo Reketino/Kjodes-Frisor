@@ -59,7 +59,7 @@ export default function KontaktPage() {
             backdrop-blur-md 
             border border-white/20
             rounded-3xl 
-            p-8 
+            p-4 md:p-8 
             space-y-2
             shadow-lg 
             transition 
@@ -124,6 +124,7 @@ export default function KontaktPage() {
                 p-4
                 rounded-xl
               bg-white/10
+              min-w-0
                 transition-all
                 hover:bg-white/25
                 hover:-translate-y-1
@@ -135,7 +136,7 @@ export default function KontaktPage() {
                   className="text-blue-700"
                 />
 
-                <span className="text-xl font-medium">
+                <span className="text-lg md:text-xl font-medium wrap-break-word">
                   kjodesfrisorsalong@gmail.com
                 </span>
               </a>
