@@ -75,8 +75,9 @@ export default function KontaktPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-                flex items-center justify-center gap-3
-                p-4
+                flex items-center 
+                md:justify-center 
+                gap-3 p-4
                 rounded-xl
                 bg-white/10
                 transition-all
