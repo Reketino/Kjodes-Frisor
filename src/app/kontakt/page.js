@@ -136,7 +136,7 @@ export default function KontaktPage() {
                   className="text-blue-700"
                 />
 
-                <span className="text-lg md:text-xl font-medium wrap-break-word">
+                <span className="text-lg md:text-xl font-medium break-all">
                   kjodesfrisorsalong@gmail.com
                 </span>
               </a>
