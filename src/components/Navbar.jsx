@@ -56,9 +56,9 @@ export default function Navbar() {
           className="md:hidden flex flex-col space-y-1"
           onClick={() => setIsOpen((prev) => !prev)}
         >
-          <span className="block w-6 h-0.5 bg-white"></span>
-          <span className="block w-6 h-0.5 bg-white"></span>
-          <span className="block w-6 h-0.5 bg-white"></span>
+          <span aria-hidden="true" className="block w-6 h-0.5 bg-white"></span>
+          <span aria-hidden="true" className="block w-6 h-0.5 bg-white"></span>
+          <span aria-hidden="true" className="block w-6 h-0.5 bg-white"></span>
         </button>
       </div>
 
