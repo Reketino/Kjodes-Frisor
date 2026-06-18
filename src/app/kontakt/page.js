@@ -144,7 +144,7 @@ export default function KontaktPage() {
                   className="w-6 h-6 shrink-0 text-blue-700"
                 />
 
-                <span className="min-w-0 text-base md:text-xl font-medium text-center md:text-left break-all">
+                <span className="min-w-0 break-all text-base md:text-xl font-medium text-center md:text-left ">
                   kjodesfrisorsalong@gmail.com
                 </span>
               </a>
