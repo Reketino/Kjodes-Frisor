@@ -30,6 +30,20 @@ export const metadata = {
 
 export default function AapningPage() {
   const today = new Date().getDay();
+
+  const vacation = {
+    enabled: true,
+    start: new Date("2026-07-15"),
+    end: new Date("2026-08-10"),
+    message: "Sommerferie"
+  };
+
+  const now = new Date();
+
+  const isVacation =
+  vacation.enabled && 
+  now >= vacation.start &&
+  now <= vacation.end;
   
 
   const days = [
@@ -77,6 +91,33 @@ export default function AapningPage() {
         >
           Åpningstider
         </h1>
+        {isVacation && (
+          <div className="
+          mb-8 
+          rounded-3xl
+          border border-amber-400
+          bg-amber-500/15
+          backdrop-blur-md
+          p-6
+          text-center
+          shadow-lg
+          "
+          >
+            <h2 className="text-3xl font-serif font-semibold text-amber-300">
+              🌴 Sommerferie
+            </h2>
+
+            <p className="mt-3 text-lg text-stone-100">
+              Kjødes Frisørsalong holder stengt fra {" "}
+              <strong>15. Juli</strong> til{" "}
+              <strong>10. August</strong>
+            </p>
+
+            <p className="mt-2 text-stone-300">
+              Vi ønsker alle våre kunder en riktig god sommer!
+            </p>
+          </div>
+        )}
         <ul className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-8">
           {openingHours.map((service) => {
             const isHelg = ["Lørdag", "Søndag"].includes(service.day);
@@ -96,7 +137,9 @@ export default function AapningPage() {
                     hover:-translate-y-1
 
            ${
-             isToday
+            isVacation
+            ? "bg-amber-500/10 border-2 border-amber-400"
+             : isToday
                ? "bg-green-500/20 border-2 border-green-500"
                : "bg-white/10 border-2 border-stone-500"
            }
@@ -110,7 +153,9 @@ export default function AapningPage() {
                     dateTime={service.dateTime}
                     className={`text-2xl leading-relaxed transition-colors duration-300  
           ${
-            isHelg
+            isVacation
+            ? "text-amber-300"
+            : isHelg
               ? "text-stone-200 group-hover:text-red-600"
               : "text-stone-200 group-hover:text-green-500"
           }`}
@@ -118,7 +163,26 @@ export default function AapningPage() {
                     {service.time}
                   </time>
 
-                  {isToday && (
+                  {isVacation ? (
+                    <span className="
+                    absolute
+                    top-4
+                    right-4
+                    rounded-full
+                    bg-amber-500/90
+                    px-3
+                    py-1
+                    text-xs
+                    font-semibold
+                    uppercase
+                    tracking-wide
+                    text-white
+                    "
+                    >
+                      Sommerferie
+                    </span>
+                  ) : (
+                  isToday && (
                     <span
                       className={`
                       absolute
@@ -135,6 +199,7 @@ export default function AapningPage() {
                     >
                       {isClosedToday ? "Stengt i dag" : "Åpent i dag"}
                     </span>
+                    )
                   )}
                 </article>
               </li>
