@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { closedPeriods } from "@/data/closedPeriod";
 
 export const metadata = {
   title: "Åpningstider",
