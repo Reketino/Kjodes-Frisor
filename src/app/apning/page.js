@@ -132,7 +132,7 @@ export default function AapningPage() {
                     hover:-translate-y-1
 
            ${
-            isVacation
+            isClosedPeriod
             ? "bg-amber-500/10 border-2 border-amber-400"
              : isToday
                ? "bg-green-500/20 border-2 border-green-500"
