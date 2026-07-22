@@ -105,6 +105,9 @@ export default function AapningPage() {
             <p className="mt-3 text-lg text-stone-100">
               {activePeriod.message}
             </p>
+            <p className="mt-2 text-stone-300">
+              {activePeriod.greeting}
+            </p>
           </div>
         )}
         <ul className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-8">
