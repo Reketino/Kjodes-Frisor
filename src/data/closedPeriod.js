@@ -6,7 +6,14 @@ export const closedPeriods = [
     color: "amber",
     icon: "🌴",
     message: "Kjødes Frisørsalong holder stengt fra 15. juli til 10. august.",
-    greeting: "Vi ønsker alle våre kunder en riktig god sommer!"
+    greeting: "Vi ønsker alle våre kunder en riktig god sommer!",
+    theme: {
+      notice: "border-amber-400 bg-amber-500/15",
+      heading: "text-amber-300",
+      card: "bg-amber-500/10 border-amber-400",
+      time: "text-amber-300",
+      badge: "bg-amber-500/90"
+    },
   },
 
   {
