@@ -103,9 +103,7 @@ export default function AapningPage() {
             </h2>
 
             <p className="mt-3 text-lg text-stone-100">
-              Kjødes Frisørsalong holder stengt fra {" "}
-              <strong>15. Juli</strong> til{" "}
-              <strong>10. August</strong>
+              {activePeriod.message}
             </p>
 
             <p className="mt-2 text-stone-300">
