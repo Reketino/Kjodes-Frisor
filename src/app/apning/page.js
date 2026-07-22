@@ -32,19 +32,13 @@ export const metadata = {
 export default function AapningPage() {
   const today = new Date().getDay();
 
-  const vacation = {
-    enabled: true,
-    start: new Date("2026-07-15"),
-    end: new Date("2026-08-10"),
-    message: "Sommerferie"
-  };
-
   const now = new Date();
 
-  const isVacation =
-  vacation.enabled && 
-  now >= vacation.start &&
-  now <= vacation.end;
+  const activePeriod = closedPeriods.find(
+    (period) => now >= period.start && now <= period.end
+  );
+
+  const isClosedPeriod = Boolean(activePeriod)
   
 
   const days = [
@@ -92,7 +86,7 @@ export default function AapningPage() {
         >
           Åpningstider
         </h1>
-        {isVacation && (
+        {isClosedPeriod && activePeriod && (
           <div className="
           mb-8 
           rounded-3xl
@@ -105,17 +99,14 @@ export default function AapningPage() {
           "
           >
             <h2 className="text-3xl font-serif font-semibold text-amber-300">
-              🌴 Sommerferie
+              {activePeriod.icon} {activePeriod.name}
             </h2>
 
             <p className="mt-3 text-lg text-stone-100">
-              Kjødes Frisørsalong holder stengt fra {" "}
-              <strong>15. Juli</strong> til{" "}
-              <strong>10. August</strong>
+              {activePeriod.message}
             </p>
-
             <p className="mt-2 text-stone-300">
-              Vi ønsker alle våre kunder en riktig god sommer!
+              {activePeriod.greeting}
             </p>
           </div>
         )}
@@ -138,7 +129,7 @@ export default function AapningPage() {
                     hover:-translate-y-1
 
            ${
-            isVacation
+            isClosedPeriod
             ? "bg-amber-500/10 border-2 border-amber-400"
              : isToday
                ? "bg-green-500/20 border-2 border-green-500"
@@ -154,7 +145,7 @@ export default function AapningPage() {
                     dateTime={service.dateTime}
                     className={`text-2xl leading-relaxed transition-colors duration-300  
           ${
-            isVacation
+            isClosedPeriod
             ? "text-amber-300"
             : isHelg
               ? "text-stone-200 group-hover:text-red-600"
@@ -164,7 +155,7 @@ export default function AapningPage() {
                     {service.time}
                   </time>
 
-                  {isVacation ? (
+                  {isClosedPeriod && activePeriod ? (
                     <span className="
                     absolute
                     top-4
@@ -180,7 +171,7 @@ export default function AapningPage() {
                     text-white
                     "
                     >
-                      Sommerferie
+                      {activePeriod.name}
                     </span>
                   ) : (
                   isToday && (

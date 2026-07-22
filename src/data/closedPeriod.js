@@ -6,6 +6,7 @@ export const closedPeriods = [
     color: "amber",
     icon: "🌴",
     message: "Kjødes Frisørsalong holder stengt fra 15. juli til 10. august.",
+    greeting: "Vi ønsker alle våre kunder en riktig god sommer!"
   },
 
   {
@@ -15,14 +16,16 @@ export const closedPeriods = [
     color: "red",
     icon: "🎄",
     message: "Kjødes Frisørsalong holder stengt i julen.",
+     greeting: "Vi ønsker alle våre kunder en riktig god jul!"
   },
 
   {
     name: "Påskeferie",
     start: new Date("2027-03-29"),
-    end: new Date("2026-04-05"),
+    end: new Date("2027-04-05"),
     color: "yellow",
     icon: "🐣",
     message: "Kjødes Frisørsalong holder stengt i påsken.",
+     greeting: "Vi ønsker alle våre kunder en riktig god påske!"
   },
 ];
