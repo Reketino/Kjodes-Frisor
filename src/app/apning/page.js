@@ -32,19 +32,13 @@ export const metadata = {
 export default function AapningPage() {
   const today = new Date().getDay();
 
-  const vacation = {
-    enabled: true,
-    start: new Date("2026-07-15"),
-    end: new Date("2026-08-10"),
-    message: "Sommerferie"
-  };
-
   const now = new Date();
 
-  const isVacation =
-  vacation.enabled && 
-  now >= vacation.start &&
-  now <= vacation.end;
+  const activePeriod = closedPeriods.find(
+    (period) => now >= period.start && now <= period.end
+  );
+
+  const isClosedPeriod = Boolean(activePeriod)
   
 
   const days = [
