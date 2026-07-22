@@ -158,7 +158,7 @@ export default function AapningPage() {
                     {service.time}
                   </time>
 
-                  {isVacation ? (
+                  {isClosedPeriod ? (
                     <span className="
                     absolute
                     top-4
