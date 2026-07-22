@@ -148,7 +148,7 @@ export default function AapningPage() {
                     dateTime={service.dateTime}
                     className={`text-2xl leading-relaxed transition-colors duration-300  
           ${
-            isVacation
+            isClosedPeriod
             ? "text-amber-300"
             : isHelg
               ? "text-stone-200 group-hover:text-red-600"
