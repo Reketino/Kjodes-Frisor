@@ -86,7 +86,7 @@ export default function AapningPage() {
         >
           Åpningstider
         </h1>
-        {isVacation && (
+        {isClosedPeriod && activePeriod && (
           <div className="
           mb-8 
           rounded-3xl
