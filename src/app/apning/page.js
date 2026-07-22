@@ -99,7 +99,7 @@ export default function AapningPage() {
           "
           >
             <h2 className="text-3xl font-serif font-semibold text-amber-300">
-              🌴 Sommerferie
+              {activePeriod.icon} {activePeriod.name}
             </h2>
 
             <p className="mt-3 text-lg text-stone-100">
