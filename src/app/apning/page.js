@@ -99,7 +99,13 @@ export default function AapningPage() {
           ${activePeriod.theme.notice}
         `}
           >
-            <h2 className="text-3xl font-serif font-semibold text-amber-300">
+            <h2 className={`
+              text-3xl 
+              font-serif 
+              font-semibold
+              ${activePeriod.theme,heading}
+              `}
+              >
               {activePeriod.icon} {activePeriod.name}
             </h2>
 
