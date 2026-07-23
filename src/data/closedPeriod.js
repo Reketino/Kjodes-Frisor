@@ -23,7 +23,15 @@ export const closedPeriods = [
     color: "red",
     icon: "🎄",
     message: "Kjødes Frisørsalong holder stengt i julen.",
-     greeting: "Vi ønsker alle våre kunder en riktig god jul!"
+    greeting: "Vi ønsker alle våre kunder en riktig god jul!",
+    theme: {
+      notice: "border-red-400 bg-red-500/15",
+      heading: "text-red-300",
+      card: "bg-red-300",
+      time: "text-red-300",
+      badge: "bg-red-500/90"
+    }
+
   },
 
   {
