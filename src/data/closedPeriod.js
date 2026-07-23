@@ -27,7 +27,7 @@ export const closedPeriods = [
     theme: {
       notice: "border-red-400 bg-red-500/15",
       heading: "text-red-300",
-      card: "bg-red-300",
+      card: "bg-red-500/10 border-red-400",
       time: "text-red-300",
       badge: "bg-red-500/90"
     }
