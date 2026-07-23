@@ -87,7 +87,7 @@ export default function AapningPage() {
           Åpningstider
         </h1>
         {isClosedPeriod && activePeriod && (
-          <div className="
+          <div className={`
           mb-8 
           rounded-3xl
           border border-amber-400
@@ -96,9 +96,16 @@ export default function AapningPage() {
           p-6
           text-center
           shadow-lg
-          "
+          ${activePeriod.theme.notice}
+        `}
           >
-            <h2 className="text-3xl font-serif font-semibold text-amber-300">
+            <h2 className={`
+              text-3xl 
+              font-serif 
+              font-semibold
+              ${activePeriod.theme.heading}
+              `}
+              >
               {activePeriod.icon} {activePeriod.name}
             </h2>
 
