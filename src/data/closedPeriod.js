@@ -12,7 +12,7 @@ export const closedPeriods = [
       heading: "text-amber-300",
       card: "bg-amber-500/10 border-amber-400",
       time: "text-amber-300",
-      badge: "bg-amber-500/90"
+      badge: "bg-amber-500/90",
     },
   },
 
@@ -29,9 +29,8 @@ export const closedPeriods = [
       heading: "text-red-300",
       card: "bg-red-500/10 border-red-400",
       time: "text-red-300",
-      badge: "bg-red-500/90"
-    }
-
+      badge: "bg-red-500/90",
+    },
   },
 
   {
@@ -41,13 +40,13 @@ export const closedPeriods = [
     color: "yellow",
     icon: "🐣",
     message: "Kjødes Frisørsalong holder stengt i påsken.",
-     greeting: "Vi ønsker alle våre kunder en riktig god påske!",
-      theme: {
+    greeting: "Vi ønsker alle våre kunder en riktig god påske!",
+    theme: {
       notice: "border-yellow-400 bg-yellow-500/15",
       heading: "text-yellow-300",
       card: "bg-yellow-500/10 border-yellow-400",
       time: "text-yellow-300",
       badge: "bg-yellow-500/90",
-    }
+    },
   },
 ];
