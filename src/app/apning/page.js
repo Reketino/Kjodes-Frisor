@@ -103,7 +103,7 @@ export default function AapningPage() {
               text-3xl 
               font-serif 
               font-semibold
-              ${activePeriod.theme,heading}
+              ${activePeriod.theme.heading}
               `}
               >
               {activePeriod.icon} {activePeriod.name}
