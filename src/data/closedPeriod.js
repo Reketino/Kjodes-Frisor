@@ -41,6 +41,13 @@ export const closedPeriods = [
     color: "yellow",
     icon: "🐣",
     message: "Kjødes Frisørsalong holder stengt i påsken.",
-     greeting: "Vi ønsker alle våre kunder en riktig god påske!"
+     greeting: "Vi ønsker alle våre kunder en riktig god påske!",
+      theme: {
+      notice: "border-yellow-400 bg-yellow-500/15",
+      heading: "text-yellow-300",
+      card: "bg-yellow-500/10 border-yellow-400",
+      time: "text-yellow-300",
+      badge: "bg-yellow-500/90",
+    }
   },
 ];
