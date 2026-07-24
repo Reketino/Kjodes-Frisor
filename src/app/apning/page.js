@@ -90,8 +90,7 @@ export default function AapningPage() {
           <div className={`
           mb-8 
           rounded-3xl
-          border border-amber-400
-          bg-amber-500/15
+          border
           backdrop-blur-md
           p-6
           text-center
@@ -195,7 +194,6 @@ export default function AapningPage() {
                     top-4
                     right-4
                     rounded-full
-                    bg-amber-500/90
                     px-3
                     py-1
                     text-xs
