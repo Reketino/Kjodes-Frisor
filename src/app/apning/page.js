@@ -35,11 +35,10 @@ export default function AapningPage() {
   const now = new Date();
 
   const activePeriod = closedPeriods.find(
-    (period) => now >= period.start && now <= period.end
+    (period) => now >= period.start && now <= period.end,
   );
 
-  const isClosedPeriod = Boolean(activePeriod)
-  
+  const isClosedPeriod = Boolean(activePeriod);
 
   const days = [
     "Søndag",
@@ -87,7 +86,8 @@ export default function AapningPage() {
           Åpningstider
         </h1>
         {isClosedPeriod && activePeriod && (
-          <div className={`
+          <div
+            className={`
           mb-8 
           rounded-3xl
           border
@@ -98,22 +98,21 @@ export default function AapningPage() {
           ${activePeriod.theme.notice}
         `}
           >
-            <h2 className={`
+            <h2
+              className={`
               text-3xl 
               font-serif 
               font-semibold
               ${activePeriod.theme.heading}
               `}
-              >
+            >
               {activePeriod.icon} {activePeriod.name}
             </h2>
 
             <p className="mt-3 text-lg text-stone-100">
               {activePeriod.message}
             </p>
-            <p className="mt-2 text-stone-300">
-              {activePeriod.greeting}
-            </p>
+            <p className="mt-2 text-stone-300">{activePeriod.greeting}</p>
           </div>
         )}
         <ul className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-8">
@@ -136,20 +135,20 @@ export default function AapningPage() {
                     hover:-translate-y-1
 
            ${
-            isClosedPeriod && activePeriod
-            ? activePeriod.theme.card
-             : isToday
-               ? "bg-green-500/20 border-green-500"
-               : "bg-white/10 border-stone-500"
+             isClosedPeriod && activePeriod
+               ? activePeriod.theme.card
+               : isToday
+                 ? "bg-green-500/20 border-green-500"
+                 : "bg-white/10 border-stone-500"
            }
            
            ${
-            isClosedPeriod
-            ? ""
-            : isHelg 
-            ? " hover:bg-neutral-900 hover:shadow-red-500/30" 
-            : " hover:bg-neutral-900 hover:shadow-green-500/30"
-          }
+             isClosedPeriod
+               ? ""
+               : isHelg
+                 ? " hover:bg-neutral-900 hover:shadow-red-500/30"
+                 : " hover:bg-neutral-900 hover:shadow-green-500/30"
+           }
         `}
                 >
                   <h2 className=" text-4xl font-semibold mb-2 text-stone-400">
@@ -160,20 +159,19 @@ export default function AapningPage() {
                     className={`text-2xl leading-relaxed transition-colors duration-300  
           ${
             isClosedPeriod && activePeriod
-            ? activePeriod.theme.time
-            : isHelg
-              ? "text-stone-200 group-hover:text-red-600"
-              : "text-stone-200 group-hover:text-green-500"
-          }`
-        }
+              ? activePeriod.theme.time
+              : isHelg
+                ? "text-stone-200 group-hover:text-red-600"
+                : "text-stone-200 group-hover:text-green-500"
+          }`}
                   >
                     {service.time}
                   </time>
 
                   {isClosedPeriod && activePeriod && (
                     <span
-                    aria-hidden="true"
-                    className="
+                      aria-hidden="true"
+                      className="
                     absolute
                     right-5
                     bottom-4
@@ -190,7 +188,8 @@ export default function AapningPage() {
                   )}
 
                   {isClosedPeriod && activePeriod ? (
-                    <span className={`
+                    <span
+                      className={`
                     absolute
                     top-4
                     right-4
@@ -208,9 +207,9 @@ export default function AapningPage() {
                       {activePeriod.name}
                     </span>
                   ) : (
-                  isToday && (
-                    <span
-                      className={`
+                    isToday && (
+                      <span
+                        className={`
                       absolute
                       top-4
                       right-4
@@ -222,9 +221,9 @@ export default function AapningPage() {
                     text-white
                     ${isClosedToday ? "bg-red-600" : "bg-green-600"}
                     `}
-                    >
-                      {isClosedToday ? "Stengt i dag" : "Åpent i dag"}
-                    </span>
+                      >
+                        {isClosedToday ? "Stengt i dag" : "Åpent i dag"}
+                      </span>
                     )
                   )}
                 </article>
