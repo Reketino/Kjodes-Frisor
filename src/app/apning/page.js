@@ -90,8 +90,7 @@ export default function AapningPage() {
           <div className={`
           mb-8 
           rounded-3xl
-          border border-amber-400
-          bg-amber-500/15
+          border
           backdrop-blur-md
           p-6
           text-center
@@ -128,22 +127,30 @@ export default function AapningPage() {
                 <article
                   className={`
                     relative
-                    group p-6 rounded-4xl 
-                    bg-white/10 border-2 
+                    group 
+                    p-6 
+                    rounded-4xl 
+                   border-2 
                     backdrop-blur-md shadow-md 
                     transition-all duration-300
-                  hover:bg-neutral-900  
                     hover:-translate-y-1
 
            ${
-            isClosedPeriod
-            ? "bg-amber-500/10 border-2 border-amber-400"
+            isClosedPeriod && activePeriod
+            ? activePeriod.theme.card
              : isToday
-               ? "bg-green-500/20 border-2 border-green-500"
-               : "bg-white/10 border-2 border-stone-500"
+               ? "bg-green-500/20 border-green-500"
+               : "bg-white/10 border-stone-500"
            }
-
-           ${isHelg ? "hover:shadow-red-500/30" : "hover:shadow-green-500/30"}`}
+           
+           ${
+            isClosedPeriod
+            ? ""
+            : isHelg 
+            ? " hover:bg-neutral-900 hover:shadow-red-500/30" 
+            : " hover:bg-neutral-900 hover:shadow-green-500/30"
+          }
+        `}
                 >
                   <h2 className=" text-4xl font-semibold mb-2 text-stone-400">
                     {service.day}
@@ -152,23 +159,42 @@ export default function AapningPage() {
                     dateTime={service.dateTime}
                     className={`text-2xl leading-relaxed transition-colors duration-300  
           ${
-            isClosedPeriod
-            ? "text-amber-300"
+            isClosedPeriod && activePeriod
+            ? activePeriod.theme.time
             : isHelg
               ? "text-stone-200 group-hover:text-red-600"
               : "text-stone-200 group-hover:text-green-500"
-          }`}
+          }`
+        }
                   >
                     {service.time}
                   </time>
 
+                  {isClosedPeriod && activePeriod && (
+                    <span
+                    aria-hidden="true"
+                    className="
+                    absolute
+                    right-5
+                    bottom-4
+                    text-4xl
+                    opacity-70
+                    transition-transform
+                    duration-300
+                    group-hover:scale-110
+                    group-hover:rotate-6
+                    "
+                    >
+                      {activePeriod.icon}
+                    </span>
+                  )}
+
                   {isClosedPeriod && activePeriod ? (
-                    <span className="
+                    <span className={`
                     absolute
                     top-4
                     right-4
                     rounded-full
-                    bg-amber-500/90
                     px-3
                     py-1
                     text-xs
@@ -176,7 +202,8 @@ export default function AapningPage() {
                     uppercase
                     tracking-wide
                     text-white
-                    "
+                    ${activePeriod.theme.badge}
+                    `}
                     >
                       {activePeriod.name}
                     </span>
