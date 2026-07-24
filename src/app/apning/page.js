@@ -159,12 +159,13 @@ export default function AapningPage() {
                     dateTime={service.dateTime}
                     className={`text-2xl leading-relaxed transition-colors duration-300  
           ${
-            isClosedPeriod
-            ? "text-amber-300"
+            isClosedPeriod && activePeriod
+            ? activePeriod.theme.time
             : isHelg
               ? "text-stone-200 group-hover:text-red-600"
               : "text-stone-200 group-hover:text-green-500"
-          }`}
+          }`
+        }
                   >
                     {service.time}
                   </time>
