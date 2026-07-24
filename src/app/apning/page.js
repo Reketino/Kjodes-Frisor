@@ -135,8 +135,8 @@ export default function AapningPage() {
                     hover:-translate-y-1
 
            ${
-            isClosedPeriod
-            ? "bg-amber-500/10 border-2 border-amber-400"
+            isClosedPeriod && activePeriod
+            ? activePeriod.theme.card
              : isToday
                ? "bg-green-500/20 border-2 border-green-500"
                : "bg-white/10 border-2 border-stone-500"
