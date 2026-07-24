@@ -37,7 +37,6 @@ export const closedPeriods = [
     name: "Påskeferie",
     start: new Date("2027-03-29"),
     end: new Date("2027-04-05"),
-    color: "yellow",
     icon: "🐣",
     message: "Kjødes Frisørsalong holder stengt i påsken.",
     greeting: "Vi ønsker alle våre kunder en riktig god påske!",
