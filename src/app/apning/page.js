@@ -162,6 +162,25 @@ export default function AapningPage() {
                     {service.time}
                   </time>
 
+                  {isClosedPeriod && activePeriod && (
+                    <span
+                    aria-hidden="true"
+                    className="
+                    absolute
+                    right-5
+                    bottom-4
+                    text-4xl
+                    opacity-70
+                    transition-transform
+                    duration-300
+                    group-hover:scale-110
+                    group-hover:rotate-6
+                    "
+                    >
+                      {activePeriod.icon}
+                    </span>
+                  )}
+
                   {isClosedPeriod && activePeriod ? (
                     <span className="
                     absolute
