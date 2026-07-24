@@ -3,7 +3,7 @@ export const closedPeriods = [
     name: "Sommerferie",
     start: new Date("2026-07-15"),
     end: new Date("2026-08-10"),
-    icon: "🌴",
+    icon: "🏖️",
     message: "Kjødes Frisørsalong holder stengt fra 15. juli til 10. august.",
     greeting: "Vi ønsker alle våre kunder en riktig god sommer!",
     theme: {
