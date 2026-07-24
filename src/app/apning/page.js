@@ -133,7 +133,6 @@ export default function AapningPage() {
                    border-2 
                     backdrop-blur-md shadow-md 
                     transition-all duration-300
-                  hover:bg-neutral-900  
                     hover:-translate-y-1
 
            ${
@@ -141,15 +140,15 @@ export default function AapningPage() {
             ? activePeriod.theme.card
              : isToday
                ? "bg-green-500/20 border-green-500"
-               : "bg-white/10  border-stone-500"
+               : "bg-white/10 border-stone-500"
            }
-
+           
            ${
             isClosedPeriod
             ? ""
             : isHelg 
-            ? "hover:shadow-red-500/30" 
-            : "hover:shadow-green-500/30"
+            ? " hover:bg-neutral-900 hover:shadow-red-500/30" 
+            : " hover:bg-neutral-900 hover:shadow-green-500/30"
           }
         `}
                 >
