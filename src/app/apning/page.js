@@ -190,7 +190,7 @@ export default function AapningPage() {
                   )}
 
                   {isClosedPeriod && activePeriod ? (
-                    <span className="
+                    <span className={`
                     absolute
                     top-4
                     right-4
@@ -203,7 +203,7 @@ export default function AapningPage() {
                     uppercase
                     tracking-wide
                     text-white
-                    "
+                    `}
                     >
                       {activePeriod.name}
                     </span>
