@@ -127,8 +127,10 @@ export default function AapningPage() {
                 <article
                   className={`
                     relative
-                    group p-6 rounded-4xl 
-                    bg-white/10 border-2 
+                    group 
+                    p-6 
+                    rounded-4xl 
+                   border-2 
                     backdrop-blur-md shadow-md 
                     transition-all duration-300
                   hover:bg-neutral-900  
@@ -138,8 +140,8 @@ export default function AapningPage() {
             isClosedPeriod && activePeriod
             ? activePeriod.theme.card
              : isToday
-               ? "bg-green-500/20 border-2 border-green-500"
-               : "bg-white/10 border-2 border-stone-500"
+               ? "bg-green-500/20 border-green-500"
+               : "bg-white/10  border-stone-500"
            }
 
            ${
