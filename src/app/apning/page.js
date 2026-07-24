@@ -203,6 +203,7 @@ export default function AapningPage() {
                     uppercase
                     tracking-wide
                     text-white
+                    ${activePeriod.theme.badge}
                     `}
                     >
                       {activePeriod.name}
