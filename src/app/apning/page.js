@@ -143,7 +143,14 @@ export default function AapningPage() {
                : "bg-white/10 border-2 border-stone-500"
            }
 
-           ${isHelg ? "hover:shadow-red-500/30" : "hover:shadow-green-500/30"}`}
+           ${
+            isClosedPeriod
+            ? ""
+            : isHelg 
+            ? "hover:shadow-red-500/30" 
+            : "hover:shadow-green-500/30"
+          }
+        `}
                 >
                   <h2 className=" text-4xl font-semibold mb-2 text-stone-400">
                     {service.day}
