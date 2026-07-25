@@ -50,8 +50,7 @@ export const metadata = {
   ];
 
   export default function AapningPage() {
-      const today = new Date().getDay();
-
+  const today = new Date().getDay();
   const now = new Date();
 
   const activePeriod = closedPeriods.find(
