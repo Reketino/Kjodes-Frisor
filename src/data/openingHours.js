@@ -1,3 +1,13 @@
+export const days = [
+    "Søndag",
+    "Mandag",
+    "Tirsdag",
+    "Onsdag",
+    "Torsdag",
+    "Fredag",
+    "Lørdag",
+]
+
 export const openingHours = [
     { day: "Mandag", time: "09-16:30", dateTime: "09:00/16:30" },
     { day: "Tirsdag", time: "09-16:30", dateTime: "09:00/16:30" },

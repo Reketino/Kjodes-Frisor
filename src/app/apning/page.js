@@ -53,7 +53,6 @@ export const metadata = {
     const now = new Date();
     const today = now.getDay();
 
-
   const activePeriod = closedPeriods.find(
     (period) => now >= period.start && now <= period.end,
   );
