@@ -29,7 +29,7 @@ export const metadata = {
   },
 };
 
-export default function AapningPage() {
+
   const today = new Date().getDay();
 
   const now = new Date();
@@ -59,6 +59,8 @@ export default function AapningPage() {
     { day: "Lørdag", time: "Stengt", dateTime: undefined },
     { day: "Søndag", time: "Stengt", dateTime: undefined },
   ];
+
+  export default function AapningPage() {
 
   return (
     <main className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
