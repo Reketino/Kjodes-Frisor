@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { closedPeriods } from "@/data/closedPeriod";
-import { days, openingHours} from "@/data/openingHours";
+import { days, openingHours } from "@/data/openingHours";
 
 export const metadata = {
   title: "Åpningstider",
@@ -30,9 +30,9 @@ export const metadata = {
   },
 };
 
-  export default function AapningPage() {
-    const now = new Date();
-    const today = now.getDay();
+export default function AapningPage() {
+  const now = new Date();
+  const today = now.getDay();
 
   const activePeriod = closedPeriods.find(
     (period) => now >= period.start && now <= period.end,
