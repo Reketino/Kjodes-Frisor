@@ -29,17 +29,6 @@ export const metadata = {
   },
 };
 
-
-  const today = new Date().getDay();
-
-  const now = new Date();
-
-  const activePeriod = closedPeriods.find(
-    (period) => now >= period.start && now <= period.end,
-  );
-
-  const isClosedPeriod = Boolean(activePeriod);
-
   const days = [
     "Søndag",
     "Mandag",
@@ -61,6 +50,15 @@ export const metadata = {
   ];
 
   export default function AapningPage() {
+      const today = new Date().getDay();
+
+  const now = new Date();
+
+  const activePeriod = closedPeriods.find(
+    (period) => now >= period.start && now <= period.end,
+  );
+
+  const isClosedPeriod = Boolean(activePeriod);
 
   return (
     <main className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
