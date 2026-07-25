@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { closedPeriods } from "@/data/closedPeriod";
+import { days, openingHours} from "@/data/openingHours";
 
 export const metadata = {
   title: "Åpningstider",
@@ -29,36 +30,15 @@ export const metadata = {
   },
 };
 
-export default function AapningPage() {
-  const today = new Date().getDay();
-
-  const now = new Date();
+  export default function AapningPage() {
+    const now = new Date();
+    const today = now.getDay();
 
   const activePeriod = closedPeriods.find(
     (period) => now >= period.start && now <= period.end,
   );
 
   const isClosedPeriod = Boolean(activePeriod);
-
-  const days = [
-    "Søndag",
-    "Mandag",
-    "Tirsdag",
-    "Onsdag",
-    "Torsdag",
-    "Fredag",
-    "Lørdag",
-  ];
-
-  const openingHours = [
-    { day: "Mandag", time: "09-16:30", dateTime: "09:00/16:30" },
-    { day: "Tirsdag", time: "09-16:30", dateTime: "09:00/16:30" },
-    { day: "Onsdag", time: "09-16:30", dateTime: "09:00/16:30" },
-    { day: "Torsdag", time: "09-16:30", dateTime: "09:00/16:30" },
-    { day: "Fredag", time: "09-16", dateTime: "09:00/16:00" },
-    { day: "Lørdag", time: "Stengt", dateTime: undefined },
-    { day: "Søndag", time: "Stengt", dateTime: undefined },
-  ];
 
   return (
     <main className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
