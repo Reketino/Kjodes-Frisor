@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { closedPeriods } from "@/data/closedPeriod";
 import { days, openingHours } from "@/data/openingHours";
