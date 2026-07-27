@@ -1,7 +1,8 @@
 import { Geist, Geist_Mono, Great_Vibes } from "next/font/google";
 import Navbar from "@/components/Navbar";
-import "./globals.css";
 import Footer from "@/components/Footer";
+import { businessSchema } from "@/data/business";
+import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -57,6 +58,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(businessSchema),
+          }}
+        />
+
         <Navbar />
 
         <main className="grow mt-20">{children}</main>

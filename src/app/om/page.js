@@ -20,7 +20,7 @@ export const metadata = {
 
     images: [
       {
-        url: "/salong.webp",
+        url: "/assets/salong.webp",
         width: 1200,
         height: 630,
         alt: "Kjødes Frisørsalong",
@@ -116,14 +116,14 @@ export default function OmPage() {
       <section className="px-6 py-16 max-w-6xl mx-auto">
         <figure className="flex flex-col items-center gap-5">
           <Image
-            src="/salong.webp"
+            src="/assets/salong.webp"
             alt="Bilde av salongen"
             className="w-full max-w-3xl rounded-4xl shadow-lg object-cover
       grayscale hover:scale-101 hover:grayscale-0  
       transition-all duration-700"
             width={1920}
             height={1080}
-            sizes="(max-width: 768px) 100vw, 384px"
+            sizes="(max-width: 768px) 100vw, 768px"
           />
           <figcaption className=" md:w-1/2 font-semibold leading-relaxed text-neutral-400 text-xl text-center">
             Velkommen til Kjødes Frisørsalong – hvor tradisjon møter moderne
