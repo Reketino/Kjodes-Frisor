@@ -5,4 +5,22 @@ export const businessSchema = {
     name: "Kjødes Frisørsalong AS",
     url: "https://www.kjodesfrisorsalong.no/",
     telephone: "+47 70 25 46 80",
+
+    address: {
+        "@type": "PostalAddress",
+        streetAddress: "Storgata 5",
+        postalCode: "6230",
+        addressLocality: "Sykkylven",
+        addressCountry: "NO",
+    },
+
+    openingHoursSpecification: [
+        {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
+            opens: "09:00",
+            closes: "16:30",
+        },
+        
+    ]
 }
