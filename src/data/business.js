@@ -4,7 +4,7 @@ export const businessSchema = {
 
     name: "Kjødes Frisørsalong AS",
     url: "https://www.kjodesfrisorsalong.no/",
-    telephone: "+47 70 25 46 80",
+    telephone: "+4770254680",
 
     address: {
         "@type": "PostalAddress",
