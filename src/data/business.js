@@ -21,6 +21,11 @@ export const businessSchema = {
             opens: "09:00",
             closes: "16:30",
         },
-        
+        {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: "Friday",
+            opens: "09:00",
+            closes: "16:00",
+        }
     ]
 }
