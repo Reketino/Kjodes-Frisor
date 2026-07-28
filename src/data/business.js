@@ -3,7 +3,7 @@ export const businessSchema = {
   "@type": "HairSalon",
 
   name: "Kjødes Frisørsalong AS",
-  url: "https://kjodesfrisorsalong.no/",
+  url: "https://www.kjodesfrisorsalong.no/",
   telephone: "+4770254680",
 
   address: {

@@ -20,7 +20,7 @@ const greatVibes = Great_Vibes({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://kjodesfrisorsalong.no"),
+  metadataBase: new URL("https://www.kjodesfrisorsalong.no"),
 
   title: "Kjødes Frisørsalong",
 
@@ -39,7 +39,7 @@ export const metadata = {
     description:
       "Frisør i Sykkylven – klipp, styling, farge og timebestilling.",
 
-    url: "https://kjodesfrisorsalong.no",
+    url: "https://www.kjodesfrisorsalong.no",
 
     images: [
       {
