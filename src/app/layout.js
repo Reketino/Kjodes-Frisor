@@ -29,14 +29,11 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "nb_NO",
-
+    url: "https://www.kjodesfrisorsalong.no",
+    siteName: "Kjødes Frisørsalong",
     title: "Kjødes Frisørsalong",
-
     description:
       "Frisør i Sykkylven – klipp, styling, farge og timebestilling.",
-
-    url: "https://www.kjodesfrisorsalong.no",
-
     images: [
       {
         url: "/assets/Logo.png",
