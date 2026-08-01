@@ -6,7 +6,7 @@ export default function robots() {
         allow: "/",
       },
     ],
-    sitemap: "https://kjodesfrisorsalong.no/sitemap.xml",
-    host: "https://kjodesfrisorsalong.no",
+    sitemap: "https://www.kjodesfrisorsalong.no/sitemap.xml",
+    host: "https://www.kjodesfrisorsalong.no",
   };
 }
