@@ -14,6 +14,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport = {
+  themeColor: "#2b211c",
+};
+
 export const metadata = {
   metadataBase: new URL("https://www.kjodesfrisorsalong.no"),
 
