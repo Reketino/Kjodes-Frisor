@@ -25,6 +25,10 @@ export const metadata = {
 
   description: "Frisør i Sykkylven – klipp, styling, farge og timebestilling.",
 
+  alternates: {
+    cannonical: "/",
+  },
+
   icons: {
     icon: "/favicon.ico",
   },
