@@ -2,6 +2,8 @@ import Image from "next/image";
 import { closedPeriods } from "@/data/closedPeriod";
 import { days, openingHours } from "@/data/openingHours";
 
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   title: "Åpningstider",
 
