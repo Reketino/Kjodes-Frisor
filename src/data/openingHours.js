@@ -11,27 +11,27 @@ export const days = [
 export const openingHours = [
   {
     day: "Mandag",
-    time: "09-16:30",
+    time: "09:00-16:30",
     dateTime: "09:00/16:30",
   },
   {
     day: "Tirsdag",
-    time: "09-16:30",
+    time: "09:00-16:30",
     dateTime: "09:00/16:30",
   },
   {
     day: "Onsdag",
-    time: "09-16:30",
+    time: "09:00-16:30",
     dateTime: "09:00/16:30",
   },
   {
     day: "Torsdag",
-    time: "09-16:30",
+    time: "09:00-16:30",
     dateTime: "09:00/16:30",
   },
   {
     day: "Fredag",
-    time: "09-16",
+    time: "09:00-16:00",
     dateTime: "09:00/16:00",
   },
   {
