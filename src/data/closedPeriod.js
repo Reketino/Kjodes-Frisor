@@ -17,8 +17,8 @@ export const closedPeriods = [
 
   {
     name: "Juleferie",
-    start: new Date("2026-12-24"),
-    end: new Date("2026-12-28"),
+    start: new Date("2026-12-23"),
+    end: new Date("2027-01-01"),
     icon: "🎄",
     message: "Kjødes Frisørsalong holder stengt i julen.",
     greeting: "Vi ønsker alle våre kunder en riktig god jul!",
