@@ -1,18 +1,30 @@
 # 💈 Kjodes Frisor
 
-My first modern and accessible frontend web application built for a local barber shop.
+My first modern, responssive and accessible website built **Kjødes Frisørsalong AS**, a local hairsalon in Sykkylven, Norway.
 
-The website provides essential information, location details, and external booking access for **Kjødes Frisørsalong AS**.
+The website provides customers with essential information about the salon, opening hours, location, contact details and access to the salon's external booking solution.
 
 ---
 
 ## Features
 
-*  Business information (location w/ Google Maps, opening hours, contact)
-*  External booking solution integration
-*  Fully responsive design (mobile-first)
-*  Focus on accessibility (A11y)
-*  Fast and optimized performance
+- Business information
+- Opening hours with dynamic holiday periods
+- Contact information
+- Google Maps location
+- External booking solution
+- Responsive, mobile-first design
+- Semantic HTML
+- Accessibility-focused implementation
+- SEO metadata and canonical URLs
+- Open Graph metadata
+- Schema.org `HairSalon` structured data
+- Dynamic `sitemap.xml`
+- Dynamic `robots.txt`
+- Optimized images with `next/image`
+- Fast static rendering where appropriate
+- Dynamic rendering for date-dependent opening hours
+
 
 ---
 
