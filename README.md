@@ -4,6 +4,10 @@ My first modern, responssive and accessible website built **Kjødes Frisørsalon
 
 The website provides customers with essential information about the salon, opening hours, location, contact details and access to the salon's external booking solution.
 
+## Live Website
+
+[Visit Kjødes Frisørsalong](https://www.kjodesfrisorsalong.no)
+
 ---
 
 ## Features
