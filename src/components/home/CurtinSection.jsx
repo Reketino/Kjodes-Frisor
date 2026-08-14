@@ -19,7 +19,10 @@ export default function CurtinProducts() {
                         Curtin
                     </h2>
 
-                    
+                    <p className="max-w-xl text-lg leading-relaxed text-neutral-400">
+                    Vi fører produkter fra Curtin i salongen. Spør oss gjerne om
+                    hvilke produkter som passer best til ditt hår og din styling.
+                    </p> 
                 </div>
             </div>
             
