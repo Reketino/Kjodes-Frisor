@@ -34,11 +34,8 @@ export default function CutrinProducts() {
                     className="w-full max-w-xl rounded-4xl object-cover shadow-lg"
                     sizes="(max-width: 768px) 100vw, 50vw"
                     />
-                </figure>
-
-                
+                </figure> 
             </div>
-            
         </section>
     )
 }
