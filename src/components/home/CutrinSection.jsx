@@ -25,6 +25,17 @@ export default function CutrinProducts() {
                     </p> 
                 </div>
 
+                <figure className="flex justify-center">
+                    <Image
+                    src="/assets/cutrin.webp"
+                    alt="Cutrin hårpleieprodukter"
+                    width={1200}
+                    height={800}
+                    className="w-full max-w-xl rounded-4xl object-cover shadow-lg"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                </figure>
+
                 
             </div>
             
