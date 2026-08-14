@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function CurtinProducts() {
+export default function CutrinProducts() {
     return(
         <section 
         aria-labelledby="curtin-heading"
@@ -16,14 +16,16 @@ export default function CurtinProducts() {
                     id="curtin-heading"
                     className="mb-6 text-4xl font-serif text-neutral-500 md:text-5xl"
                     >
-                        Curtin
+                        Cutrin
                     </h2>
 
                     <p className="max-w-xl text-lg leading-relaxed text-neutral-400">
-                    Vi fører produkter fra Curtin i salongen. Spør oss gjerne om
+                    Vi fører produkter fra Cutrin i salongen. Spør oss gjerne om
                     hvilke produkter som passer best til ditt hår og din styling.
                     </p> 
                 </div>
+
+                
             </div>
             
         </section>
