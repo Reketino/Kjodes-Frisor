@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "@/components/home/HeroSection";
 import IntroSection from "@/components/home/IntroSection";
 import ServicesSection from "@/components/home/ServiceSection";
+import CutrinProducts from "@/components/home/CutrinSection";
 import GallerySection from "@/components/home/GallerySection";
 import TeamSection from "@/components/home/TeamSection";
 import LocationSection from "@/components/home/LocationSection";
@@ -42,6 +43,8 @@ export default function Home() {
       <IntroSection />
 
       <ServicesSection />
+
+      <CutrinProducts />
 
       <GallerySection />
 

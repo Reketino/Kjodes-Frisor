@@ -19,7 +19,7 @@ export default function GallerySection() {
 
   return (
     <section
-      className="py-20 bg-stone-200 text-neutral-800 mt-6"
+      className="py-20 bg-stone-200 text-neutral-800"
       aria-labelledby="gallery-heading"
     >
       <header>
