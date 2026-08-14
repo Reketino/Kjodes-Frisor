@@ -13,7 +13,7 @@ export default function CutrinProducts() {
                     </p>
 
                     <h2
-                    id="curtin-heading"
+                    id="cutrin-heading"
                     className="mb-6 text-4xl font-serif text-neutral-500 md:text-5xl"
                     >
                         Cutrin
