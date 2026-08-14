@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function CutrinProducts() {
     return(
         <section 
-        aria-labelledby="curtin-heading"
+        aria-labelledby="cutrin-heading"
         className="mx-auto max-w-6xl"
         >
             <div className="grid items-center gap-10 md:grid-cols-2">
