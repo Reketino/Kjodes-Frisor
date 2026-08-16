@@ -5,7 +5,7 @@ const products = [
     brand: "Cutrin",
     category: "Hårpleie & styling",
     description:
-      "Vi fører produkter fra Cutrin i salongen, blant annet Ainoa-serien. Spør oss gjerne om hvilke produkter som passer best til ditt hår og dine behov.",
+      "Vi fører produkter fra Cutrin i salongen, blant annet Ainoa serien. Spør oss gjerne om hvilke produkter som passer best til ditt hår og dine behov.",
     image: "/assets/cutrin.webp",
     alt: "Cutrin Ainoa hårpleieprodukter",
     href: "https://cutrin.no/",
