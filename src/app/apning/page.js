@@ -32,14 +32,21 @@ export const metadata = {
 };
 
 export default function AapningPage() {
-  const now = new Date();
-  const today = now.getDay();
+const now = new Date();
 
-  const activePeriod = closedPeriods.find(
-    (period) => now >= period.start && now <= period.end,
-  );
+const today = now.getDay();
 
-  const isClosedPeriod = Boolean(activePeriod);
+const todayDate = new Intl.DateTimeFormat("sv-SE", {
+  timeZone: "Europe/Oslo",
+}).format(now);
+
+const activePeriod = closedPeriods.find(
+  (period) =>
+    todayDate >= period.start &&
+    todayDate <= period.end,
+);
+
+const isClosedPeriod = Boolean(activePeriod);
 
   return (
     <main className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
