@@ -1,10 +1,11 @@
 export const closedPeriods = [
   {
     name: "Sommerferie",
-    start: new Date("2026-07-15"),
-    end: new Date("2026-08-10"),
+    start: "2026-07-15",
+    end: "2026-08-10",
     icon: "🏖️",
-    message: "Kjødes Frisørsalong holder stengt fra 15. juli til 10. august.",
+    message:
+      "Kjødes Frisørsalong holder stengt fra 15. juli til 10. august.",
     greeting: "Vi ønsker alle våre kunder en riktig god sommer!",
     theme: {
       notice: "border-amber-400 bg-amber-500/15",
@@ -14,11 +15,27 @@ export const closedPeriods = [
       badge: "bg-amber-500/90",
     },
   },
+  {
+    name: "Oppussing",
+    start: "2026-09-08",
+    end: "2026-09-09",
+    icon: "🛠️",
+    message:
+      "Kjødes Frisørsalong holder stengt tirsdag 8. og onsdag 9. september på grunn av oppussing.",
+    greeting: "Vi åpner igjen torsdag 10. september.",
+    theme: {
+      notice: "border-stone-400 bg-stone-500/15",
+      heading: "text-stone-300",
+      card: "bg-stone-500/10 border-stone-400",
+      time: "text-stone-300",
+      badge: "bg-stone-600/90",
+    },
+  },
 
   {
     name: "Juleferie",
-    start: new Date("2026-12-23"),
-    end: new Date("2027-01-01"),
+    start: "2026-12-23",
+    end: "2027-01-01",
     icon: "🎄",
     message: "Kjødes Frisørsalong holder stengt i julen.",
     greeting: "Vi ønsker alle våre kunder en riktig god jul!",
@@ -33,8 +50,8 @@ export const closedPeriods = [
 
   {
     name: "Påskeferie",
-    start: new Date("2027-03-22"),
-    end: new Date("2027-03-30"),
+    start: "2027-03-29",
+    end: "2027-04-05",
     icon: "🐣",
     message: "Kjødes Frisørsalong holder stengt i påsken.",
     greeting: "Vi ønsker alle våre kunder en riktig god påske!",
