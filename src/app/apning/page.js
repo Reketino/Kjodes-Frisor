@@ -43,11 +43,6 @@ export default function AapningPage() {
 
   const isClosedPeriod = Boolean(activePeriod);
 
-  /*
-   * Finn mandagen i inneværende uke.
-   * Vi bruker dato-strenger for å unngå problemer med
-   * tidssoner og klokkeslett.
-   */
   const currentWeekStart = new Date(`${todayDate}T12:00:00Z`);
 
   const daysSinceMonday = today === 0 ? 6 : today - 1;
@@ -141,10 +136,6 @@ export default function AapningPage() {
               .toISOString()
               .slice(0, 10);
 
-            /*
-             * Denne dagen er berørt dersom datoen ligger
-             * innenfor den aktive stengeperioden.
-             */
             const isClosedByPeriod =
               Boolean(activePeriod) &&
               serviceDateString >= activePeriod.start &&
