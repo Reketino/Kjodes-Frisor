@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import { closedPeriods } from "@/data/closedPeriod";
 import { days, openingHours } from "@/data/openingHours";
 
@@ -6,20 +7,14 @@ export const dynamic = "force-dynamic";
 
 export const metadata = {
   title: "Åpningstider",
-
   description: "Se åpningstidene til Kjødes Frisørsalong i Sykkylven.",
-
   alternates: {
     canonical: "/apning",
   },
-
   openGraph: {
     title: "Åpningstider | Kjødes Frisørsalong",
-
     description: "Se åpningstidene til Kjødes Frisørsalong i Sykkylven.",
-
     url: "/apning",
-
     images: [
       {
         url: "/assets/Logo.png",
@@ -32,24 +27,37 @@ export const metadata = {
 };
 
 export default function AapningPage() {
-const now = new Date();
+  const now = new Date();
 
-const today = now.getDay();
+  const today = now.getDay();
 
-const todayDate = new Intl.DateTimeFormat("sv-SE", {
-  timeZone: "Europe/Oslo",
-}).format(now);
+  const todayDate = new Intl.DateTimeFormat("sv-SE", {
+    timeZone: "Europe/Oslo",
+  }).format(now);
 
-const activePeriod = closedPeriods.find(
-  (period) =>
-    todayDate >= period.start &&
-    todayDate <= period.end,
-);
+  const activePeriod = closedPeriods.find(
+    (period) =>
+      todayDate >= period.start &&
+      todayDate <= period.end,
+  );
 
-const isClosedPeriod = Boolean(activePeriod);
+  const isClosedPeriod = Boolean(activePeriod);
+
+  /*
+   * Finn mandagen i inneværende uke.
+   * Vi bruker dato-strenger for å unngå problemer med
+   * tidssoner og klokkeslett.
+   */
+  const currentWeekStart = new Date(`${todayDate}T12:00:00Z`);
+
+  const daysSinceMonday = today === 0 ? 6 : today - 1;
+
+  currentWeekStart.setUTCDate(
+    currentWeekStart.getUTCDate() - daysSinceMonday,
+  );
 
   return (
-    <main className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
+    <main className="relative flex min-h-screen w-full items-center justify-center overflow-hidden">
       <Image
         src="/assets/kalender.webp"
         alt="Klokke"
@@ -61,37 +69,38 @@ const isClosedPeriod = Boolean(activePeriod);
         className="object-cover"
       />
 
-      <div className="absolute inset-0 bg-black/70 z-0 pointer-events-none" />
+      <div className="pointer-events-none absolute inset-0 z-0 bg-black/70" />
 
       <section
-        className="relative z-10 w-full max-w-4xl px-4 py-10 text-center "
+        className="relative z-10 w-full max-w-4xl px-4 py-10 text-center"
         aria-labelledby="opening-hours-heading"
       >
         <h1
           id="opening-hours-heading"
-          className=" text-5xl md:text-6xl font-serif font-semibold text-stone-400 mb-8"
+          className="mb-8 font-serif text-5xl font-semibold text-stone-400 md:text-6xl"
         >
           Åpningstider
         </h1>
+
         {isClosedPeriod && activePeriod && (
           <div
             className={`
-          mb-8 
-          rounded-3xl
-          border
-          backdrop-blur-md
-          p-6
-          text-center
-          shadow-lg
-          ${activePeriod.theme.notice}
-        `}
+              mb-8
+              rounded-3xl
+              border
+              p-6
+              text-center
+              shadow-lg
+              backdrop-blur-md
+              ${activePeriod.theme.notice}
+            `}
           >
             <h2
               className={`
-              text-3xl 
-              font-serif 
-              font-semibold
-              ${activePeriod.theme.heading}
+                text-3xl
+                font-serif
+                font-semibold
+                ${activePeriod.theme.heading}
               `}
             >
               {activePeriod.icon} {activePeriod.name}
@@ -100,119 +109,175 @@ const isClosedPeriod = Boolean(activePeriod);
             <p className="mt-3 text-lg text-stone-100">
               {activePeriod.message}
             </p>
-            <p className="mt-2 text-stone-300">{activePeriod.greeting}</p>
+
+            <p className="mt-2 text-stone-300">
+              {activePeriod.greeting}
+            </p>
           </div>
         )}
-        <ul className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-8">
+
+        <ul className="mx-auto grid max-w-4xl gap-8 sm:grid-cols-2">
           {openingHours.map((service) => {
-            const isHelg = ["Lørdag", "Søndag"].includes(service.day);
+            const isHelg = ["Lørdag", "Søndag"].includes(
+              service.day,
+            );
+
             const isToday = service.day === days[today];
-            const isClosedToday = isToday && service.time === "Stengt";
+
+            const serviceDayIndex = days.indexOf(service.day);
+
+            const serviceDate = new Date(currentWeekStart);
+
+            const daysFromMonday =
+              serviceDayIndex === 0
+                ? 6
+                : serviceDayIndex - 1;
+
+            serviceDate.setUTCDate(
+              serviceDate.getUTCDate() + daysFromMonday,
+            );
+
+            const serviceDateString = serviceDate
+              .toISOString()
+              .slice(0, 10);
+
+            /*
+             * Denne dagen er berørt dersom datoen ligger
+             * innenfor den aktive stengeperioden.
+             */
+            const isClosedByPeriod =
+              Boolean(activePeriod) &&
+              serviceDateString >= activePeriod.start &&
+              serviceDateString <= activePeriod.end;
+
+            const isClosedToday =
+              isToday && service.time === "Stengt";
 
             return (
               <li key={service.day}>
                 <article
                   className={`
                     relative
-                    group 
-                    p-6 
-                    rounded-4xl 
-                   border-2 
-                    backdrop-blur-md shadow-md 
-                    transition-all duration-300
+                    group
+                    rounded-4xl
+                    border-2
+                    p-6
+                    shadow-md
+                    backdrop-blur-md
+                    transition-all
+                    duration-300
                     hover:-translate-y-1
 
-           ${
-             isClosedPeriod && activePeriod
-               ? activePeriod.theme.card
-               : isToday
-                 ? "bg-green-500/20 border-green-500"
-                 : "bg-white/10 border-stone-500"
-           }
-           
-           ${
-             isClosedPeriod
-               ? ""
-               : isHelg
-                 ? " hover:bg-neutral-900 hover:shadow-red-500/30"
-                 : " hover:bg-neutral-900 hover:shadow-green-500/30"
-           }
-        `}
+                    ${
+                      isClosedByPeriod && activePeriod
+                        ? activePeriod.theme.card
+                        : isToday
+                          ? "border-green-500 bg-green-500/20"
+                          : "border-stone-500 bg-white/10"
+                    }
+
+                    ${
+                      isClosedByPeriod
+                        ? ""
+                        : isHelg
+                          ? "hover:bg-neutral-900 hover:shadow-red-500/30"
+                          : "hover:bg-neutral-900 hover:shadow-green-500/30"
+                    }
+                  `}
                 >
-                  <h2 className=" text-4xl font-semibold mb-2 text-stone-400">
+                  <h2 className="mb-2 text-4xl font-semibold text-stone-400">
                     {service.day}
                   </h2>
+
                   <time
-                    dateTime={service.dateTime}
-                    className={`text-2xl leading-relaxed transition-colors duration-300  
-          ${
-            isClosedPeriod && activePeriod
-              ? activePeriod.theme.time
-              : isHelg
-                ? "text-stone-200 group-hover:text-red-600"
-                : "text-stone-200 group-hover:text-green-500"
-          }`}
+                    dateTime={
+                      isClosedByPeriod
+                        ? undefined
+                        : service.dateTime
+                    }
+                    className={`
+                      text-2xl
+                      leading-relaxed
+                      transition-colors
+                      duration-300
+
+                      ${
+                        isClosedByPeriod && activePeriod
+                          ? activePeriod.theme.time
+                          : isHelg
+                            ? "text-stone-200 group-hover:text-red-600"
+                            : "text-stone-200 group-hover:text-green-500"
+                      }
+                    `}
                   >
-                    {service.time}
+                    {isClosedByPeriod
+                      ? "Stengt"
+                      : service.time}
                   </time>
 
-                  {isClosedPeriod && activePeriod && (
-                    <span
-                      aria-hidden="true"
-                      className="
-                    absolute
-                    right-5
-                    bottom-4
-                    text-4xl
-                    opacity-70
-                    transition-transform
-                    duration-300
-                    group-hover:scale-110
-                    group-hover:rotate-6
-                    "
-                    >
-                      {activePeriod.icon}
-                    </span>
-                  )}
+                  {isClosedByPeriod && activePeriod && (
+                    <>
+                      <span
+                        aria-hidden="true"
+                        className="
+                          absolute
+                          right-5
+                          bottom-4
+                          text-4xl
+                          opacity-70
+                          transition-transform
+                          duration-300
+                          group-hover:rotate-6
+                          group-hover:scale-110
+                        "
+                      >
+                        {activePeriod.icon}
+                      </span>
 
-                  {isClosedPeriod && activePeriod ? (
-                    <span
-                      className={`
-                    absolute
-                    top-4
-                    right-4
-                    rounded-full
-                    px-3
-                    py-1
-                    text-xs
-                    font-semibold
-                    uppercase
-                    tracking-wide
-                    text-white
-                    ${activePeriod.theme.badge}
-                    `}
-                    >
-                      {activePeriod.name}
-                    </span>
-                  ) : (
-                    isToday && (
                       <span
                         className={`
-                      absolute
-                      top-4
-                      right-4
-                      rounded-full
-                    bg-green-600
-                    px-3 py-1
-                    text-sm
-                    font-semibold
-                    text-white
-                    ${isClosedToday ? "bg-red-600" : "bg-green-600"}
-                    `}
+                          absolute
+                          top-4
+                          right-4
+                          rounded-full
+                          px-3
+                          py-1
+                          text-xs
+                          font-semibold
+                          uppercase
+                          tracking-wide
+                          text-white
+                          ${activePeriod.theme.badge}
+                        `}
                       >
-                        {isClosedToday ? "Stengt i dag" : "Åpent i dag"}
+                        {activePeriod.name}
                       </span>
-                    )
+                    </>
+                  )}
+
+                  {!isClosedByPeriod && isToday && (
+                    <span
+                      className={`
+                        absolute
+                        top-4
+                        right-4
+                        rounded-full
+                        px-3
+                        py-1
+                        text-sm
+                        font-semibold
+                        text-white
+                        ${
+                          isClosedToday
+                            ? "bg-red-600"
+                            : "bg-green-600"
+                        }
+                      `}
+                    >
+                      {isClosedToday
+                        ? "Stengt i dag"
+                        : "Åpent i dag"}
+                    </span>
                   )}
                 </article>
               </li>
