@@ -15,14 +15,13 @@ export const closedPeriods = [
       badge: "bg-amber-500/90",
     },
   },
-
   {
     name: "Oppussing",
-    start: "2026-09-09",
+    start: "2026-09-08",
     end: "2026-09-09",
     icon: "🛠️",
     message:
-      "Kjødes Frisørsalong holder stengt onsdag 9. september på grunn av oppussing.",
+      "Kjødes Frisørsalong holder stengt tirsdag 8. og onsdag 9. september på grunn av oppussing.",
     greeting: "Vi åpner igjen torsdag 10. september.",
     theme: {
       notice: "border-stone-400 bg-stone-500/15",
