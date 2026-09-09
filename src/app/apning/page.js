@@ -27,13 +27,20 @@ export const metadata = {
 };
 
 export default function AapningPage() {
-  const now = new Date();
+const now = new Date();
 
-  const today = now.getDay();
+const todayDate = new Intl.DateTimeFormat("sv-SE", {
+  timeZone: "Europe/Oslo",
+}).format(now);
 
-  const todayDate = new Intl.DateTimeFormat("sv-SE", {
-    timeZone: "Europe/Oslo",
-  }).format(now);
+const todayName = new Intl.DateTimeFormat("nb-NO", {
+  timeZone: "Europe/Oslo",
+  weekday: "long",
+}).format(now);
+
+const today = days.findIndex(
+  (day) => day.toLowerCase() === todayName.toLowerCase(),
+);
 
   const activePeriod = closedPeriods.find(
     (period) =>
