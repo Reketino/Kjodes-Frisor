@@ -27,25 +27,23 @@ export const metadata = {
 };
 
 export default function AapningPage() {
-const now = new Date();
+  const now = new Date();
 
-const todayDate = new Intl.DateTimeFormat("sv-SE", {
-  timeZone: "Europe/Oslo",
-}).format(now);
+  const todayDate = new Intl.DateTimeFormat("sv-SE", {
+    timeZone: "Europe/Oslo",
+  }).format(now);
 
-const todayName = new Intl.DateTimeFormat("nb-NO", {
-  timeZone: "Europe/Oslo",
-  weekday: "long",
-}).format(now);
+  const todayName = new Intl.DateTimeFormat("nb-NO", {
+    timeZone: "Europe/Oslo",
+    weekday: "long",
+  }).format(now);
 
-const today = days.findIndex(
-  (day) => day.toLowerCase() === todayName.toLowerCase(),
-);
+  const today = days.findIndex(
+    (day) => day.toLowerCase() === todayName.toLowerCase(),
+  );
 
   const activePeriod = closedPeriods.find(
-    (period) =>
-      todayDate >= period.start &&
-      todayDate <= period.end,
+    (period) => todayDate >= period.start && todayDate <= period.end,
   );
 
   const isClosedPeriod = Boolean(activePeriod);
@@ -54,9 +52,7 @@ const today = days.findIndex(
 
   const daysSinceMonday = today === 0 ? 6 : today - 1;
 
-  currentWeekStart.setUTCDate(
-    currentWeekStart.getUTCDate() - daysSinceMonday,
-  );
+  currentWeekStart.setUTCDate(currentWeekStart.getUTCDate() - daysSinceMonday);
 
   return (
     <main className="relative flex min-h-screen w-full items-center justify-center overflow-hidden">
@@ -112,17 +108,13 @@ const today = days.findIndex(
               {activePeriod.message}
             </p>
 
-            <p className="mt-2 text-stone-300">
-              {activePeriod.greeting}
-            </p>
+            <p className="mt-2 text-stone-300">{activePeriod.greeting}</p>
           </div>
         )}
 
         <ul className="mx-auto grid max-w-4xl gap-8 sm:grid-cols-2">
           {openingHours.map((service) => {
-            const isHelg = ["Lørdag", "Søndag"].includes(
-              service.day,
-            );
+            const isHelg = ["Lørdag", "Søndag"].includes(service.day);
 
             const isToday = service.day === days[today];
 
@@ -131,25 +123,18 @@ const today = days.findIndex(
             const serviceDate = new Date(currentWeekStart);
 
             const daysFromMonday =
-              serviceDayIndex === 0
-                ? 6
-                : serviceDayIndex - 1;
+              serviceDayIndex === 0 ? 6 : serviceDayIndex - 1;
 
-            serviceDate.setUTCDate(
-              serviceDate.getUTCDate() + daysFromMonday,
-            );
+            serviceDate.setUTCDate(serviceDate.getUTCDate() + daysFromMonday);
 
-            const serviceDateString = serviceDate
-              .toISOString()
-              .slice(0, 10);
+            const serviceDateString = serviceDate.toISOString().slice(0, 10);
 
             const isClosedByPeriod =
               Boolean(activePeriod) &&
               serviceDateString >= activePeriod.start &&
               serviceDateString <= activePeriod.end;
 
-            const isClosedToday =
-              isToday && service.time === "Stengt";
+            const isClosedToday = isToday && service.time === "Stengt";
 
             return (
               <li key={service.day}>
@@ -188,11 +173,7 @@ const today = days.findIndex(
                   </h2>
 
                   <time
-                    dateTime={
-                      isClosedByPeriod
-                        ? undefined
-                        : service.dateTime
-                    }
+                    dateTime={isClosedByPeriod ? undefined : service.dateTime}
                     className={`
                       text-2xl
                       leading-relaxed
@@ -208,9 +189,7 @@ const today = days.findIndex(
                       }
                     `}
                   >
-                    {isClosedByPeriod
-                      ? "Stengt"
-                      : service.time}
+                    {isClosedByPeriod ? "Stengt" : service.time}
                   </time>
 
                   {isClosedByPeriod && activePeriod && (
@@ -265,16 +244,10 @@ const today = days.findIndex(
                         text-sm
                         font-semibold
                         text-white
-                        ${
-                          isClosedToday
-                            ? "bg-red-600"
-                            : "bg-green-600"
-                        }
+                        ${isClosedToday ? "bg-red-600" : "bg-green-600"}
                       `}
                     >
-                      {isClosedToday
-                        ? "Stengt i dag"
-                        : "Åpent i dag"}
+                      {isClosedToday ? "Stengt i dag" : "Åpent i dag"}
                     </span>
                   )}
                 </article>
