@@ -27,32 +27,29 @@ export const metadata = {
 };
 
 export default function AapningPage() {
-  const now = new Date();
+ const now = new Date();
 
-  const todayDate = new Intl.DateTimeFormat("sv-SE", {
-    timeZone: "Europe/Oslo",
-  }).format(now);
+const todayDate = new Intl.DateTimeFormat("sv-SE", {
+  timeZone: "Europe/Oslo",
+}).format(now);
 
-  const todayName = new Intl.DateTimeFormat("nb-NO", {
-    timeZone: "Europe/Oslo",
-    weekday: "long",
-  }).format(now);
+const today = new Date(`${todayDate}T12:00:00Z`).getUTCDay();
 
-  const today = days.findIndex(
-    (day) => day.toLowerCase() === todayName.toLowerCase(),
-  );
+const activePeriod = closedPeriods.find(
+  (period) =>
+    todayDate >= period.start &&
+    todayDate <= period.end,
+);
 
-  const activePeriod = closedPeriods.find(
-    (period) => todayDate >= period.start && todayDate <= period.end,
-  );
+const isClosedPeriod = Boolean(activePeriod);
 
-  const isClosedPeriod = Boolean(activePeriod);
+const currentWeekStart = new Date(`${todayDate}T12:00:00Z`);
 
-  const currentWeekStart = new Date(`${todayDate}T12:00:00Z`);
+const daysSinceMonday = today === 0 ? 6 : today - 1;
 
-  const daysSinceMonday = today === 0 ? 6 : today - 1;
-
-  currentWeekStart.setUTCDate(currentWeekStart.getUTCDate() - daysSinceMonday);
+currentWeekStart.setUTCDate(
+  currentWeekStart.getUTCDate() - daysSinceMonday,
+);
 
   return (
     <main className="relative flex min-h-screen w-full items-center justify-center overflow-hidden">
